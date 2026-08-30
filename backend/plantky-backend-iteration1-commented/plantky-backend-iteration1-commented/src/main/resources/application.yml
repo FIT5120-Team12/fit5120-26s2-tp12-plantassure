@@ -1,0 +1,55 @@
+# ============================================================
+# Plantky 公共配置
+# ============================================================
+# application.yml 会在所有环境加载。
+# environment-specific 配置放在 application-local.yml / application-prod.yml。
+
+server:
+  # 后端 HTTP 端口。
+  # 如果环境变量 SERVER_PORT 不存在，则使用默认 8080。
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    # Spring Application 名称，日志/监控/未来部署时可用于识别服务。
+    name: plantky-backend
+
+  profiles:
+    # 默认使用 local 环境。
+    # 生产部署时设置 SPRING_PROFILES_ACTIVE=prod。
+    active: ${SPRING_PROFILES_ACTIVE:local}
+
+  jackson:
+    # API Contract 需要明确返回 null 字段（例如 commonName/rating），
+    # 因此设置 always，不自动忽略 null。
+    default-property-inclusion: always
+
+mybatis-plus:
+  configuration:
+    # 数据库 snake_case 自动映射到 Java camelCase：
+    # scientific_name -> scientificName
+    # vba_record_count -> vbaRecordCount
+    map-underscore-to-camel-case: true
+
+    # 当前项目不使用 MyBatis 二级缓存。
+    # 数据量很小、查询简单，避免为了“使用缓存”而引入额外一致性复杂度。
+    cache-enabled: false
+
+  global-config:
+    # 关闭 MyBatis-Plus 启动 banner，保持启动日志简洁。
+    banner: false
+
+springdoc:
+  api-docs:
+    # OpenAPI JSON 地址；Apifox 可直接通过该 URL 导入接口。
+    path: /v3/api-docs
+  swagger-ui:
+    # Swagger UI 页面地址。
+    path: /swagger-ui.html
+
+plantky:
+  cors:
+    # 本地默认允许 Vite dev server 访问。
+    # 可通过 FRONTEND_ORIGIN 环境变量覆盖。
+    allowed-origins:
+      - ${FRONTEND_ORIGIN:http://localhost:5173}

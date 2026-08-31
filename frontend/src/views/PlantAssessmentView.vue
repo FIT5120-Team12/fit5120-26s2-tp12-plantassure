@@ -53,7 +53,7 @@
   function resolvePlantId(value: string | string[] | undefined): number | null {
     if (typeof value !== 'string' || value.trim() === '') return null;
     const plantId = Number(value);
-    return Number.isInteger(plantId) && plantId > 0 ? plantId : null;
+    return Number.isSafeInteger(plantId) && plantId > 0 ? plantId : null;
   }
 
   async function loadAssessment(value: string | string[] | undefined) {

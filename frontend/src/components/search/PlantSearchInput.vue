@@ -215,6 +215,7 @@
           type="search"
           name="plant-search"
           required
+          maxlength="255"
           autocomplete="off"
           placeholder="Search by common or scientific name"
           role="combobox"

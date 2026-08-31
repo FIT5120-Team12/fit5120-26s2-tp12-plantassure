@@ -1,4 +1,4 @@
-# FIT5120 Project — Check Before You Plant
+# FIT5120 Project — PlantAssure
 
 ## Setup
 

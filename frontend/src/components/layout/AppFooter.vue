@@ -1,5 +1,14 @@
 <script setup lang="ts">
   import logoUrl from '@/assets/images/plantassure-logo.png';
+
+  withDefaults(
+    defineProps<{
+      homeHrefPrefix?: string;
+    }>(),
+    {
+      homeHrefPrefix: '',
+    },
+  );
 </script>
 
 <template>
@@ -10,8 +19,8 @@
         <p>Designed for residential gardeners in the City of Monash.</p>
       </div>
       <nav class="app-footer__nav" aria-label="Footer navigation">
-        <a href="#why-it-matters">About</a>
-        <a href="#about-data">Data Sources</a>
+        <a :href="`${homeHrefPrefix}#why-it-matters`">About</a>
+        <a :href="`${homeHrefPrefix}#about-data`">Data Sources</a>
       </nav>
       <p class="app-footer__note">Plant information for more informed planting decisions.</p>
     </div>

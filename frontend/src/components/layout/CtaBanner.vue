@@ -7,10 +7,12 @@
       title: string;
       description: string;
       actionLabel?: string;
+      compact?: boolean;
     }>(),
     {
       eyebrow: 'GET STARTED',
       actionLabel: 'Check a Plant',
+      compact: false,
     },
   );
 
@@ -20,7 +22,11 @@
 </script>
 
 <template>
-  <section class="cta-banner" aria-labelledby="cta-title">
+  <section
+    class="cta-banner"
+    :class="{ 'cta-banner--compact': compact }"
+    aria-labelledby="cta-title"
+  >
     <img class="cta-banner__decoration cta-banner__decoration--left" :src="decorationUrl" alt="" />
     <div class="cta-banner__content">
       <p class="cta-banner__eyebrow">{{ eyebrow }}</p>
@@ -49,10 +55,16 @@
   }
 
   .cta-banner__content {
+    min-width: 0;
     position: relative;
     z-index: 1;
     max-width: 440px;
     text-align: center;
+  }
+
+  .cta-banner--compact {
+    min-height: 320px;
+    padding-block: var(--space-2xl);
   }
 
   .cta-banner__eyebrow {
@@ -68,12 +80,14 @@
     color: var(--color-on-primary);
     font-size: 2.25rem;
     line-height: 1.08;
+    overflow-wrap: anywhere;
   }
 
   .cta-banner__description {
     margin: 20px auto 36px;
     color: color-mix(in srgb, var(--color-on-primary) 78%, transparent);
     font-size: 1rem;
+    overflow-wrap: anywhere;
   }
 
   .cta-banner button {
@@ -136,6 +150,10 @@
       bottom: 0;
       opacity: 0.45;
     }
+
+    .cta-banner--compact {
+      min-height: 320px;
+    }
   }
 
   @media (max-width: 899px) {
@@ -174,6 +192,20 @@
 
     .cta-banner__decoration--right {
       right: -22%;
+    }
+
+    .cta-banner--compact {
+      min-height: 340px;
+    }
+
+    .cta-banner--compact .cta-banner__decoration {
+      opacity: 0.18;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cta-banner button {
+      transition: none;
     }
   }
 </style>

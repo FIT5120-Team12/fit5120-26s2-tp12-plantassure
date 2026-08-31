@@ -1,5 +1,6 @@
 <script setup lang="ts">
-  import { ref } from 'vue';
+  import { nextTick, onMounted, ref } from 'vue';
+  import { useRoute } from 'vue-router';
 
   import heroImageUrl from '@/assets/images/home-hero-botanical.png';
   import whyImageUrl from '@/assets/images/why-it-matters-garden.png';
@@ -10,6 +11,7 @@
   import PlantSearchInput from '@/components/search/PlantSearchInput.vue';
 
   const searchInput = ref<InstanceType<typeof PlantSearchInput> | null>(null);
+  const route = useRoute();
 
   const processSteps = [
     {
@@ -38,6 +40,12 @@
   function focusSearch() {
     searchInput.value?.focusInput();
   }
+
+  onMounted(async () => {
+    if (route.hash !== '#plant-search-input') return;
+    await nextTick();
+    focusSearch();
+  });
 </script>
 
 <template>

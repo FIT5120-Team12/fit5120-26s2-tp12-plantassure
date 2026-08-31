@@ -41,7 +41,6 @@
             class="plant-results__link"
             :href="`/plants/${result.plantId}/assessment`"
             @click.prevent="$emit('select', result)"
-            @keydown.enter.prevent="$emit('select', result)"
           >
             <span class="plant-results__identity">
               <span v-if="result.commonName" class="plant-results__common-name">

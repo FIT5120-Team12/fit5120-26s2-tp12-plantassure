@@ -23,6 +23,7 @@
   const explicitQuery = ref('');
   const showExplicitResults = ref(false);
   let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+  let suggestionLoadId = 0;
 
   function focusInput() {
     input.value?.focus();
@@ -47,12 +48,13 @@
 
   async function loadSuggestions(expectedQuery: string) {
     if (query.value.trim() !== expectedQuery || expectedQuery.length < 3) return;
+    const loadId = ++suggestionLoadId;
 
     activeIndex.value = -1;
     isOpen.value = true;
     await searchStore.fetchSuggestions();
 
-    if (query.value.trim() !== expectedQuery) return;
+    if (loadId !== suggestionLoadId || query.value.trim() !== expectedQuery) return;
     suggestionQuery.value = expectedQuery;
     isOpen.value = true;
   }
@@ -69,6 +71,7 @@
     closeDropdown();
 
     if (normalizedQuery.length < 3) {
+      suggestionLoadId += 1;
       suggestionQuery.value = '';
       void searchStore.fetchSuggestions();
       return;
@@ -139,7 +142,10 @@
   async function executeExplicitSearch() {
     const normalizedQuery = query.value.trim();
 
+    if (isSearching.value && explicitQuery.value === normalizedQuery) return;
+
     clearDebounce();
+    suggestionLoadId += 1;
     closeDropdown();
     searchStore.clearSuggestions();
     suggestionQuery.value = '';
@@ -181,6 +187,7 @@
   onMounted(() => document.addEventListener('pointerdown', handleDocumentPointerDown));
   onBeforeUnmount(() => {
     clearDebounce();
+    suggestionLoadId += 1;
     document.removeEventListener('pointerdown', handleDocumentPointerDown);
   });
 
@@ -188,7 +195,13 @@
 </script>
 
 <template>
-  <form ref="root" class="plant-search" role="search" @submit.prevent="executeExplicitSearch">
+  <form
+    ref="root"
+    class="plant-search"
+    role="search"
+    :aria-busy="isSearching"
+    @submit.prevent="executeExplicitSearch"
+  >
     <label class="visually-hidden" for="plant-search-input">
       Search by common or scientific name
     </label>
@@ -213,7 +226,7 @@
           @focus="handleFocus"
           @keydown="handleKeydown"
         />
-        <button type="submit">Search</button>
+        <button type="submit" :disabled="isSearching">Search</button>
       </div>
       <AutocompleteDropdown
         v-if="isOpen"
@@ -307,6 +320,11 @@
 
   .plant-search button:hover {
     background: var(--color-primary-hover);
+  }
+
+  .plant-search button:disabled {
+    cursor: wait;
+    opacity: 0.72;
   }
 
   .plant-search button:active {

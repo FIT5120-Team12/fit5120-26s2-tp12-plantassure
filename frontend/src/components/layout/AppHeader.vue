@@ -1,6 +1,17 @@
 <script setup lang="ts">
   import logoUrl from '@/assets/images/plantassure-logo.png';
 
+  withDefaults(
+    defineProps<{
+      homeHrefPrefix?: string;
+      actionLabel?: string;
+    }>(),
+    {
+      homeHrefPrefix: '',
+      actionLabel: 'Check a Plant',
+    },
+  );
+
   defineEmits<{
     checkPlant: [];
   }>();
@@ -9,17 +20,20 @@
 <template>
   <header class="app-header">
     <div class="app-container app-header__inner">
-      <a class="app-header__brand" href="#top" aria-label="PlantAssure home">
+      <a class="app-header__brand" :href="`${homeHrefPrefix}#top`" aria-label="PlantAssure home">
         <img :src="logoUrl" alt="PlantAssure" />
       </a>
 
       <nav class="app-header__nav" aria-label="Primary navigation">
-        <a class="app-header__link" href="#how-it-works">How it works</a>
-        <a class="app-header__link app-header__link--about" href="#why-it-matters">
+        <a class="app-header__link" :href="`${homeHrefPrefix}#how-it-works`">How it works</a>
+        <a
+          class="app-header__link app-header__link--about"
+          :href="`${homeHrefPrefix}#why-it-matters`"
+        >
           About / Data Sources
         </a>
         <button class="app-header__action" type="button" @click="$emit('checkPlant')">
-          <span>Check a Plant</span>
+          <span>{{ actionLabel }}</span>
           <i class="mdi mdi-arrow-right" aria-hidden="true"></i>
         </button>
       </nav>

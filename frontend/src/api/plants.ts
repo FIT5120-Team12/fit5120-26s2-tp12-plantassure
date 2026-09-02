@@ -3,7 +3,7 @@ import axios from 'axios'
 import type { PlantAssessmentResponse, PlantSearchResponse } from '@/types/plant'
 
 export const plantApi = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || '/api/v1',
+  baseURL: 'http://54.79.19.80:8080/api/v1',
 })
 
 export async function searchPlants(keyword: string): Promise<PlantSearchResponse> {

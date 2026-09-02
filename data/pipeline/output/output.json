@@ -40,7 +40,7 @@
   {
     "scientific_name": "Acacia baileyana",
     "common_name": "Cootamundra Wattle",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -59,7 +59,7 @@
   {
     "scientific_name": "Acacia boormanii",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "native",
       "degree_of_establishment": "native",
@@ -116,7 +116,7 @@
   {
     "scientific_name": "Acacia dealbata",
     "common_name": "Silver Wattle",
-    "recommendation": "Use Caution",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
       "degree_of_establishment": "native",
@@ -190,6 +190,25 @@
     ]
   },
   {
+    "scientific_name": "Acacia genistifolia subsp. genistifolia",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 1986,
+      "inat_record_count": 1765,
+      "inat_most_recent_date": "2026-08-10T15:15:56"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Acacia howittii",
     "common_name": "Sticky Wattle",
     "recommendation": "Reconsider Planting",
@@ -230,7 +249,7 @@
   {
     "scientific_name": "Acacia iteaphylla",
     "common_name": "Flinders Range Wattle | Willow-leaved Wattle",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -266,7 +285,64 @@
     ]
   },
   {
+    "scientific_name": "Acacia leprosa var. uninervia",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 82,
+      "inat_most_recent_date": "2026-08-01T14:37:31"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Acacia longifolia",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 4,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 1832,
+      "inat_most_recent_date": "2026-08-08T15:08:23"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Acacia longifolia subsp. longifolia",
+    "common_name": NaN,
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 4,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 1832,
+      "inat_most_recent_date": "2026-08-08T15:08:23"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Acacia longifolia subsp. sophorae",
     "common_name": NaN,
     "recommendation": "Reconsider Planting",
     "supporting_evidence": {
@@ -532,6 +608,44 @@
     ]
   },
   {
+    "scientific_name": "Acacia verticillata subsp. cephalantha",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 6,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 3044,
+      "inat_most_recent_date": "2026-08-10T08:38:37"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Acacia verticillata subsp. verticillata",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 6,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 3044,
+      "inat_most_recent_date": "2026-08-10T08:38:37"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Acaena echinata",
     "common_name": "Sheep's Burr",
     "recommendation": "Not Assessed",
@@ -629,7 +743,7 @@
   {
     "scientific_name": "Acetosella vulgaris",
     "common_name": "Sheep Sorrel",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -743,7 +857,7 @@
   {
     "scientific_name": "Agapanthus praecox",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -760,12 +874,50 @@
     ]
   },
   {
-    "scientific_name": "Agrostis capillaris",
-    "common_name": "Brown-top Bent",
+    "scientific_name": "Agapanthus praecox subsp. orientalis",
+    "common_name": "Agapanthus",
     "recommendation": "Reconsider Planting",
     "supporting_evidence": {
       "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 326,
+      "inat_most_recent_date": "2026-08-08T15:42"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Agrostis capillaris",
+    "common_name": "Brown-top Bent",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 7,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 42,
+      "inat_most_recent_date": "2026-02-04T13:45:16"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Agrostis capillaris var. capillaris",
+    "common_name": NaN,
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 7,
       "vba_most_recent_year": 2023,
       "inat_record_count": 42,
@@ -800,7 +952,7 @@
   {
     "scientific_name": "Aira elegantissima",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -819,7 +971,7 @@
   {
     "scientific_name": "Aizoon pubescens",
     "common_name": "Galenia",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -1083,6 +1235,25 @@
     ]
   },
   {
+    "scientific_name": "Amperea xiphoclada var. xiphoclada",
+    "common_name": "Broom Spurge",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 883,
+      "inat_most_recent_date": "2026-08-08T16:25:37"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Amphibromus archeri",
     "common_name": "Pointed Swamp Wallaby-grass",
     "recommendation": "Not Assessed",
@@ -1160,6 +1331,25 @@
   },
   {
     "scientific_name": "Amyema pendula",
+    "common_name": "Drooping Mistletoe",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 1987,
+      "inat_record_count": 1266,
+      "inat_most_recent_date": "2026-08-10T17:32:47"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Amyema pendula subsp. pendula",
     "common_name": "Drooping Mistletoe",
     "recommendation": "Not Assessed",
     "supporting_evidence": {
@@ -1520,7 +1710,45 @@
     ]
   },
   {
+    "scientific_name": "Austrostipa rudis subsp. rudis",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 16,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 110,
+      "inat_most_recent_date": "2026-03-14T15:37"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Austrostipa scabra",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 47,
+      "inat_most_recent_date": "2026-05-13T17:28:14"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Austrostipa scabra subsp. scabra",
     "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
@@ -1579,7 +1807,7 @@
   {
     "scientific_name": "Avena sterilis",
     "common_name": "Sterile Oat",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -1616,6 +1844,25 @@
   },
   {
     "scientific_name": "Banksia integrifolia",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 1121,
+      "inat_most_recent_date": "2026-08-10T14:27:42"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Banksia integrifolia subsp. integrifolia",
     "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
@@ -1693,6 +1940,25 @@
   {
     "scientific_name": "Bidens pilosa",
     "common_name": "Cobbler's-pegs",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2020,
+      "inat_record_count": 63,
+      "inat_most_recent_date": "2026-08-02T17:18:17"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Bidens pilosa var. minor",
+    "common_name": NaN,
     "recommendation": "Lower Concern",
     "supporting_evidence": {
       "establishment_status": "introduced",
@@ -1902,7 +2168,7 @@
   {
     "scientific_name": "Briza maxima",
     "common_name": "Large Quaking Grass | Shelly Grass",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -1921,7 +2187,7 @@
   {
     "scientific_name": "Briza minor",
     "common_name": "Lesser Quaking Grass | Shivery Grass",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -1940,7 +2206,7 @@
   {
     "scientific_name": "Bromus catharticus",
     "common_name": "Prairie Grass",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -2109,6 +2375,25 @@
     ]
   },
   {
+    "scientific_name": "Bursaria spinosa subsp. spinosa",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 24,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 4005,
+      "inat_most_recent_date": "2026-08-08T16:11:26"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Caesia calliantha",
     "common_name": "Blue Grass-lily",
     "recommendation": "Not Assessed",
@@ -2130,6 +2415,44 @@
   {
     "scientific_name": "Caesia parviflora",
     "common_name": "Pale Grass-lily",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 1987,
+      "inat_record_count": 663,
+      "inat_most_recent_date": "2026-05-16T15:47:26"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Caesia parviflora var. minor",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 1987,
+      "inat_record_count": 663,
+      "inat_most_recent_date": "2026-05-16T15:47:26"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Caesia parviflora var. parviflora",
+    "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -2263,7 +2586,7 @@
   {
     "scientific_name": "Callitriche stagnalis",
     "common_name": "Common Water-starwort",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -2318,12 +2641,50 @@
     ]
   },
   {
+    "scientific_name": "Calystegia sepium subsp. roseata",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 163,
+      "inat_most_recent_date": "2026-05-02T14:08:20"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Calystegia silvatica",
     "common_name": "Greater Bindweed",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2022,
+      "inat_record_count": 30,
+      "inat_most_recent_date": "2026-02-19T15:28:24"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Calystegia silvatica subsp. silvatica",
+    "common_name": NaN,
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 1,
       "vba_most_recent_year": 2022,
       "inat_record_count": 30,
@@ -2434,7 +2795,7 @@
   {
     "scientific_name": "Carduus pycnocephalus",
     "common_name": "Slender Thistle",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -2584,6 +2945,25 @@
     ]
   },
   {
+    "scientific_name": "Cassinia aculeata subsp. aculeata",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 5,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 1291,
+      "inat_most_recent_date": "2026-08-09T16:57:36"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Cassinia arcuata",
     "common_name": NaN,
     "recommendation": "Not Assessed",
@@ -2643,6 +3023,25 @@
   {
     "scientific_name": "Cassytha glabella",
     "common_name": "Slender Dodder-laurel | Tangled Dodder-laurel",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 612,
+      "inat_most_recent_date": "2026-08-07T14:23:26"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Cassytha glabella f. dispar",
+    "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -2738,7 +3137,7 @@
   {
     "scientific_name": "Centaurium erythraea",
     "common_name": "Common Centaury",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -2850,6 +3249,25 @@
     ]
   },
   {
+    "scientific_name": "Centrolepis strigosa subsp. strigosa",
+    "common_name": "Hairy Centrolepis",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 165,
+      "inat_most_recent_date": "2025-12-10T13:16"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Cerastium glomeratum",
     "common_name": "Sticky Mouse-ear Chickweed",
     "recommendation": "Use Caution",
@@ -2909,6 +3327,25 @@
   {
     "scientific_name": "Chamaescilla corymbosa",
     "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 1513,
+      "inat_most_recent_date": "2026-08-09T16:57:39"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Chamaescilla corymbosa var. corymbosa",
+    "common_name": "Blue Stars | Mudrurt",
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -3061,7 +3498,7 @@
   {
     "scientific_name": "Cirsium vulgare",
     "common_name": "Spear Thistle",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -3325,9 +3762,66 @@
     ]
   },
   {
+    "scientific_name": "Correa reflexa var. lobata",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 4,
+      "vba_most_recent_year": 2020,
+      "inat_record_count": 2899,
+      "inat_most_recent_date": "2026-08-08T14:11:16"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Correa reflexa var. reflexa",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 4,
+      "vba_most_recent_year": 2020,
+      "inat_record_count": 2899,
+      "inat_most_recent_date": "2026-08-08T14:11:16"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Cortaderia selloana",
     "common_name": "Pampas Grass",
     "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 229,
+      "inat_most_recent_date": "2026-07-26T10:55"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Cortaderia selloana subsp. selloana",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -3498,10 +3992,29 @@
   {
     "scientific_name": "Corymbia citriodora",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 41,
+      "inat_most_recent_date": "2026-04-25T13:47:30"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Corymbia citriodora subsp. citriodora",
+    "common_name": NaN,
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 1,
       "vba_most_recent_year": 2023,
       "inat_record_count": 41,
@@ -3648,6 +4161,25 @@
     ]
   },
   {
+    "scientific_name": "Crassula decumbens var. decumbens",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 5,
+      "vba_most_recent_year": 2005,
+      "inat_record_count": 336,
+      "inat_most_recent_date": "2026-08-11T07:53:56"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Crassula helmsii",
     "common_name": "Swamp Crassula",
     "recommendation": "Not Assessed",
@@ -3669,10 +4201,29 @@
   {
     "scientific_name": "Crassula multicava",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 165,
+      "inat_most_recent_date": "2026-08-08T16:23"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Crassula multicava subsp. multicava",
+    "common_name": "Fairy Crassula",
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 0,
       "vba_most_recent_year": "No local records found",
       "inat_record_count": 165,
@@ -3859,10 +4410,29 @@
   {
     "scientific_name": "Cynodon dactylon",
     "common_name": "Couch",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
       "degree_of_establishment": "native",
+      "vba_record_count": 8,
+      "vba_most_recent_year": 2025,
+      "inat_record_count": 262,
+      "inat_most_recent_date": "2026-07-01T15:05:32"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Cynodon dactylon var. dactylon",
+    "common_name": NaN,
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 8,
       "vba_most_recent_year": 2025,
       "inat_record_count": 262,
@@ -3954,7 +4524,7 @@
   {
     "scientific_name": "Datura stramonium",
     "common_name": "Common Thorn-apple",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -4049,6 +4619,25 @@
   {
     "scientific_name": "Daviesia ulicifolia",
     "common_name": "Gorse Bitter-pea",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 1168,
+      "inat_most_recent_date": "2026-08-10T15:15:27"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Daviesia ulicifolia subsp. ulicifolia",
+    "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -4161,8 +4750,46 @@
     ]
   },
   {
+    "scientific_name": "Dianella longifolia var. longifolia",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 4,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 370,
+      "inat_most_recent_date": "2026-07-28T14:20:44"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Dianella revoluta",
     "common_name": "Black-anther Flax-lily | Spreading Flax-lily",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 8,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 1439,
+      "inat_most_recent_date": "2026-08-07T11:40:11"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Dianella revoluta var. revoluta",
+    "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -4353,7 +4980,7 @@
   {
     "scientific_name": "Dittrichia graveolens",
     "common_name": "Stinkwort",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -4902,9 +5529,47 @@
     ]
   },
   {
+    "scientific_name": "Epilobium billardiereanum subsp. billardiereanum",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 100,
+      "inat_most_recent_date": "2026-07-07T15:46:27"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Epilobium billardiereanum subsp. cinereum",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 100,
+      "inat_most_recent_date": "2026-07-07T15:46:27"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Epilobium ciliatum",
     "common_name": "Glandular Willow-herb",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -4961,7 +5626,7 @@
   {
     "scientific_name": "Eragrostis cilianensis",
     "common_name": "Stink-grass",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -5056,7 +5721,7 @@
   {
     "scientific_name": "Erigeron sumatrensis",
     "common_name": "Tall Fleabane",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -5075,7 +5740,7 @@
   {
     "scientific_name": "Eriobotrya japonica",
     "common_name": "Loquat",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "adventive",
@@ -5113,7 +5778,7 @@
   {
     "scientific_name": "Eschscholzia californica",
     "common_name": "Californian Poppy",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -5189,7 +5854,7 @@
   {
     "scientific_name": "Eucalyptus botryoides",
     "common_name": "Southern Mahogany",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "native",
       "degree_of_establishment": "native",
@@ -5227,6 +5892,25 @@
   {
     "scientific_name": "Eucalyptus camaldulensis",
     "common_name": "River Red-gum",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 6,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 890,
+      "inat_most_recent_date": "2026-08-06T09:13:59"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Eucalyptus camaldulensis subsp. camaldulensis",
+    "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -5341,6 +6025,25 @@
   {
     "scientific_name": "Eucalyptus globulus",
     "common_name": "Southern Blue-gum",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 139,
+      "inat_most_recent_date": "2026-08-04T10:20:27"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Eucalyptus globulus subsp. globulus",
+    "common_name": NaN,
     "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -5379,6 +6082,25 @@
   {
     "scientific_name": "Eucalyptus leucoxylon",
     "common_name": "Yellow Gum",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2020,
+      "inat_record_count": 369,
+      "inat_most_recent_date": "2026-07-30T17:38:15"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Eucalyptus leucoxylon subsp. megalocarpa",
+    "common_name": NaN,
     "recommendation": "Reconsider Planting",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -5510,6 +6232,25 @@
     ]
   },
   {
+    "scientific_name": "Eucalyptus ovata subsp. ovata",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 14,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 365,
+      "inat_most_recent_date": "2026-07-15T13:17:24"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Eucalyptus pauciflora",
     "common_name": "Snow Gum",
     "recommendation": "Not Assessed",
@@ -5567,6 +6308,25 @@
     ]
   },
   {
+    "scientific_name": "Eucalyptus phenax subsp. phenax",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 2,
+      "inat_most_recent_date": "2022-10-17T09:18"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Eucalyptus polyanthemos",
     "common_name": "Red Box",
     "recommendation": "Not Assessed",
@@ -5605,6 +6365,25 @@
     ]
   },
   {
+    "scientific_name": "Eucalyptus radiata subsp. radiata",
+    "common_name": "Narrow-leaved Peppermint",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 12,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 501,
+      "inat_most_recent_date": "2026-08-08T12:07:20"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Eucalyptus tricarpa",
     "common_name": "Ironbark",
     "recommendation": "Not Assessed",
@@ -5624,8 +6403,65 @@
     ]
   },
   {
+    "scientific_name": "Eucalyptus tricarpa subsp. tricarpa",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 216,
+      "inat_most_recent_date": "2026-07-21T09:53:30"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Eucalyptus viminalis",
     "common_name": "Manna Gum | Ribbon Gum",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 12,
+      "vba_most_recent_year": 2025,
+      "inat_record_count": 690,
+      "inat_most_recent_date": "2026-08-02T14:07:20"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Eucalyptus viminalis subsp. pryoriana",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 12,
+      "vba_most_recent_year": 2025,
+      "inat_record_count": 690,
+      "inat_most_recent_date": "2026-08-02T14:07:20"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Eucalyptus viminalis subsp. viminalis",
+    "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -5740,7 +6576,7 @@
   {
     "scientific_name": "Euphorbia peplus",
     "common_name": "Petty Spurge",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -5797,7 +6633,7 @@
   {
     "scientific_name": "Festuca rubra",
     "common_name": "Red Fescue | Creeping Fescue",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -5892,7 +6728,7 @@
   {
     "scientific_name": "Fraxinus angustifolia",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -6061,9 +6897,28 @@
     ]
   },
   {
+    "scientific_name": "Galium gaudichaudii subsp. gaudichaudii",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 40,
+      "inat_most_recent_date": "2026-04-13T15:22:59"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Gamochaeta americana",
     "common_name": "Cudweed",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -6082,7 +6937,7 @@
   {
     "scientific_name": "Gamochaeta purpurea",
     "common_name": "Spike Cudweed",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -6441,6 +7296,44 @@
     ]
   },
   {
+    "scientific_name": "Gonocarpus micranthus subsp. micranthus",
+    "common_name": "Creeping Raspwort",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 273,
+      "inat_most_recent_date": "2026-08-02T10:50:15"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Gonocarpus micranthus subsp. ramosissimus",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 273,
+      "inat_most_recent_date": "2026-08-02T10:50:15"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Gonocarpus tetragynus",
     "common_name": "Common Raspwort",
     "recommendation": "Not Assessed",
@@ -6612,9 +7505,28 @@
     ]
   },
   {
+    "scientific_name": "Grevillea ilicifolia subsp. ilicifolia",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 60,
+      "inat_most_recent_date": "2025-11-05T16:34"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Grevillea robusta",
     "common_name": "Silky Oak",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "adventive",
@@ -6633,7 +7545,26 @@
   {
     "scientific_name": "Grevillea rosmarinifolia",
     "common_name": "Rosemary Grevillea",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 1986,
+      "inat_record_count": 579,
+      "inat_most_recent_date": "2026-08-10T17:40:03"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Grevillea rosmarinifolia subsp. rosmarinifolia",
+    "common_name": NaN,
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "native",
       "degree_of_establishment": "native",
@@ -6747,7 +7678,7 @@
   {
     "scientific_name": "Hakea salicifolia",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -6764,9 +7695,28 @@
     ]
   },
   {
+    "scientific_name": "Hakea salicifolia subsp. salicifolia",
+    "common_name": "Willow-leaved Hakea",
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 2,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 247,
+      "inat_most_recent_date": "2026-08-07T11:21:58"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Hakea sericea",
     "common_name": "Silky Hakea",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -6897,6 +7847,25 @@
     ]
   },
   {
+    "scientific_name": "Hemarthria uncinata var. uncinata",
+    "common_name": "Mat Grass",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 106,
+      "inat_most_recent_date": "2026-04-14T14:29:46"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Hennediella stanfordensis",
     "common_name": NaN,
     "recommendation": "Not Assessed",
@@ -6936,6 +7905,25 @@
   },
   {
     "scientific_name": "Hibbertia fasciculata",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 504,
+      "inat_most_recent_date": "2026-08-07T12:06"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Hibbertia fasciculata var. prostrata",
     "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
@@ -7108,10 +8096,29 @@
   {
     "scientific_name": "Hypericum perforatum",
     "common_name": "St Johns Wort",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 528,
+      "inat_most_recent_date": "2026-07-04T12:17:08"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Hypericum perforatum subsp. veronense",
+    "common_name": NaN,
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 0,
       "vba_most_recent_year": "No local records found",
       "inat_record_count": 528,
@@ -7146,7 +8153,7 @@
   {
     "scientific_name": "Hypochaeris glabra",
     "common_name": "Smooth Cat's-ear",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -7165,7 +8172,7 @@
   {
     "scientific_name": "Hypochaeris radicata",
     "common_name": "Cat's-ear | Flat-weed",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -7260,6 +8267,25 @@
   {
     "scientific_name": "Indigofera australis",
     "common_name": "Austral Indigo",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 1535,
+      "inat_most_recent_date": "2026-08-09T16:53:26"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Indigofera australis subsp. australis",
+    "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -7486,6 +8512,25 @@
     ]
   },
   {
+    "scientific_name": "Isotoma fluviatilis subsp. australis",
+    "common_name": "Swamp Isotome",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 319,
+      "inat_most_recent_date": "2026-05-10T15:22:54"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Juncus amabilis",
     "common_name": NaN,
     "recommendation": "Not Assessed",
@@ -7507,10 +8552,29 @@
   {
     "scientific_name": "Juncus articulatus",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 4,
+      "vba_most_recent_year": 2005,
+      "inat_record_count": 20,
+      "inat_most_recent_date": "2026-02-25T11:40:28"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Juncus articulatus subsp. articulatus",
+    "common_name": "Jointed Rush",
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 4,
       "vba_most_recent_year": 2005,
       "inat_record_count": 20,
@@ -7583,7 +8647,7 @@
   {
     "scientific_name": "Juncus capitatus",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -7849,7 +8913,7 @@
   {
     "scientific_name": "Lactuca serriola",
     "common_name": "Prickly Lettuce",
-    "recommendation": "Lower Concern",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -7925,10 +8989,29 @@
   {
     "scientific_name": "Lapsana communis",
     "common_name": NaN,
-    "recommendation": "Lower Concern",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 176,
+      "inat_most_recent_date": "2026-07-11T11:27"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Lapsana communis subsp. communis",
+    "common_name": "Nipplewort",
+    "recommendation": "Lower Concern",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 1,
       "vba_most_recent_year": 2023,
       "inat_record_count": 176,
@@ -7980,9 +9063,28 @@
     ]
   },
   {
+    "scientific_name": "Leontodon saxatilis subsp. saxatilis",
+    "common_name": "Lesser Hawkbit | Hairy Hawkbit",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 1987,
+      "inat_record_count": 254,
+      "inat_most_recent_date": "2026-07-02T09:51:12"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Lepidium africanum",
     "common_name": "Common Peppercress | Rubble Peppercress",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -8417,6 +9519,25 @@
     ]
   },
   {
+    "scientific_name": "Leucopogon virgatus var. virgatus",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 1942,
+      "inat_most_recent_date": "2026-08-10T10:39:30"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Levenhookia dubia",
     "common_name": "Hairy Stylewort",
     "recommendation": "Not Assessed",
@@ -8437,6 +9558,25 @@
   },
   {
     "scientific_name": "Lewinskya tasmanica",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 27,
+      "inat_most_recent_date": "2025-11-28T12:32"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Lewinskya tasmanica var. tasmanica",
     "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
@@ -8721,6 +9861,44 @@
     ]
   },
   {
+    "scientific_name": "Lomandra filiformis subsp. coriacea",
+    "common_name": "Wattle Mat-rush",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 18,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 1275,
+      "inat_most_recent_date": "2026-08-05T16:02:20"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Lomandra filiformis subsp. filiformis",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 18,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 1275,
+      "inat_most_recent_date": "2026-08-05T16:02:20"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Lomandra longifolia",
     "common_name": "Spiny-headed Mat-rush | Karawun",
     "recommendation": "Not Assessed",
@@ -8740,8 +9918,46 @@
     ]
   },
   {
+    "scientific_name": "Lomandra longifolia subsp. longifolia",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 23,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 2503,
+      "inat_most_recent_date": "2026-08-10T17:35:03"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Lomandra multiflora",
     "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 416,
+      "inat_most_recent_date": "2026-08-07T09:36:54"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Lomandra multiflora subsp. multiflora",
+    "common_name": "Many-flowered Mat-rush",
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -8780,7 +9996,7 @@
   {
     "scientific_name": "Lotus angustissimus",
     "common_name": "Slender Bird's-foot Trefoil",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -8854,6 +10070,25 @@
     ]
   },
   {
+    "scientific_name": "Luzula meridionalis var. densiflora",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 1987,
+      "inat_record_count": 269,
+      "inat_most_recent_date": "2026-07-23T11:35:54"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Lycopodiella lateralis",
     "common_name": "Slender Club-moss",
     "recommendation": "Not Assessed",
@@ -8894,7 +10129,7 @@
   {
     "scientific_name": "Lysimachia arvensis",
     "common_name": "Pimpernel",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -8913,7 +10148,7 @@
   {
     "scientific_name": "Lysimachia minima",
     "common_name": "Kause Chaffweed",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -9179,7 +10414,7 @@
   {
     "scientific_name": "Medicago polymorpha",
     "common_name": "Burr Medic",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -9198,7 +10433,26 @@
   {
     "scientific_name": "Melaleuca armillaris",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2020,
+      "inat_record_count": 213,
+      "inat_most_recent_date": "2026-08-03T14:41:22"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Melaleuca armillaris subsp. armillaris",
+    "common_name": "Giant Honey-myrtle",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "native",
       "degree_of_establishment": "native",
@@ -9386,6 +10640,25 @@
     ]
   },
   {
+    "scientific_name": "Microlaena stipoides var. stipoides",
+    "common_name": "Weeping grass",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 12,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 752,
+      "inat_most_recent_date": "2026-08-07T11:18:24"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Microseris scapigera",
     "common_name": NaN,
     "recommendation": "Not Assessed",
@@ -9502,7 +10775,7 @@
   {
     "scientific_name": "Moenchia erecta",
     "common_name": "Erect Chickweed | Upright Chickweed",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -9692,7 +10965,7 @@
   {
     "scientific_name": "Nasturtium officinale",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -10148,10 +11421,29 @@
   {
     "scientific_name": "Paraserianthes lophantha",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 245,
+      "inat_most_recent_date": "2026-08-06T15:21:17"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Paraserianthes lophantha subsp. lophantha",
+    "common_name": "Cape Wattle | Crested Wattle",
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 1,
       "vba_most_recent_year": 2023,
       "inat_record_count": 245,
@@ -10260,6 +11552,25 @@
     ]
   },
   {
+    "scientific_name": "Patersonia occidentalis var. occidentalis",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 1985,
+      "inat_record_count": 646,
+      "inat_most_recent_date": "2026-07-01T16:18:31"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Pauridia glabella",
     "common_name": NaN,
     "recommendation": "Not Assessed",
@@ -10279,7 +11590,45 @@
     ]
   },
   {
+    "scientific_name": "Pauridia glabella var. glabella",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 57,
+      "inat_most_recent_date": "2026-08-08T12:19:07"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Pauridia vaginata",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 1991,
+      "inat_record_count": 302,
+      "inat_most_recent_date": "2026-08-07T02:38"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Pauridia vaginata var. vaginata",
     "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
@@ -10357,6 +11706,25 @@
   {
     "scientific_name": "Pentapogon quadrifidus",
     "common_name": "Five-awned Spear-grass",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 17,
+      "inat_most_recent_date": "2025-11-28T21:00"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Pentapogon quadrifidus var. quadrifidus",
+    "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -10509,10 +11877,29 @@
   {
     "scientific_name": "Phalaris arundinacea",
     "common_name": "Reed Canary-grass",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 14,
+      "vba_most_recent_year": 2022,
+      "inat_record_count": 13,
+      "inat_most_recent_date": "2026-02-15T10:39:29"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Phalaris arundinacea var. arundinacea",
+    "common_name": "Reed Canary-grass",
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 14,
       "vba_most_recent_year": 2022,
       "inat_record_count": 13,
@@ -10718,10 +12105,29 @@
   {
     "scientific_name": "Plantago coronopus",
     "common_name": "Buck's-horn Plantain",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 6,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 693,
+      "inat_most_recent_date": "2026-08-05T16:01:12"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Plantago coronopus subsp. coronopus",
+    "common_name": NaN,
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 6,
       "vba_most_recent_year": 2023,
       "inat_record_count": 693,
@@ -10849,6 +12255,25 @@
     ]
   },
   {
+    "scientific_name": "Platysace heterophylla var. heterophylla",
+    "common_name": "Slender Platysace",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 188,
+      "inat_most_recent_date": "2026-08-09T16:27:40"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Platysace lanceolata",
     "common_name": "Shrubby Platysace",
     "recommendation": "Not Assessed",
@@ -10908,7 +12333,7 @@
   {
     "scientific_name": "Poa bulbosa",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -10925,7 +12350,45 @@
     ]
   },
   {
+    "scientific_name": "Poa bulbosa var. bulbosa",
+    "common_name": "Bulbous Meadow-grass",
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 13,
+      "inat_most_recent_date": "2025-11-02T17:48:09"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Poa labillardierei",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 14,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 179,
+      "inat_most_recent_date": "2026-08-06T15:03:51"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Poa labillardierei var. labillardierei",
     "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
@@ -10965,7 +12428,7 @@
   {
     "scientific_name": "Poa pratensis",
     "common_name": "Kentucky Blue-grass | Smooth Meadow-grass",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -11098,7 +12561,7 @@
   {
     "scientific_name": "Polycarpon tetraphyllum",
     "common_name": "Four-leaved Allseed",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -11307,7 +12770,7 @@
   {
     "scientific_name": "Potentilla indica",
     "common_name": "Indian Strawberry",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -11459,6 +12922,25 @@
   {
     "scientific_name": "Pteridium esculentum",
     "common_name": "Bracken | Austral Bracken",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 6,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 4230,
+      "inat_most_recent_date": "2026-08-09T12:11:55"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Pteridium esculentum subsp. esculentum",
+    "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -11704,6 +13186,25 @@
     ]
   },
   {
+    "scientific_name": "Racopilum cuspidigerum var. convolutaceum",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 99,
+      "inat_most_recent_date": "2026-07-26T10:50:53"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Ranunculus lappaceus",
     "common_name": "Australian Buttercup",
     "recommendation": "Not Assessed",
@@ -11725,7 +13226,7 @@
   {
     "scientific_name": "Ranunculus muricatus",
     "common_name": "Sharp Buttercup",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -11763,7 +13264,7 @@
   {
     "scientific_name": "Ranunculus sceleratus",
     "common_name": NaN,
-    "recommendation": "Use Caution",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -11780,9 +13281,28 @@
     ]
   },
   {
+    "scientific_name": "Ranunculus sceleratus subsp. sceleratus",
+    "common_name": "Celery Buttercup",
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 49,
+      "inat_most_recent_date": "2026-07-28T09:33:56"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Raphanus raphanistrum",
     "common_name": "Wild Radish",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -11896,10 +13416,29 @@
   {
     "scientific_name": "Romulea rosea",
     "common_name": NaN,
-    "recommendation": "Use Caution",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 8,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 1203,
+      "inat_most_recent_date": "2026-08-08T14:38"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Romulea rosea var. australis",
+    "common_name": "Onion-grass",
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 8,
       "vba_most_recent_year": 2023,
       "inat_record_count": 1203,
@@ -12067,7 +13606,7 @@
   {
     "scientific_name": "Rumex obtusifolius",
     "common_name": NaN,
-    "recommendation": "Use Caution",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -12084,12 +13623,50 @@
     ]
   },
   {
+    "scientific_name": "Rumex obtusifolius subsp. obtusifolius",
+    "common_name": "Broadleaf Dock",
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 10,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 128,
+      "inat_most_recent_date": "2026-05-17T14:28"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Rumex pulcher",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 1987,
+      "inat_record_count": 2,
+      "inat_most_recent_date": "2025-06-24T11:06"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Rumex pulcher subsp. pulcher",
+    "common_name": "Fiddle Dock",
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 1,
       "vba_most_recent_year": 1987,
       "inat_record_count": 2,
@@ -12293,6 +13870,25 @@
     ]
   },
   {
+    "scientific_name": "Rytidosperma racemosum var. racemosum",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 4,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 138,
+      "inat_most_recent_date": "2026-06-23T13:20:49"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Rytidosperma semiannulare",
     "common_name": NaN,
     "recommendation": "Not Assessed",
@@ -12371,7 +13967,7 @@
   {
     "scientific_name": "Salix cinerea",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -12409,7 +14005,7 @@
   {
     "scientific_name": "Salpichroa origanifolia",
     "common_name": "Pampas Lily-of-the-Valley",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -12578,6 +14174,25 @@
     ]
   },
   {
+    "scientific_name": "Schoenus lepidosperma subsp. lepidosperma",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 2,
+      "inat_most_recent_date": "2023-08-27T12:14"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Scorpiurium cucullatum",
     "common_name": NaN,
     "recommendation": "Not Assessed",
@@ -12654,6 +14269,25 @@
     ]
   },
   {
+    "scientific_name": "Senecio glomeratus subsp. glomeratus",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 339,
+      "inat_most_recent_date": "2026-08-02T15:38"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Senecio hispidulus",
     "common_name": "Rough Fireweed | Hill Fireweed | Hispid Fireweed",
     "recommendation": "Not Assessed",
@@ -12675,7 +14309,7 @@
   {
     "scientific_name": "Senecio jacobaea",
     "common_name": "Ragwort",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -12713,6 +14347,25 @@
   {
     "scientific_name": "Senecio pinnatifolius",
     "common_name": "Variable Groundsel",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 273,
+      "inat_most_recent_date": "2026-07-30T08:00:11"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Senecio pinnatifolius var. lanceolatus",
+    "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",
@@ -12827,10 +14480,29 @@
   {
     "scientific_name": "Silene gallica",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 187,
+      "inat_most_recent_date": "2026-05-17T11:26"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Silene gallica var. quinquevulnera",
+    "common_name": "Spotted Catchfly | Five-wounded Catchfly",
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 0,
       "vba_most_recent_year": "No local records found",
       "inat_record_count": 187,
@@ -12884,7 +14556,7 @@
   {
     "scientific_name": "Solanum americanum",
     "common_name": "Glossy Nightshade",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -12960,7 +14632,7 @@
   {
     "scientific_name": "Solanum mauritianum",
     "common_name": "Tobacco-bush",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -13074,7 +14746,7 @@
   {
     "scientific_name": "Sonchus asper",
     "common_name": "Rough Sow-thistle | Prickly Sow-thistle",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -13091,9 +14763,28 @@
     ]
   },
   {
+    "scientific_name": "Sonchus asper subsp. asper",
+    "common_name": NaN,
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 11,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 652,
+      "inat_most_recent_date": "2026-07-11T10:57"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Sonchus oleraceus",
     "common_name": "Sow Thistle",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -13302,7 +14993,7 @@
   {
     "scientific_name": "Stellaria media",
     "common_name": "Chickweed",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -13339,6 +15030,25 @@
   },
   {
     "scientific_name": "Stylidium armeria",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 673,
+      "inat_most_recent_date": "2026-08-07T11:36:45"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Stylidium armeria subsp. armeria",
     "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
@@ -13435,7 +15145,7 @@
   {
     "scientific_name": "Symphyotrichum subulatum",
     "common_name": "Aster-weed",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -13718,6 +15428,25 @@
     ]
   },
   {
+    "scientific_name": "Thysanotus tuberosus subsp. tuberosus",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 1209,
+      "inat_most_recent_date": "2026-02-09T09:30:09"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Todea barbara",
     "common_name": "Austral King-fern",
     "recommendation": "Not Assessed",
@@ -13757,6 +15486,25 @@
   },
   {
     "scientific_name": "Trachymene composita",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 417,
+      "inat_most_recent_date": "2026-08-07T13:24"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Trachymene composita var. composita",
     "common_name": NaN,
     "recommendation": "Not Assessed",
     "supporting_evidence": {
@@ -13815,7 +15563,7 @@
   {
     "scientific_name": "Tribolium obliterum",
     "common_name": "Capetown Grass",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -13853,10 +15601,29 @@
   {
     "scientific_name": "Trifolium angustifolium",
     "common_name": NaN,
-    "recommendation": "Use Caution",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 1987,
+      "inat_record_count": 384,
+      "inat_most_recent_date": "2026-07-14T15:21:58"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Trifolium angustifolium var. angustifolium",
+    "common_name": "Narrow-leaved Clover",
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 1,
       "vba_most_recent_year": 1987,
       "inat_record_count": 384,
@@ -13891,7 +15658,7 @@
   {
     "scientific_name": "Trifolium dubium",
     "common_name": "Suckling Clover",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -13910,7 +15677,7 @@
   {
     "scientific_name": "Trifolium fragiferum",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -13927,9 +15694,28 @@
     ]
   },
   {
+    "scientific_name": "Trifolium fragiferum var. fragiferum",
+    "common_name": "Strawberry Clover",
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 91,
+      "inat_most_recent_date": "2026-04-27T16:57"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Trifolium glomeratum",
     "common_name": "Clustered Clover",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -13948,7 +15734,7 @@
   {
     "scientific_name": "Trifolium incarnatum",
     "common_name": NaN,
-    "recommendation": "Use Caution",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -13967,10 +15753,29 @@
   {
     "scientific_name": "Trifolium michelianum",
     "common_name": NaN,
-    "recommendation": "Lower Concern",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 3,
+      "inat_most_recent_date": "2024-09-27T11:23"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Trifolium michelianum var. michelianum",
+    "common_name": "Annual White Clover",
+    "recommendation": "Lower Concern",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 0,
       "vba_most_recent_year": "No local records found",
       "inat_record_count": 3,
@@ -14005,7 +15810,7 @@
   {
     "scientific_name": "Trifolium repens",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -14022,9 +15827,28 @@
     ]
   },
   {
+    "scientific_name": "Trifolium repens var. repens",
+    "common_name": "White Clover",
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 16,
+      "vba_most_recent_year": 2024,
+      "inat_record_count": 1948,
+      "inat_most_recent_date": "2026-08-09T16:39:12"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Trifolium resupinatum",
     "common_name": "Shaftal Clover",
-    "recommendation": "Use Caution",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
@@ -14081,10 +15905,29 @@
   {
     "scientific_name": "Trifolium vesiculosum",
     "common_name": NaN,
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 0,
+      "inat_most_recent_date": "No local records found"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Trifolium vesiculosum var. vesiculosum",
+    "common_name": "Arrowleaf Clover",
+    "recommendation": "Reconsider Planting",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 0,
       "vba_most_recent_year": "No local records found",
       "inat_record_count": 0,
@@ -14195,7 +16038,7 @@
   {
     "scientific_name": "Urtica urens",
     "common_name": "Small Nettle",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -14271,7 +16114,7 @@
   {
     "scientific_name": "Vellereophyton dealbatum",
     "common_name": "White Cudweed",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -14290,7 +16133,7 @@
   {
     "scientific_name": "Veronica arvensis",
     "common_name": "Wall Speedwell",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -14442,10 +16285,29 @@
   {
     "scientific_name": "Vicia sativa",
     "common_name": "Common Vetch",
-    "recommendation": "Lower Concern",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 846,
+      "inat_most_recent_date": "2026-08-09T16:31:11"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Vicia sativa subsp. sativa",
+    "common_name": NaN,
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 3,
       "vba_most_recent_year": 2023,
       "inat_record_count": 846,
@@ -14537,7 +16399,7 @@
   {
     "scientific_name": "Vulpia bromoides",
     "common_name": "Squirrel-tail Fescue",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Use Caution",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "naturalised",
@@ -14556,10 +16418,29 @@
   {
     "scientific_name": "Vulpia myuros",
     "common_name": "Rat's-tail Fescue",
-    "recommendation": "Reconsider Planting",
+    "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "introduced",
       "degree_of_establishment": "Not available",
+      "vba_record_count": 0,
+      "vba_most_recent_year": "No local records found",
+      "inat_record_count": 0,
+      "inat_most_recent_date": "No local records found"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Vulpia myuros f. myuros",
+    "common_name": NaN,
+    "recommendation": "Use Caution",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
       "vba_record_count": 0,
       "vba_most_recent_year": "No local records found",
       "inat_record_count": 0,
@@ -14649,7 +16530,45 @@
     ]
   },
   {
+    "scientific_name": "Wahlenbergia stricta subsp. stricta",
+    "common_name": "Tall Bluebell",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 2005,
+      "inat_record_count": 165,
+      "inat_most_recent_date": "2026-05-23T12:57"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Watsonia meriana",
+    "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "introduced",
+      "degree_of_establishment": "naturalised",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 231,
+      "inat_most_recent_date": "2026-07-21T10:59:21"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Watsonia meriana var. bulbillifera",
     "common_name": NaN,
     "recommendation": "Reconsider Planting",
     "supporting_evidence": {
@@ -14687,8 +16606,46 @@
     ]
   },
   {
+    "scientific_name": "Wurmbea dioica subsp. dioica",
+    "common_name": "Early Nancy",
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 1,
+      "vba_most_recent_year": 1991,
+      "inat_record_count": 2082,
+      "inat_most_recent_date": "2026-08-09T17:03:42"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
     "scientific_name": "Xanthorrhoea minor",
     "common_name": NaN,
+    "recommendation": "Not Assessed",
+    "supporting_evidence": {
+      "establishment_status": "native",
+      "degree_of_establishment": "native",
+      "vba_record_count": 3,
+      "vba_most_recent_year": 2023,
+      "inat_record_count": 1683,
+      "inat_most_recent_date": "2026-07-12T10:52:43"
+    },
+    "data_sources": [
+      "VicFlora",
+      "2022 Advisory List",
+      "VBA Flora Records",
+      "iNaturalist (GBIF)"
+    ]
+  },
+  {
+    "scientific_name": "Xanthorrhoea minor subsp. lutea",
+    "common_name": "Small Grass-tree | Toolimerin",
     "recommendation": "Not Assessed",
     "supporting_evidence": {
       "establishment_status": "native",

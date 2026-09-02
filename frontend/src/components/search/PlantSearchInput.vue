@@ -5,11 +5,14 @@
 
   import AutocompleteDropdown from '@/components/search/AutocompleteDropdown.vue';
   import PlantSearchResults from '@/components/search/PlantSearchResults.vue';
+  import { plantSearchMock } from '@/mocks/plantSearchMock';
   import { useSearchStore } from '@/stores/search';
   import type { PlantSearchResult } from '@/types/plant';
 
   const AUTOCOMPLETE_DELAY = 275;
   const LISTBOX_ID = 'plant-search-suggestions';
+  // TEMPORARY: autocomplete mock for layout verification before backend integration.
+  const USE_AUTOCOMPLETE_LAYOUT_MOCK = true;
 
   const router = useRouter();
   const searchStore = useSearchStore();
@@ -52,7 +55,11 @@
 
     activeIndex.value = -1;
     isOpen.value = true;
-    await searchStore.fetchSuggestions();
+    if (USE_AUTOCOMPLETE_LAYOUT_MOCK) {
+      suggestions.value = plantSearchMock;
+    } else {
+      await searchStore.fetchSuggestions();
+    }
 
     if (loadId !== suggestionLoadId || query.value.trim() !== expectedQuery) return;
     suggestionQuery.value = expectedQuery;

@@ -61,7 +61,9 @@
     right: 0;
     left: 0;
     z-index: 5;
-    overflow: hidden;
+    max-height: min(320px, calc(100vh - 160px));
+    overflow-x: hidden;
+    overflow-y: auto;
     background: var(--color-surface);
     border: 1px solid var(--color-border-strong);
     border-radius: var(--radius-md);

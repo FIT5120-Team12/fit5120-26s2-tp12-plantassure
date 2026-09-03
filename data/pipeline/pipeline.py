@@ -311,45 +311,67 @@ def run_pipeline(vicflora_path, advisory_path, vba_shp_path, gbif_path):
 
 
 # Write to MySQL (read directly by main.py's API)
+# The schema here is kept identical to the teammate's species_data_revised.sql:
+# same column names, lengths, NOT NULL constraints, primary key, and unique
+# indexes -- so whether the table gets built by running this code or by
+# importing that .sql file by hand, you end up with the exact same structure.
 def write_to_mysql(merged_df):
-    from sqlalchemy import Integer, SmallInteger, String, DateTime  # explicit column types, so the table isn't all TEXT
-
     engine = create_engine(
         f"mysql+pymysql://{DB_CONFIG['user']}:{DB_CONFIG['password']}"
         f"@{DB_CONFIG['host']}:{DB_CONFIG['port']}/{DB_CONFIG['database']}"
     )
 
-    # Give every column a real type instead of letting pandas guess (it
-    # tends to fall back to TEXT for anything with mixed/None values,
-    # which makes backend validation harder downstream).
-    column_types = {
-        "scientific_name": String(150),
-        "vernacular_name": String(200),
-        "family": String(50),
-        "establishment_means": String(30),
-        "degree_of_establishment": String(30),
-        "match_key": String(150),
-        "risk_rating": String(50),
-        "vba_record_count": SmallInteger,
-        "vba_most_recent_year": SmallInteger,
-        "inat_record_count": Integer,
-        "inat_most_recent_date": DateTime,
-    }
+    # Build the table with fixed DDL statements instead of letting pandas'
+    # to_sql() infer types automatically -- type inference alone can't give
+    # us a primary key, unique indexes, or NOT NULL constraints, so this has
+    # to be a real hand-written CREATE TABLE to line up with
+    # species_data_revised.sql.
+    # Kept as two separate statements (not one blob split on ";") on purpose:
+    # some of the column COMMENTs below contain a semicolon themselves, and a
+    # naive split on ";" would slice the CREATE TABLE statement in half.
+    drop_table_sql = "DROP TABLE IF EXISTS `species_data`;"
+    create_table_sql = """
+    CREATE TABLE `species_data` (
+      `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Internal plant identifier used as plantId',
+      `scientific_name` VARCHAR(255) NOT NULL COMMENT 'Accepted scientific name',
+      `vernacular_name` VARCHAR(1000) NULL COMMENT 'Common/vernacular name(s)',
+      `family` VARCHAR(100) NOT NULL COMMENT 'Plant family',
+      `establishment_means` VARCHAR(30) NOT NULL COMMENT 'e.g. native, introduced, uncertain',
+      `degree_of_establishment` VARCHAR(50) NULL COMMENT 'e.g. native, naturalised, adventive',
+      `match_key` VARCHAR(255) NOT NULL COMMENT 'Normalised scientific-name matching key',
+      `risk_rating` VARCHAR(50) NULL COMMENT '2022 Advisory List risk rating, NULL means no exact assessment',
+      `vba_record_count` INT UNSIGNED NOT NULL DEFAULT 0 COMMENT 'City of Monash VBA matching record count',
+      `vba_most_recent_year` SMALLINT UNSIGNED NULL COMMENT 'Most recent City of Monash VBA record year',
+      `inat_record_count` INT UNSIGNED NOT NULL DEFAULT 0 COMMENT 'iNaturalist record count, not required by Iteration 1 API',
+      `inat_most_recent_date` DATETIME NULL COMMENT 'Most recent iNaturalist record date, not required by Iteration 1 API',
+      PRIMARY KEY (`id`),
+      UNIQUE KEY `uk_species_data_match_key` (`match_key`),
+      UNIQUE KEY `uk_species_data_scientific_name` (`scientific_name`),
+      KEY `idx_species_data_vernacular_name` (`vernacular_name`(191))
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+    """
+    with engine.begin() as conn:
+        conn.exec_driver_sql(drop_table_sql)
+        conn.exec_driver_sql(create_table_sql)
 
-    # inat_most_recent_date is stored as an ISO string like
-    # "2026-08-09T08:42:51" for the JSON/CSV output, but a real
-    # DATETIME column needs an actual datetime value (and MySQL wants
-    # a space instead of the "T"), so convert a copy just for the DB write.
+    # Work on a separate copy just for the DB write. The JSON/CSV output
+    # still wants the human-readable placeholder strings ("Not Assessed /
+    # No exact match", "Not available"), but the database should get real
+    # NULLs instead -- two different audiences, two different needs.
     df_for_db = merged_df.copy()
+    df_for_db["risk_rating"] = df_for_db["risk_rating"].replace(
+        "Not Assessed / No exact match", None
+    )
+    df_for_db["degree_of_establishment"] = df_for_db["degree_of_establishment"].replace(
+        "Not available", None
+    )
     df_for_db["inat_most_recent_date"] = pd.to_datetime(
         df_for_db["inat_most_recent_date"], errors="coerce"
     )
 
-    # if_exists="replace": every pipeline run overwrites the table with fresh data
-    df_for_db.to_sql(
-        "species_data", con=engine, if_exists="replace", index=False,
-        dtype=column_types,
-    )
+    # The table already exists now, so just insert -- append, not replace,
+    # otherwise pandas would blow away the schema we just built.
+    df_for_db.to_sql("species_data", con=engine, if_exists="append", index=False)
     print(f"  -> Written to MySQL table species_data, {len(merged_df)} rows")
 
 

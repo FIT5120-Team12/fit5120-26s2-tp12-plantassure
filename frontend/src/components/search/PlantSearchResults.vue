@@ -61,7 +61,15 @@
 
 <style scoped>
   .plant-results {
-    margin-top: var(--space-md);
+    position: absolute;
+    top: calc(100% + var(--space-xs));
+    right: 0;
+    left: 0;
+    z-index: 4;
+    max-height: min(420px, calc(100vh - 160px));
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
     padding: var(--space-md);
     background: var(--color-surface);
     border: 1px solid var(--color-border);

@@ -1,12 +1,12 @@
 <script setup lang="ts">
   import { storeToRefs } from 'pinia';
-import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
-import { useRouter } from 'vue-router';
+  import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
+  import { useRouter } from 'vue-router';
 
   import AutocompleteDropdown from '@/components/search/AutocompleteDropdown.vue';
-import PlantSearchResults from '@/components/search/PlantSearchResults.vue';
-import { useSearchStore } from '@/stores/search';
-import type { PlantSearchResult } from '@/types/plant';
+  import PlantSearchResults from '@/components/search/PlantSearchResults.vue';
+  import { useSearchStore } from '@/stores/search';
+  import type { PlantSearchResult } from '@/types/plant';
 
   const AUTOCOMPLETE_DELAY = 275;
   const LISTBOX_ID = 'plant-search-suggestions';

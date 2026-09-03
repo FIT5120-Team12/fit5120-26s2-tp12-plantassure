@@ -1,0 +1,881 @@
+id,scientific_name,scientific_name_authorship,taxon_rank,accepted_name_usage,taxonomic_status,occurrence_status,establishment_means,degree_of_establishment,vernacular_name,accepted_name_usage_id,has_introduced_occurrences,family
+63bd1b91-99f6-4eff-b093-675b249e7aad,"Acacia acinacea",Lindl.,species,,accepted,present,native,native,"Gold-dust Wattle",,,Fabaceae
+72dd0540-6407-42f7-aa78-d90a36a66e82,"Acacia aculeatissima","J.F.Macbr.   ",species,,accepted,present,native,native,"Thin-leaf Wattle | Snake Wattle",,,Fabaceae
+238b3bfd-4a0c-4638-b928-485897ec580d,"Acacia baileyana",F.Muell.,species,,accepted,present,introduced,naturalised,"Cootamundra Wattle",,,Fabaceae
+424647e8-19d1-49dd-9a05-9285475d54a3,"Acacia boormanii",Maiden,species,,accepted,present,native,native,,,1,Fabaceae
+3b409aa5-3392-4d3a-affe-c74116ef1553,"Acacia brownii","(Poir.) Steud.",species,,accepted,present,native,native,"Heath Wattle",,,Fabaceae
+76abff97-353c-4dcb-9c1b-a4beacdd8371,"Acacia cultriformis","A.Cunn. ex G.Don",species,,accepted,present,introduced,adventive,,,,Fabaceae
+0c8e21a6-fe09-4835-84e1-d9531ad24728,"Acacia dealbata",Link,species,,accepted,present,native,native,"Silver Wattle",,,Fabaceae
+450d5c45-2a9e-4975-800e-8bb891debdc1,"Acacia decurrens",Willd.,species,,accepted,present,introduced,naturalised,"Early Black-wattle",,,Fabaceae
+05c9d5ce-b88d-4671-92a6-4efa7a6fee0d,"Acacia elata","A.Cunn. ex Benth.",species,,accepted,present,introduced,naturalised,"Cedar Wattle",,,Fabaceae
+eea96412-e771-4d26-8263-45c5f9bfd414,"Acacia genistifolia",Link,species,,accepted,present,native,native,"Spreading Wattle",,,Fabaceae
+f2d57523-a804-4a84-b98c-b4a25637b5c5,"Acacia genistifolia subsp. genistifolia",,subspecies,,accepted,present,native,native,,,,Fabaceae
+f9d0ac14-065c-462d-a5f5-565343ef3761,"Acacia howittii",F.Muell.,species,,accepted,present,native,native,"Sticky Wattle",,1,Fabaceae
+7d607d97-2df6-4817-8415-3a82555bce42,"Acacia implexa",Benth.,species,,accepted,present,native,native,"Lightwood | Hickory Wattle",,,Fabaceae
+9be0f6d3-1f3e-4cb7-b096-76e30c1fc02f,"Acacia iteaphylla","F.Muell. ex Benth.",species,,accepted,present,introduced,naturalised,"Flinders Range Wattle | Willow-leaved Wattle",,,Fabaceae
+da49fd90-e9b7-4041-bd31-e7510215bead,"Acacia leprosa","Sieber ex DC.",species,,accepted,present,native,native,"Cinnamon Wattle",,,Fabaceae
+41778fcb-5b12-4bc0-9fff-bec041c347bc,"Acacia leprosa var. uninervia","Maslin & D.J.Murphy",variety,,accepted,present,native,native,,,,Fabaceae
+6fbc322c-cdf2-4526-a261-353a4a41f290,"Acacia longifolia","(Andrews) Willd.",species,,accepted,present,native,native,,,,Fabaceae
+44e79a17-8e5e-4988-a39c-35e1f35a1364,"Acacia longifolia subsp. longifolia",,subspecies,,accepted,present,native,native,,,1,Fabaceae
+032751af-9771-46f8-99f0-dd6da352096f,"Acacia longifolia subsp. sophorae","(Labill.) Court",subspecies,,accepted,present,native,native,,,1,Fabaceae
+a72a846c-7a92-4a4a-8dca-e2582a0f393e,"Acacia mearnsii","De Wild.",species,,accepted,present,native,native,"Black Wattle",,,Fabaceae
+a7b5e691-0803-40d6-a1d4-dd96e54720a0,"Acacia melanoxylon",R.Br.,species,,accepted,present,native,native,"Blackwood | Mudgerabah | Hickory | Sally Wattle | Blackwood",,,Fabaceae
+71f40fab-0f6d-4b84-8e37-bbfae90b13d4,"Acacia myrtifolia","(Sm.) Willd.",species,,accepted,present,native,native,"Myrtle Wattle",,,Fabaceae
+6c44588e-53df-47cd-8c1c-70cba14758f7,"Acacia oxycedrus","Sieber ex DC.",species,,accepted,present,native,native,"Spike Wattle",,,Fabaceae
+fc1c0e04-bf6f-4220-aac8-7a26a9eb36dc,"Acacia paradoxa",DC.,species,,accepted,present,native,native,"Hedge Wattle | Kangaroo Thorn | Prickly Wattle",,,Fabaceae
+86b75989-5d25-4071-8b70-6d1696287d3b,"Acacia pravissima",F.Muell.,species,,accepted,present,native,native,"Ovens Wattle | Wedge-leaf Wattle",,1,Fabaceae
+70059a9d-a1fc-46b1-8339-0034360edf0c,"Acacia provincialis",A.Camus,species,,accepted,present,native,native,Wirilda,,1,Fabaceae
+20f70d14-0560-467d-a05e-e23eefc93ac6,"Acacia pycnantha",Benth.,species,,accepted,present,native,native,"Golden Wattle",,,Fabaceae
+5cbe32aa-1014-4ceb-97b9-ac492e7950a6,"Acacia siculiformis","A.Cunn. ex Benth.",species,,accepted,present,native,native,"Dagger Wattle",,,Fabaceae
+20306051-ddde-458d-98cb-86d1d3b5393a,"Acacia stricta","(Andrews) Willd.",species,,accepted,present,native,native,"Hop Wattle",,,Fabaceae
+4d90c72f-8085-4654-8d36-4cf4398252c4,"Acacia suaveolens","(Sm.) Willd.",species,,accepted,present,native,native,"Sweet Wattle",,,Fabaceae
+0ec6ff94-353e-4a16-9bcf-dd98980db575,"Acacia ulicifolia","(Salisb.) Court",species,,accepted,present,native,native,"Juniper Wattle",,,Fabaceae
+4014dc41-ab27-44fa-aef9-d109934061b9,"Acacia verticillata","(L’Hér.) Willd.",species,,accepted,present,native,native,"Prickly Moses",,,Fabaceae
+2708b884-ab7d-4963-b659-7d6a39235bd5,"Acacia verticillata subsp. cephalantha","(F.Muell.) Court",subspecies,,accepted,present,native,native,,,,Fabaceae
+2cae18e2-9490-44ab-bc9d-3de1c69746b9,"Acacia verticillata subsp. verticillata",,subspecies,,accepted,present,native,native,,,,Fabaceae
+7fb6e40c-e46c-434e-a318-b3ff0e20c4b8,"Acaena echinata",Nees,species,,accepted,present,native,native,"Sheep's Burr",,,Rosaceae
+4dc33918-59b1-4f71-9702-928c603f44eb,"Acaena novae-zelandiae",Kirk,species,,accepted,present,native,native,Bidgee-widgee,,,Rosaceae
+0f44f2f6-9243-476f-9aad-37141fadb6ac,"Acaena ×ovina",A.Cunn.,species,,accepted,present,native,native,"Sheep's Burr",,,Rosaceae
+a4ac9cf5-f2c5-4c79-8ba6-7903fe1a4523,"Acanthus mollis",L.,species,,accepted,present,introduced,naturalised,"Bear's Breech",,,Acanthaceae
+43af663c-4702-47b2-9147-095d2fc79048,"Acer negundo",L.,species,,accepted,present,introduced,naturalised,"Box Elder",,,Sapindaceae
+82987ef3-32a0-4090-aca3-9ae8ea48a071,"Acetosella vulgaris",Fourr.,species,,accepted,present,introduced,naturalised,"Sheep Sorrel",,,Polygonaceae
+adfd303d-5dc8-470f-98d1-6e1cfaa2ff44,"Achrophyllum dentatum","(Hook.f. & Wilson) Vitt & Crosby",species,,accepted,present,native,native,,,,Daltoniaceae
+1548ca6a-621b-4eef-b1e1-f50266c38909,"Acianthus pusillus",D.L.Jones,species,,accepted,present,native,native,"Small Mosquito Orchid",,,Orchidaceae
+881b144b-b599-41ce-8ee4-b6d705881649,"Acrocladium chlamydophyllum","(Hook.f. & Wilson) Müll.Hal. & Broth.",species,,accepted,present,native,native,,,,Acrocladiaceae
+94ad4263-480e-4d4c-bf73-3c0b0573ff4e,"Acrotriche serrulata","(Labill.) R.Br.",species,,accepted,present,native,native,Honey-pots,,,Ericaceae
+7ae5329e-dec7-4932-b377-f4d121ff95f9,"Adiantum aethiopicum",L.,species,,accepted,present,native,native,"Common Maidenhair",,1,Pteridaceae
+9af576d9-07e9-4491-84b0-3de71adbe509,"Agapanthus praecox",Willd.,species,,accepted,present,introduced,,,,,Amaryllidaceae
+f4b0a03e-9739-42dd-9bff-9b1dc3ce0459,"Agapanthus praecox subsp. orientalis","(F.M.Leight.) F.M.Leight.",subspecies,,accepted,present,introduced,naturalised,Agapanthus,,,Amaryllidaceae
+f2c8989a-4e8b-46e1-b80f-57a98c6d79fc,"Agrostis capillaris",L.,species,,accepted,present,introduced,,"Brown-top Bent",,,Poaceae
+567ed900-e7ba-4aa7-8935-920ee901afc2,"Agrostis capillaris var. capillaris",,variety,,accepted,present,introduced,naturalised,,,,Poaceae
+79bf0cc5-2a4b-4f2b-a458-ab042d7f60a2,"Agrostis stolonifera",L.,species,,accepted,present,introduced,naturalised,"Creeping Bent",,,Poaceae
+cd44a568-359a-4e20-9f66-f30126ea9aa7,"Aira elegantissima",Schur,species,,accepted,present,introduced,naturalised,,,,Poaceae
+563f8d13-726f-4dd2-8460-db4bbb555f5a,"Aizoon pubescens","Eckl. & Zeyh.",species,,accepted,present,introduced,naturalised,Galenia,,,Aizoaceae
+4e795283-e2cd-492b-8811-b1ba3662b0e5,"Alisma plantago-aquatica",L.,species,,accepted,present,native,native,"Water Plantain",,,Alismataceae
+ed62304b-f70b-4b64-b9e7-d15ca9132c13,"Allittia cardiocarpa","(F.Muell. ex Benth.) P.S.Short",species,,accepted,present,native,native,"Swamp Daisy",,,Asteraceae
+88b31d41-7bd4-4583-ae99-56a728936720,"Allium triquetrum",L.,species,,accepted,present,introduced,naturalised,"Three-corner Garlic",,,Amaryllidaceae
+ffb1666e-3e9a-4d25-9b99-fc5a7edfaf69,"Allocasuarina littoralis","(Salisb.) L.A.S.Johnson",species,,accepted,present,native,native,"Black Sheoak",,,Casuarinaceae
+fc96cb48-6bf6-430b-b2e9-c0887dd98cf2,"Allocasuarina paludosa","(Sieber ex Spreng.) L.A.S.Johnson",species,,accepted,present,native,native,"Scrub Sheoak",,,Casuarinaceae
+e843ec6a-2a15-46cc-a3d6-e19ee0d0c987,"Allocasuarina paradoxa","(Macklin) L.A.S.Johnson",species,,accepted,present,native,native,,,,Casuarinaceae
+ee526b30-89b9-4065-93c1-d426dfbaf700,"Allocasuarina pusilla","(Macklin) L.A.S.Johnson",species,,accepted,present,native,native,"Dwarf Sheoak",,,Casuarinaceae
+08e8dacc-5804-4ce7-9dec-f3e34960d801,"Allocasuarina verticillata","(Lam.) L.A.S.Johnson",species,,accepted,present,native,native,"Drooping Sheoak",,,Casuarinaceae
+864aa30d-7cdb-4c80-afa6-17c572508a62,"Alopecurus pratensis",L.,species,,accepted,present,introduced,naturalised,"Meadow Fox-tail",,,Poaceae
+a2698aa0-d263-468a-944f-4efc263f276a,"Alternanthera denticulata",R.Br.,species,,accepted,present,native,native,"Lesser Joyweed",,,Amaranthaceae
+b91fa6b9-be61-415a-83f9-1d2b126e0d1e,"Alternanthera philoxeroides","(Mart.) Griseb.",species,,accepted,present,introduced,naturalised,"Alligator Weed",,,Amaranthaceae
+4b9b2caa-c41b-4c02-9624-6fef659ca593,"Amelichloa caudata","(Trin.) Arriaga & Barkworth",species,,accepted,present,introduced,naturalised,,,,Poaceae
+a6457e6c-2bdc-493a-817c-0d07d2123372,"Amperea xiphoclada","(Sieber ex Spreng.) Druce",species,,accepted,present,native,native,,,,Euphorbiaceae
+c5c852b2-5fdd-4da3-b4d4-433e2408bd57,"Amperea xiphoclada var. xiphoclada",,variety,,accepted,present,native,native,"Broom Spurge",,,Euphorbiaceae
+35666223-8023-4c3d-860e-36547e17dcbd,"Amphibromus archeri","(Hook.f.) P.Morris",species,,accepted,present,native,native,"Pointed Swamp Wallaby-grass",,,Poaceae
+c77ee760-31ec-4e70-82f6-4d884d7b37b8,"Amphibromus nervosus","(Hook.f.) Baill",species,,accepted,present,native,native,"Common Swamp Wallaby-grass",,,Poaceae
+120c772d-437c-4a21-99f1-26266296827a,"Amyema miquelii","(Lehm. ex Miq.) Tiegh.",species,,accepted,present,native,native,"Box Mistletoe",,,Loranthaceae
+40e38c92-b836-460e-8329-8ad4c0b23608,"Amyema miraculosa","(Miq.) Tiegh.",species,,accepted,present,native,native,"Fleshy Mistletoe",,,Loranthaceae
+15ff3b4b-f086-4ff8-8840-f5f4287d5eea,"Amyema pendula","(Sieber ex Spreng.) Tiegh.",species,,accepted,present,native,native,"Drooping Mistletoe",,,Loranthaceae
+35a45df5-f18f-4446-9d7a-63df7e2f78dc,"Amyema pendula subsp. pendula",,subspecies,,accepted,present,native,native,"Drooping Mistletoe",,,Loranthaceae
+f0527aba-b4f6-4826-a98a-c668366433cf,"Angianthus preissianus","(Steetz) Benth.",species,,accepted,present,native,native,"Salt Angianthus",,,Asteraceae
+87fd7364-4d39-446c-a2e3-529c0cbeff83,"Anredera cordifolia","(Ten.) Steenis",species,,accepted,present,introduced,naturalised,"Madeira Vine | Jalap",,,Basellaceae
+a4579989-10f6-4a57-8be6-9181f1ef128b,"Anthosachne scabra","(R.Br.) Nevski",species,,accepted,present,native,native,"Common Wheat-grass",,,Poaceae
+d628f2f9-610d-42af-933b-fa9900c04bd0,"Anthoxanthum odoratum",L.,species,,accepted,present,introduced,naturalised,"Sweet Vernal-grass",,,Poaceae
+a95270b8-9b7a-417c-a7c7-f445539b93c3,"Aotus ericoides","(Vent.) G.Don",species,,accepted,present,native,native,"Common Aotus",,,Fabaceae
+6eb4960e-bedc-4361-a071-2047f20a3c04,"Aphelia gracilis",Sond.,species,,accepted,present,native,native,"Slender Aphelia",,,Restionaceae
+a344d0bc-ff36-4cbb-9e64-f3374a22c244,"Aphelia pumilio","F.Muell. ex Sond.",species,,accepted,present,native,native,"Dwarf Aphelia",,,Restionaceae
+96298485-4b5b-4255-9a4d-fa544aecb29d,"Arbutus unedo",L.,species,,accepted,present,introduced,naturalised,"Irish Strawberry Tree",,,Ericaceae
+2e2f45c1-5adb-4eec-8e1d-dd20c60200ac,"Arctotheca calendula","(L.) Levyns",species,,accepted,present,introduced,naturalised,Capeweed,,,Asteraceae
+995138d1-ef45-438e-9ffe-d916eb3832c9,"Arthropodium fimbriatum",R.Br.,species,,accepted,present,native,native,"Nodding Chocolate-lily",,,Asparagaceae
+124bad05-8e7f-4f30-86f7-8fdb5f766ea0,"Arthropodium milleflorum","(DC.) J.F.Macbr.",species,,accepted,present,native,native,"Pale Vanilla-lily",,,Asparagaceae
+994436f9-653f-4531-a0cb-81a13e86e52a,"Arthropodium strictum",R.Br.,species,,accepted,present,native,native,"Chocolate Lily",,,Asparagaceae
+719e718c-8fe9-42e8-8b55-2191fdb8fe7b,"Asparagus asparagoides","(L.) W.Wight",species,,accepted,present,introduced,naturalised,,,,Asparagaceae
+94c5bd77-1c9b-404a-9c40-aba63242ac9a,"Atriplex cinerea",Poir.,species,,accepted,present,native,native,"Coast Saltbush",,1,Chenopodiaceae
+788550ce-22bb-4a38-beeb-5e902de5c5aa,"Atriplex prostrata","Boucher ex DC.",species,,accepted,present,introduced,naturalised,Orache,,,Chenopodiaceae
+50e7b111-e8ff-41b9-871e-862b93a12d6a,"Austrostipa mollis","(R.Br.) S.W.L.Jacobs & J.Everett",species,,accepted,present,native,native,,,,Poaceae
+aa5f344b-82b7-4cbd-a6e3-497a15005bcf,"Austrostipa pubinodis","(Trin. & Rupr.) S.W.L.Jacobs & J.Everett",species,,accepted,present,native,native,,,,Poaceae
+81fd3576-5a2d-4484-b5dd-854e02c82971,"Austrostipa rudis","(Spreng.) S.W.L.Jacobs & J.Everett",species,,accepted,present,native,native,,,,Poaceae
+b206a1a4-cb46-446c-9bf2-0b3e3bb9e177,"Austrostipa rudis subsp. rudis",,subspecies,,accepted,present,native,native,,,,Poaceae
+2842b516-0194-43ca-b2b0-724d7788750d,"Austrostipa scabra","(Lindl.) S.W.L.Jacobs & J.Everett",species,,accepted,present,native,native,,,,Poaceae
+3444f55b-e4fa-4cdb-ba9e-aa498ec07c06,"Austrostipa scabra subsp. scabra",,subspecies,,accepted,present,native,native,,,,Poaceae
+8b16af1c-e247-4e63-a467-b0dde8f9d753,"Austrostipa stipoides","(Hook.f.) S.W.L.Jacobs & J.Everett",species,,accepted,present,native,native,,,,Poaceae
+8ac62cc5-dd0a-4474-9e66-e842cdf2323e,"Avena fatua",L.,species,,accepted,present,introduced,naturalised,"Wild Oat",,,Poaceae
+5597207b-b71b-41b5-b849-56e5779e0667,"Avena sterilis",L.,species,,accepted,present,introduced,naturalised,"Sterile Oat",,,Poaceae
+b6546d20-0b54-42e4-9000-7661c7d18638,"Azolla rubra",R.Br.,species,,accepted,present,native,native,,,,Salviniaceae
+36a63a70-f6bb-44aa-9b00-fc71b4264b5e,"Banksia integrifolia",L.f.,species,,accepted,present,native,native,,,,Proteaceae
+2b7b0e82-9f07-4a47-9da9-464f927946f6,"Banksia integrifolia subsp. integrifolia",,subspecies,,accepted,present,native,native,,,1,Proteaceae
+d53901b2-4f12-47e6-a8ad-7f57b8d32c42,"Banksia marginata",Cav.,species,,accepted,present,native,native,"Silver Banksia | Warrock",,,Proteaceae
+8627a31b-68ee-4c31-911d-e2bd9a6452ee,"Bellis perennis",L.,species,,accepted,present,introduced,naturalised,"English Daisy",,,Asteraceae
+39b8eee9-e0ff-4127-9774-610554b0e2ff,"Berula erecta","(Huds.) Coville",species,,accepted,present,uncertain,,"Water Parsnip",,,Apiaceae
+20eb117d-d1d8-4340-a73b-6f3751165843,"Bidens pilosa",L.,species,,accepted,present,introduced,naturalised,Cobbler's-pegs,,,Asteraceae
+b8911674-e391-4b19-98ee-9294c4a37b6e,"Bidens pilosa var. minor","(Blume) Sherff",variety,,accepted,present,introduced,naturalised,,,,Asteraceae
+169cd940-d54d-4f2c-9160-f723f9551d5c,"Billardiera mutabilis",Salisb.,species,,accepted,present,native,native,,,,Pittosporaceae
+6c325a2f-c22e-4773-83ae-6c5a2a810385,"Billardiera scandens",Sm.,species,,accepted,present,native,native,"Common Apple-berry",,,Pittosporaceae
+3df847ca-d85e-4f4b-8cbc-a4d924b3f71d,"Boronia parviflora",Sm.,species,,accepted,present,native,native,"Swamp Boronia",,,Rutaceae
+3044411e-8665-45cf-ba10-cc63c7b94237,"Bossiaea cinerea",R.Br.,species,,accepted,present,native,native,"Showy Bossiaea",,,Fabaceae
+a6b263c4-c8c3-484d-aee2-620d17e8091b,"Bossiaea prostrata",R.Br.,species,,accepted,present,native,native,"Creeping Bossiaea",,,Fabaceae
+bb5888c4-cc4e-406d-bff1-7eb7d7569fc7,"Bothriochloa macra","(Steud.) S.T.Blake",species,,accepted,present,native,native,"Red-leg Grass",,,Poaceae
+d1feeb03-0e4d-480f-a697-8f9a72c186d1,"Brachyscome diversifolia","(Graham ex Hook.) Fisch. & C.A.Mey.",species,,accepted,present,native,native,"Tall Daisy",,,Asteraceae
+5cf6b2cd-c6c0-4e96-9e74-822b804710c8,"Brachyscome parvula",Hook.f.,species,,accepted,present,native,native,"Coast Daisy",,,Asteraceae
+2bbce132-ad86-45ac-a6ef-e251a73235ac,"Brachyscome perpusilla","(Steetz) J.M.Black",species,,accepted,present,native,native,"Tiny Daisy",,,Asteraceae
+288f7247-0a47-45e6-ae29-43d09a6b18bf,"Brassica fruticulosa",Cirillo,species,,accepted,present,introduced,naturalised,"Twiggy Turnip",,,Brassicaceae
+b69b4c51-96ea-4f2c-b27e-f885dd76a69f,"Briza maxima",L.,species,,accepted,present,introduced,naturalised,"Large Quaking Grass | Shelly Grass",,,Poaceae
+23d135d4-214c-46d5-bae4-8f4a8b05341e,"Briza minor",L.,species,,accepted,present,introduced,naturalised,"Lesser Quaking Grass | Shivery Grass",,,Poaceae
+ec130011-3f45-4621-9c3b-a1f3a63de1e6,"Bromus catharticus",J.Vahl,species,,accepted,present,introduced,,"Prairie Grass",,,Poaceae
+e71f9c19-b7a7-41f6-bcf7-946480d0c1f9,"Bromus diandrus",Roth,species,,accepted,present,introduced,naturalised,"Great Brome",,,Poaceae
+e0320d69-4d45-4eb5-a9f1-fe3f3c0d5c47,"Bromus hordeaceus",L.,species,,accepted,present,introduced,naturalised,"Soft Brome",,,Poaceae
+b7f950e3-a7b6-4674-8d60-2839398eb343,"Brunonia australis","Sm. ex R.Br.",species,,accepted,present,native,native,"Blue Pincushion",,,Goodeniaceae
+5c7c3a9c-54cb-4b9c-9031-6790fb7b37ee,"Bryum argenteum",Hedw.,species,,accepted,present,uncertain,,,,,Bryaceae
+1eb00dc2-54bf-402a-8968-8361bb9d64bf,"Bulbine bulbosa","(R.Br.) Haw.",species,,accepted,present,native,native,"Bulbine Lily | Pike",,,Asphodelaceae
+e23707af-1674-431c-9cef-6004bd2e57ea,"Burchardia umbellata",R.Br.,species,,accepted,present,native,native,"Milkmaids | Popoto",,,Colchicaceae
+a25d7841-6f37-479a-9009-07a09aa94464,"Burnettia cuneata",Lindl.,species,,accepted,present,native,native,"Burnettia | Lizard Orchid",,,Orchidaceae
+536205ee-a735-4b04-b31f-4745f57e9588,"Bursaria spinosa",Cav.,species,,accepted,present,native,native,"Kurwan | Tupy | Sweet Bursaria | Native Box",,,Pittosporaceae
+3a10a7b8-30a2-4f84-ab39-d1a63deae343,"Bursaria spinosa subsp. spinosa",,subspecies,,accepted,present,native,native,,,,Pittosporaceae
+4c0f0b74-af0f-4ae7-a1bf-24fa9cca92f0,"Caesia calliantha",R.J.F.Hend.,species,,accepted,present,native,native,"Blue Grass-lily",,,Asphodelaceae
+e98cb803-5449-4e8a-96fd-23dcdef81f61,"Caesia parviflora",R.Br.,species,,accepted,present,native,native,"Pale Grass-lily",,,Asphodelaceae
+ff345ddf-32a3-45af-bebf-b41307902703,"Caesia parviflora var. minor",R.J.F.Hend.,variety,,accepted,present,native,native,,,,Asphodelaceae
+5e4531fd-f34a-4fff-a91a-173a3b4a6b9f,"Caesia parviflora var. parviflora",,variety,,accepted,present,native,native,,,,Asphodelaceae
+185be4c5-d2c0-4b68-a914-1e8eebbcf19c,"Caladenia australis",G.W.Carr,species,,accepted,present,native,native,"Southern Spider-orchid",,,Orchidaceae
+57231227-b5b5-4e6c-b6b4-541ddffc35c3,"Caladenia oenochila",G.W.Carr,species,,accepted,present,native,native,,,,Orchidaceae
+079e6097-322b-43ba-b9b0-92a34eed4ab9,"Caladenia parva",G.W.Carr,species,,accepted,present,native,native,"Green-comb Spider-orchid",,,Orchidaceae
+ce6aaf57-e767-4c20-a3c9-1d9b1827014f,"Caladenia robinsonii",G.W.Carr,species,,accepted,present,native,native,,,,Orchidaceae
+6f6da9ef-9390-4c4d-ad67-989ebfe5612e,"Caladenia venusta",G.W.Carr,species,,accepted,present,native,native,"White Spider-orchid",,,Orchidaceae
+f950ab28-4dd3-45d4-bbd1-1b01811e713a,"Caleana major",R.Br.,species,,accepted,present,native,native,"Large Duck-orchid | Flying Ducks",,,Orchidaceae
+cd80e5f1-02af-45f0-a5e0-bf21d03e08b9,"Callitriche stagnalis",Scop.,species,,accepted,present,introduced,naturalised,"Common Water-starwort",,,Plantaginaceae
+063985ba-92cc-4f38-8ec8-a13f3741f3d4,"Calochilus paludosus",R.Br.,species,,accepted,present,native,native,"Red Beard-orchid",,,Orchidaceae
+c772cb5d-c5be-4758-b8b0-d9c0526e164f,"Calystegia sepium","(L.) R.Br.",species,,accepted,present,native,native,"Large Bindweed",,,Convolvulaceae
+ec062bf2-fea1-4e19-85ad-438458f96294,"Calystegia sepium subsp. roseata",Brummitt,subspecies,,accepted,present,native,native,,,,Convolvulaceae
+16f377fa-0e71-42ce-895d-8799a6854021,"Calystegia silvatica","(Kit.) Griseb.",species,,accepted,present,introduced,,"Greater Bindweed",,,Convolvulaceae
+cb7d43d4-4cf3-44ae-a7f3-82cc07492c29,"Calystegia silvatica subsp. silvatica",,subspecies,,accepted,present,introduced,naturalised,,,,Convolvulaceae
+b42f6fd1-9d3a-4391-8644-7e179e160c50,"Campylopus appressifolius",Mitt.,species,,accepted,present,native,native,,,,Leucobryaceae
+a9e3bcea-ddff-42ae-9b99-71c725de1af7,"Campylopus introflexus","(Hedw.) Brid.",species,,accepted,present,native,native,,,,Leucobryaceae
+e5d5f263-91ab-451c-abe0-3c958da02cbe,"Campylopus kirkii","Mitt. ex Beckett",species,,accepted,present,native,native,,,,Leucobryaceae
+cbdb46ec-1fe4-4f57-9f9a-c01c2f498047,"Cardamine hirsuta",L.,species,,accepted,present,introduced,naturalised,"Common Bitter-cress",,,Brassicaceae
+aefd1365-bf73-4c27-b2b2-8de75ff38c7d,"Cardamine moirensis",I.Thomps.,species,,accepted,present,native,native,,,,Brassicaceae
+94e4af27-b138-4cc8-8431-ffdb32dc7dcc,"Carduus pycnocephalus",L.,species,,accepted,present,introduced,naturalised,"Slender Thistle",,,Asteraceae
+4aa77c1c-b340-475a-bc0b-522d04921a97,"Carex appressa",R.Br.,species,,accepted,present,native,native,"Tall Sedge",,,Cyperaceae
+21df61ee-dd6a-47bb-97b9-4f4a3649fad4,"Carex breviculmis",R.Br.,species,,accepted,present,native,native,"Short-stem Sedge",,,Cyperaceae
+b6ce1dcc-ccc1-4a3a-bd76-eadd74c3ef9d,"Carex fascicularis","Sol. ex Boott",species,,accepted,present,native,native,"Tassel Sedge",,,Cyperaceae
+9893ad3f-4c2d-464d-9fa1-6fca79c451fc,"Carex gaudichaudiana",Kunth,species,,accepted,present,native,native,"Fen Sedge",,,Cyperaceae
+37138406-9566-4b96-8273-d3f7167e080b,"Carex inversa",R.Br.,species,,accepted,present,native,native,"Knob Sedge",,,Cyperaceae
+f1fbe15a-dbdd-49c1-8146-afd0cda8b3be,"Carthamus tinctorius",L.,species,,accepted,present,introduced,naturalised,Safflower,,,Asteraceae
+720aa1d7-f20c-423a-97d8-91cb81478798,"Cassinia aculeata","(Labill.) R.Br.",species,,accepted,present,native,native,"Common Cassinia | Dogwood",,,Asteraceae
+f4f65285-981d-4ed1-aaad-1b055d4c1bdd,"Cassinia aculeata subsp. aculeata",,subspecies,,accepted,present,native,native,,,,Asteraceae
+07af54ae-0106-4093-9344-68a6af40e4b0,"Cassinia arcuata",R.Br.,species,,accepted,present,native,native,,,,Asteraceae
+650ecad1-5d49-46a8-a50f-a1414c67941b,"Cassinia longifolia",R.Br.,species,,accepted,present,native,native,"Shiny Cassinia | Long-leaf Dogwood",,,Asteraceae
+b63da76d-f3d0-44b0-bf60-803c7d9de56c,"Cassinia sifton",Orchard,species,,accepted,present,uncertain,,"Drooping Cassinia  | Chinese Scrub | Sifton Bush",,,Asteraceae
+41beaafe-0c6d-4664-af7f-46664e8b6eac,"Cassytha glabella",R.Br.,species,,accepted,present,native,native,"Slender Dodder-laurel | Tangled Dodder-laurel",,,Lauraceae
+d986a701-a719-470a-9313-1f846be6258c,"Cassytha glabella f. dispar","(Schltdl.) J.Weber",forma,,accepted,present,native,native,,,,Lauraceae
+330bbf5f-ab89-4dcd-b081-bfc6a8c0233e,"Cassytha melantha",R.Br.,species,,accepted,present,native,native,"Coarse Dodder-laurel",,,Lauraceae
+7ddd9d2a-a754-4b48-b718-7511e9a4243e,"Cassytha pubescens",R.Br.,species,,accepted,present,native,native,"Downy Dodder-laurel",,,Lauraceae
+bd22f2b1-0b54-4e53-959b-884a246cbfc8,"Cenchrus clandestinus","(Hochst. ex Chiov) Morrone",species,,accepted,present,introduced,naturalised,Kikuyu,,,Poaceae
+da17a011-df66-415a-b229-307ed0ed2a33,"Cenchrus longispinus","(Hack.) Fernald",species,,accepted,present,introduced,naturalised,"Spiny Burr-grass",,,Poaceae
+ac53e2d4-d145-42da-a817-bc30b5c33a57,"Centaurium erythraea",Rafn,species,,accepted,present,introduced,naturalised,"Common Centaury",,,Gentianaceae
+a5488047-c462-4f5e-89ec-2df1077fe5c7,"Centella cordifolia","(Hook.f.) Nannf.",species,,accepted,present,native,native,Centella,,,Apiaceae
+14689c9e-c00a-4b26-a486-980b6d0b321c,"Centipeda cunninghamii","(DC.) A.Braun & Asch.",species,,accepted,present,native,native,"Common Sneezeweed",,,Asteraceae
+85fc94b5-3e69-412d-a5d8-1bfe1037a56d,"Centrolepis aristata","(R.Br.) Roem. & Schult.",species,,accepted,present,native,native,"Pointed Centrolepis",,,Restionaceae
+2ad19572-1419-404f-8b85-66dab15bc1c1,"Centrolepis fascicularis",Labill.,species,,accepted,present,native,native,"Tufted Centrolepis",,,Restionaceae
+7817706a-9a45-449c-975a-4fa27e1e0e60,"Centrolepis strigosa","(R.Br.) Roem. & Schult.",species,,accepted,present,native,native,,,,Restionaceae
+a0cba39a-7dc1-4579-b582-fa20792bf26b,"Centrolepis strigosa subsp. strigosa",,subspecies,,accepted,present,native,native,"Hairy Centrolepis",,,Restionaceae
+fb300f28-0732-4d9b-be00-e08e5afc324e,"Cerastium glomeratum",Thuill.,species,,accepted,present,introduced,naturalised,"Sticky Mouse-ear Chickweed",,,Caryophyllaceae
+c099dbc8-b375-46a4-9567-a1d4b7219a53,"Ceratodon purpureus","(Hedw.) Brid.",species,,accepted,present,native,native,,,,Ditrichaceae
+e2262040-229a-4e72-b53b-4cea15075618,"Chamaecytisus palmensis","(H.Christ) F.A.Bisby & K.W.Nicholls",species,,accepted,present,introduced,naturalised,"Tree Lucerne",,,Fabaceae
+3a40b8e3-1d09-4560-bc4b-ac72dbeb458c,"Chamaescilla corymbosa","(R.Br.) F.Muell. ex Benth.",species,,accepted,present,native,native,,,,Asphodelaceae
+726387e9-e890-4948-a0c0-0908f4277452,"Chamaescilla corymbosa var. corymbosa",,variety,,accepted,present,native,native,"Blue Stars | Mudrurt",,,Asphodelaceae
+0c6f7f64-e74a-4458-bfa8-fb87559bb26c,"Chasmanthe floribunda","(Salisb.) N.E.Br.",species,,accepted,present,introduced,naturalised,,,,Iridaceae
+c9356d6f-6324-4aa2-996b-2bc9108d49ca,"Chenopodium album",L.,species,,accepted,present,introduced,naturalised,"Fat Hen | White Goosefoot",,,Chenopodiaceae
+87b71eb8-f5bb-4212-b89b-a99dadf72acd,"Chenopodium murale",L.,species,,accepted,present,introduced,naturalised,Sowbane,,,Chenopodiaceae
+59dc7611-f3d9-42b0-85f2-f6737ca254ed,"Chiloglottis curviclavia",D.L.Jones,species,,accepted,present,native,native,,,,Orchidaceae
+76a3e8ee-c9a2-4697-a583-52f90e93db43,"Chiloglottis reflexa","(Labill.) Druce",species,,accepted,present,native,native,,,,Orchidaceae
+f8057638-4def-4448-afb6-7d90de1fae74,"Chrysocephalum apiculatum","(Labill.) Steetz",species,,accepted,present,native,native,"Common Everlasting",,,Asteraceae
+599ebb54-e248-4758-a45c-965b802f66ff,"Chrysocephalum semipapposum","(Labill.) Steetz",species,,accepted,present,native,native,"Clustered Everlasting",,,Asteraceae
+51dbdb86-5c75-4825-a490-8f454170539f,"Cirsium vulgare","(Savi) Ten.",species,,accepted,present,introduced,naturalised,"Spear Thistle",,,Asteraceae
+10fa9d50-05b6-4557-9242-fb15ff4a5be2,"Clematis aristata","R.Br. ex Ker Gawl",species,,accepted,present,native,native,"Mountain Clematis",,,Ranunculaceae
+08d7e9bc-c930-41f1-b06d-e09520b24158,"Clematis microphylla",DC.,species,,accepted,present,native,native,"Small-leaved Clematis | Kenam",,,Ranunculaceae
+544a5c62-3a33-4f97-bf2c-72af5c982078,"Comesperma calymega",Labill.,species,,accepted,present,native,native,"Blue-spike Milkwort",,,Polygalaceae
+fb08bb94-740c-4326-8e76-6cf8201ed252,"Comesperma defoliatum",F.Muell.,species,,accepted,present,native,native,"Leafless Milkwort",,,Polygalaceae
+e28c524e-fe96-43d5-813b-bd4e2d583336,"Comesperma ericinum",DC.,species,,accepted,present,native,native,"Heath Milkwort",,,Polygalaceae
+da6eed71-d2bd-4b95-8694-f5916ed0ba55,"Comesperma volubile",Labill.,species,,accepted,present,native,native,"Love Creeper",,,Polygalaceae
+1b8f3911-2ea5-499d-88af-ffe7fc4dbdb4,"Coprosma quadrifida","(Labill.) B.L.Rob.",species,,accepted,present,native,native,"Prickly Currant-bush",,,Rubiaceae
+f349ca7f-0040-4c9e-9883-6f48668513fd,"Coprosma repens",A.Rich.,species,,accepted,present,introduced,naturalised,"Mirror Bush | Taupata | Maori Name",,,Rubiaceae
+1f7eae10-bd98-4ca0-9177-dced0cf80913,"Cordyline australis","(G.Forst.) Endl.",species,,accepted,present,introduced,naturalised,"New Zealand Cabbage-tree",,,Asparagaceae
+d1e8d442-5716-48ba-9c0b-4cf8910c5481,"Coronidium elatum","(A.Cunn. ex DC.) Paul G.Wilson",species,,accepted,present,native,native,,,,Asteraceae
+a0c78fff-3328-4c1b-931a-fc4a62be41b0,"Coronidium gunnianum","(Hook.) N.G.Walsh",species,,accepted,present,native,native,,,,Asteraceae
+ed90d8a9-ae15-4210-adcd-c5013881f31a,"Coronidium scorpioides","(Labill.) Paul G.Wilson",species,,accepted,present,native,native,,,,Asteraceae
+fe05fca9-e2ea-417e-8b23-80649276ac99,"Correa reflexa","(Labill.) Vent.",species,,accepted,present,native,native,"Common Correa | Native Fuchsia",,,Rutaceae
+fe222688-5677-477c-987e-7ddc15e9a9db,"Correa reflexa var. lobata","Paul G.Wilson",variety,,accepted,present,native,native,,,,Rutaceae
+2b977687-bb68-43b3-9641-85c1ce3e57f4,"Correa reflexa var. reflexa",,variety,,accepted,present,native,native,,,,Rutaceae
+7204f38d-332b-4e70-8771-65ad2b7e36c0,"Cortaderia selloana","(Schult. & Schult.f.) Asch. & Graebn.",species,,accepted,present,introduced,naturalised,"Pampas Grass",,,Poaceae
+96f5e336-58cc-4a36-b8ca-4ae25147e2cd,"Cortaderia selloana subsp. selloana",,subspecies,,accepted,present,introduced,naturalised,,,,Poaceae
+f1176345-dd5b-47f7-a6c9-7cf6a422447c,"Corunastylis archeri","(Hook.f.) D.L.Jones & M.A.Clem.",species,,accepted,present,native,native,,,,Orchidaceae
+8d9eb7d8-28b7-4d01-9636-6884ca48bba7,"Corunastylis ciliata","(Ewart & B.Rees) D.L.Jones & M.A.Clem.",species,,accepted,present,native,native,,,,Orchidaceae
+300119f9-b4a9-4d75-bf3d-fdbbeca9083e,"Corunastylis despectans","(Hook.f.) D.L.Jones & M.A.Clem.",species,,accepted,present,native,native,,,,Orchidaceae
+6ea1b45b-8889-44a4-b46b-c1637a70db10,"Corunastylis morrisii","(Nicholls) D.L.Jones & M.A.Clem.",species,,accepted,present,native,native,,,,Orchidaceae
+f62e925c-b816-47fb-8f30-611d9e2d1bf0,"Corunastylis pumila","(Hook.f.) D.L.Jones & M.A.Clem.",species,,accepted,present,native,native,,,,Orchidaceae
+66ccbf08-701b-4e3a-bb0f-5c4ce7733b3b,"Corybas fimbriatus","(R.Br.) Rchb.f.",species,,accepted,present,native,native,"Fringed Helmet-orchid",,,Orchidaceae
+3539dffb-cab9-4bb0-a871-b528d7785806,"Corybas incurvus","D.L.Jones & M.A.Clem.",species,,accepted,present,native,native,"Slaty Helmet-orchid",,,Orchidaceae
+948b85ef-49b1-49ba-86cb-32115157a659,"Corybas unguiculatus","(R.Br.) Rchb.f.",species,,accepted,present,native,native,"Small Helmet-orchid",,,Orchidaceae
+48029e96-7b87-4122-8dda-b78d0cecccda,"Corymbia citriodora","(Hook.) K.D.Hill & L.A.S.Johnson",species,,accepted,present,introduced,,,,,Myrtaceae
+b801ab5c-9874-484e-b816-801d9b8bbcd3,"Corymbia citriodora subsp. citriodora",,subspecies,,accepted,present,introduced,naturalised,,,,Myrtaceae
+a80bb5c8-e18f-4db0-b36e-36344cc3ffb5,"Corymbia maculata","(Hook.) K.D.Hill & L.A.S.Johnson",species,,accepted,present,native,native,,,1,Myrtaceae
+2e10b236-55cd-4305-8b16-9b3807c15af4,"Cotoneaster glaucophyllus",Franch.,species,,accepted,present,introduced,naturalised,,,,Rosaceae
+9201f362-5981-438f-8a5c-8fe453b150d1,"Cotoneaster pannosus",Franch.,species,,accepted,present,introduced,naturalised,,,,Rosaceae
+41c964ce-0387-48a4-ba74-5675e2aace64,"Cotoneaster simonsii",Baker,species,,accepted,present,introduced,naturalised,,,,Rosaceae
+9599de77-154f-42ee-926b-3f5489e782f4,"Cotula australis","(Sieber ex Spreng.) Hook.f.",species,,accepted,present,uncertain,,"Common Cotula",,,Asteraceae
+f7eeacf5-91db-464d-b871-7e6ca0682b65,"Cotula coronopifolia",L.,species,,accepted,present,introduced,naturalised,Water-buttons,,,Asteraceae
+c14b3e81-e306-4d70-8085-c4d673da0973,"Crassula decumbens",Thunb.,species,,accepted,present,native,native,"Spreading Crassula",,,Crassulaceae
+8db0d653-da3d-4be1-9495-a52c2168fa9e,"Crassula decumbens var. decumbens",,variety,,accepted,present,native,native,,,,Crassulaceae
+47d18feb-cb5b-43ed-b753-52232122b95b,"Crassula helmsii","(Kirk) Cockayne",species,,accepted,present,native,native,"Swamp Crassula",,,Crassulaceae
+d249fe24-615b-47d1-b0c1-0e7df4fa43b5,"Crassula multicava",Lem.,species,,accepted,present,introduced,,,,,Crassulaceae
+1ee1fb72-de98-4052-9aac-6899bdf522f7,"Crassula multicava subsp. multicava",,subspecies,,accepted,present,introduced,naturalised,"Fairy Crassula",,,Crassulaceae
+818f8a5c-a2ff-49ad-b116-e47ba5c2d1fb,"Crassula peduncularis","(Sm.) Meigen",species,,accepted,present,native,native,"Purple Crassula",,,Crassulaceae
+a820a7db-30f6-4b5e-a39f-fac952e348db,"Crassula tetramera","(Toelken) A.Druce & Sykes",species,,accepted,present,native,native,,,,Crassulaceae
+89ce8787-657a-4a79-b9fe-035acb2d3d95,"Crataegus monogyna",Jacq.,species,,accepted,present,introduced,naturalised,Hawthorn,,,Rosaceae
+e838757a-9e49-4643-88cf-0d9b6ed446a8,"Crepis capillaris","(L.) Wallr.",species,,accepted,present,introduced,naturalised,"Smooth Hawksbeard",,,Asteraceae
+7dcca4ab-de42-4eb7-befe-02781e7c505f,"Crocosmia ×crocosmiiflora","(Lemoine ex Morren) N.E.Br.",species,,accepted,present,introduced,naturalised,Montbretia,,,Iridaceae
+a85cbb3f-50a9-42b9-977e-7b4a5c105c70,"Cryptostylis subulata","(Labill.) Rchb.f.",species,,accepted,present,native,native,"Large Tongue-orchid",,,Orchidaceae
+d5654aab-8de3-4fc0-a4d7-958e7c44f885,"Cyanicula caerulea","(R.Br.) Hopper & A.P.Br.",species,,accepted,present,native,native,,,,Orchidaceae
+114d4d55-0865-4592-8942-193a5576eaea,"Cyclospermum leptophyllum","(Pers.) Sprague ex Britton & P.Wilson",species,,accepted,present,introduced,naturalised,"Slender Celery",,,Apiaceae
+687f7914-0b59-4c43-855a-d0619a49a832,"Cycnogeton procerum","(R.Br.) Buchenau",species,,accepted,present,native,native,,,,Juncaginaceae
+93a443f9-db63-4338-bb04-14cc16979fa9,"Cynodon dactylon","(L.) Pers.",species,,accepted,present,native,native,Couch,,1,Poaceae
+6a42c1f4-096c-439a-a1d7-c8dde6a04e5b,"Cynodon dactylon var. dactylon",,variety,,accepted,present,introduced,naturalised,,,,Poaceae
+1f3d56d2-3d90-4816-8b64-f9d4f5ede333,"Cynosurus echinatus",L.,species,,accepted,present,introduced,naturalised,"Rough Dog's-tail",,,Poaceae
+1591e06a-1275-4e7c-9f4e-d040cf30bc1a,"Cyperus eragrostis",Lam.,species,,accepted,present,introduced,naturalised,"Drain Flat-sedge",,,Cyperaceae
+d72b7212-d4ba-4936-9d7a-3a710adec63a,"Cyrtostylis reniformis",R.Br.,species,,accepted,present,native,native,"Gnat Orchid",,,Orchidaceae
+40348658-ea95-4d41-8ba3-c054b703d8cf,"Dactylis glomerata",L.,species,,accepted,present,introduced,naturalised,Cocksfoot,,,Poaceae
+f68e8c9d-8bea-4194-83a8-c67c5ebb27cd,"Datura stramonium",L.,species,,accepted,present,introduced,naturalised,"Common Thorn-apple",,,Solanaceae
+bf16fb91-cb0f-44ad-94c5-4fefe4aa0807,"Daucus carota",L.,species,,accepted,present,introduced,naturalised,Carrot,,,Apiaceae
+e1fec4a1-b30b-4cfd-9a87-23e874600c85,"Daucus glochidiatus","(Labill.) Fisch.",species,,accepted,present,native,native,"Australian Carrot",,,Apiaceae
+0a47f243-e3be-451e-b178-75eeb33a2647,"Daviesia latifolia",R.Br.,species,,accepted,present,native,native,"Hop Bitter-pea",,,Fabaceae
+06900c86-5d37-4559-bc92-bd49f509d268,"Daviesia leptophylla","A.Cunn. ex G.Don",species,,accepted,present,native,native,"Narrow-leaf Bitter-pea",,,Fabaceae
+0e224832-36a1-44a1-8a08-6c97923ac90f,"Daviesia ulicifolia",Andrews,species,,accepted,present,native,native,"Gorse Bitter-pea",,,Fabaceae
+2a05191e-3631-4191-a122-c2a292b80020,"Daviesia ulicifolia subsp. ulicifolia",,subspecies,,accepted,present,native,native,,,,Fabaceae
+dc2ea7d1-95e8-4c6f-965d-f616ab9cd903,"Delairea odorata",Lem.,species,,accepted,present,introduced,naturalised,"Ivy Groundsel | Cape Ivy",,,Asteraceae
+dc81dd60-010c-4c38-82e6-a2e327be2c70,"Deschampsia cespitosa","(L.) P.Beauv.",species,,accepted,present,native,native,"Tufted Hair-grass",,,Poaceae
+87b1f145-45be-46ab-8d77-d45bf0811c73,"Deyeuxia densa",Benth.,species,,accepted,present,native,native,,,,Poaceae
+617577c3-21cf-4522-a405-e5e6951a790c,"Deyeuxia quadriseta","(Labill.) Benth.",species,,accepted,present,native,native,"Reed Bent-grass",,,Poaceae
+38e45bb0-2ee7-4f10-b975-e2bf996165f4,"Dianella longifolia",R.Br.,species,,accepted,present,native,native,"Pale Flax-lily | Smooth Flax-lily",,,Asphodelaceae
+59d93cb6-49aa-4313-8688-122a14f0aed8,"Dianella longifolia var. longifolia",,variety,,accepted,present,native,native,,,,Asphodelaceae
+2c50f8b2-db48-4a27-831a-7e471fdaa39b,"Dianella revoluta",R.Br.,species,,accepted,present,native,native,"Black-anther Flax-lily | Spreading Flax-lily",,,Asphodelaceae
+8168f420-2e27-40ef-b764-deee12b1be98,"Dianella revoluta var. revoluta",,variety,,accepted,present,native,native,,,,Asphodelaceae
+39a08433-f482-435b-a15d-c5e57110bc7b,"Dichelachne rara","(R.Br.) Vickery",species,,accepted,present,native,native,,,,Poaceae
+3b9d7141-690a-4800-91d9-81b7c62a9dc0,"Dichondra repens","J.R.Forst. & G.Forst.",species,,accepted,present,native,native,Kidney-weed,,,Convolvulaceae
+9c9ecf70-9027-490a-b26e-add18d163bf7,"Dicksonia antarctica",Labill.,species,,accepted,present,native,native,"Soft Tree-fern | Kombadik",,,Dicksoniaceae
+6bc1c0d6-6c8d-4e61-8683-0fe70a666042,"Dicranoloma billarderii","(Brid.) Paris",species,,accepted,present,native,native,,,,Dicranaceae
+e5b50097-2124-4a62-97c8-ca0fa52b0e3c,"Digitaria sanguinalis","(L.) Scop.",species,,accepted,present,introduced,naturalised,"Summer Grass",,,Poaceae
+b5951903-149c-4eb4-8ff0-e16a6726b08b,"Dillwynia cinerascens","R.Br. ex Sims",species,,accepted,present,native,native,"Grey Parrot-pea",,,Fabaceae
+60167c14-46aa-460d-b140-28eb7bb19305,"Dillwynia glaberrima",Sm.,species,,accepted,present,native,native,"Smooth Parrot-pea",,,Fabaceae
+281f2c83-29e7-4a58-92ec-345a45f77895,"Dillwynia sericea",A.Cunn.,species,,accepted,present,native,native,,,,Fabaceae
+85a02b22-3cfa-4f74-8845-b88c5dc85bed,"Dipodium roseum","D.L.Jones & M.A.Clem",species,,accepted,present,native,native,"Hyacinth Orchid",,,Orchidaceae
+ba9c06f7-ff7b-4cd0-8c0f-55e8bbc86b05,"Dittrichia graveolens","(L.) Greuter",species,,accepted,present,introduced,naturalised,Stinkwort,,,Asteraceae
+73fc1b48-59ac-4179-8a83-c4f975602ca6,"Diuris chryseopsis",D.L.Jones,species,,accepted,present,native,native,,,,Orchidaceae
+e5c8bcab-d6f3-465f-957f-b6cd2d201508,"Diuris orientis",D.L.Jones,species,,accepted,present,native,native,,,,Orchidaceae
+75e06596-c8a5-49ab-a732-0024b99a3747,"Diuris pardina",Lindl.,species,,accepted,present,native,native,"Leopard Orchid | Burny Burny",,,Orchidaceae
+617c370e-cd4e-41ef-810a-171a3b698432,"Diuris sulphurea",R.Br.,species,,accepted,present,native,native,"Tiger Orchid",,,Orchidaceae
+26a2dd86-3afa-43cf-8f95-83d8cf125ec2,"Dodonaea viscosa",Jacq.,species,,accepted,present,native,native,"Sticky Hop-bush",,,Sapindaceae
+8cbb51ca-be07-4da6-a65d-17cfa6b8483a,"Drosera aberrans","(Lowrie & Carlquist) Lowrie & Conran",species,,accepted,present,native,native,,,,Droseraceae
+241a4a2a-b731-4e66-8798-c3a0389b27fb,"Drosera auriculata","Backh. ex Planch.",species,,accepted,present,native,native,,,,Droseraceae
+5a60308a-c936-416d-9742-1b7b0f40332e,"Drosera binata",Labill.Nov.Holl,species,,accepted,present,native,native,"Forked Sundew",,,Droseraceae
+a2e9f696-d60f-4073-b2c8-722dedb75d20,"Drosera glanduligera",Lehm.,species,,accepted,present,native,native,"Scarlet Sundew",,,Droseraceae
+e2207d18-2671-4d62-b5ed-9245f2cfdcb4,"Drosera hookeri","R.P.Gibson, B.J.Conn & Conran",species,,accepted,present,native,native,,,,Droseraceae
+cc8c6055-b54a-4a87-ae71-bc0addfa7692,"Drosera peltata",Thunb.,species,,accepted,present,native,native,,,,Droseraceae
+f7ed5e5c-511f-4e5f-a12f-5af0ad8a3b32,"Drosera pygmaea",DC.,species,,accepted,present,native,native,"Tiny Sundew",,,Droseraceae
+aa7685e8-bb2c-4d9a-8f1f-9e268afbe824,"Drosera spatulata",Labill.,species,,accepted,present,native,native,"Rosy Sundew",,,Droseraceae
+81fb0f60-dcba-49a3-9c2a-3bbbefc804fb,"Duma florulenta","(Meisn.) T.M.Schust.",species,,accepted,present,native,native,"Tangled Lignum",,,Polygonaceae
+ea66d656-a4c8-4f59-abec-73242b00f216,"Dysphania pumilio","(R.Br.) Mosyakin & Clemants",species,,accepted,present,native,native,,,,Chenopodiaceae
+27fdcd4d-25e4-4a4d-ab90-82bc8f728a86,"Echinochloa crus-galli","(L.) P.Beauv.",species,,accepted,present,introduced,naturalised,"Barnyard Grass",,,Poaceae
+bfdf4ad7-5391-4dc1-a82c-2ecb788c2575,"Echium plantagineum",L.,species,,accepted,present,introduced,naturalised,"Paterson's Curse | Salvation Jane",,,Boraginaceae
+98afbe18-cdee-4765-a0b7-738fcb3fe958,"Ehrharta erecta",Lam.,species,,accepted,present,introduced,naturalised,"Panic Veldt-grass",,,Poaceae
+ca19305b-9e97-4795-a86d-b37e36c67950,"Ehrharta longiflora",Sm.,species,,accepted,present,introduced,naturalised,"Annual Veldt-grass",,,Poaceae
+93637b3c-50b2-4380-b3d3-480c19a7ead9,"Eleocharis acuta",R.Br.,species,,accepted,present,native,native,"Common Spike-rush",,,Cyperaceae
+43810ccc-e269-4199-927f-399826349bd5,"Eleocharis atricha",R.Br.,species,,accepted,present,native,native,,,,Cyperaceae
+94663dd6-aac1-4eef-a1ba-6fc027ee741c,"Eleocharis sphacelata",R.Br.,species,,accepted,present,native,native,"Tall Spike-rush",,,Cyperaceae
+76035dd9-bf77-4e78-b847-a48f6b5ee317,"Eleusine indica","(L.) Gaertn.",species,,accepted,present,introduced,naturalised,Goose-grass,,,Poaceae
+da58b60a-d3fd-4cfe-9081-90f0ed27a141,"Eleusine tristachya","(Lam.) Lam.",species,,accepted,present,introduced,naturalised,"American Crows-foot Grass",,,Poaceae
+b90df799-1d4f-4f4f-a6b7-e60dbd66c7c9,"Empodisma minus","(Hook.f.) L.A.S.Johnson & D.F.Cutler",species,,accepted,present,native,native,"Spreading Rope-rush",,,Restionaceae
+cb304d8b-3b9f-45c5-baf6-5d1034805ba5,"Epacris impressa",Labill.,species,,accepted,present,native,native,"Common Heath",,,Ericaceae
+e30cbb9b-2d96-4d09-9543-e1d7a07a4d43,"Epacris obtusifolia",Sm.,species,,accepted,present,native,native,"Blunt-leaf Heath",,,Ericaceae
+8b7ea72a-c655-4dbe-995f-7e2f993c12a1,"Epilobium billardiereanum",Ser.,species,,accepted,present,native,native,,,,Onagraceae
+45f3313b-89ed-4dbf-ba10-1184ee8a994c,"Epilobium billardiereanum subsp. billardiereanum",,subspecies,,accepted,present,native,native,,,,Onagraceae
+9cb543c5-af6a-4b0c-88b5-931e2e5967fd,"Epilobium billardiereanum subsp. cinereum","(A.Rich.) P.H.Raven & Engelhorn",subspecies,,accepted,present,native,native,,,,Onagraceae
+62c68e35-ad75-4b53-b381-9945dda220bb,"Epilobium ciliatum",Raf.,species,,accepted,present,introduced,naturalised,"Glandular Willow-herb",,,Onagraceae
+bcd62b97-dfd1-4f52-8663-4a34f014e222,"Epilobium hirtigerum",A.Cunn.,species,,accepted,present,native,native,"Hairy Willow-herb",,,Onagraceae
+a6b7067f-fe55-4949-989a-01e5e3e75dd4,"Eragrostis brownii","(Kunth) Nees ex Wight",species,,accepted,present,native,native,"Common Love-grass",,,Poaceae
+59870916-6676-48bd-8286-9ccb58268b28,"Eragrostis cilianensis","(All.) Vignolo ex Janch.",species,,accepted,present,introduced,naturalised,Stink-grass,,,Poaceae
+f4cbf720-7eef-4cec-b92a-2ebce9b16f47,"Eragrostis mexicana","(Hornem.) Link",species,,accepted,present,introduced,naturalised,"Mexican Love-grass",,,Poaceae
+3bfe77a9-ef4b-4fcd-be63-6a0f82808f1f,"Erica lusitanica",Rudolphi,species,,accepted,present,introduced,naturalised,"Spanish Heath",,,Ericaceae
+ce01f286-fb0d-4a97-9007-4295c37065b8,"Erigeron bonariensis",L.,species,,accepted,present,introduced,naturalised,"Flaxleaf Fleabane",,,Asteraceae
+1c611348-ab3a-4f63-9757-f524574face8,"Erigeron karvinskianus",DC.,species,,accepted,present,introduced,naturalised,"Seaside Daisy",,,Asteraceae
+3055dcc2-5178-4be8-9dda-c95036864769,"Erigeron sumatrensis",Retz.,species,,accepted,present,introduced,naturalised,"Tall Fleabane",,,Asteraceae
+ca93f85a-6cbd-4afe-b768-1ca3de347ce5,"Eriobotrya japonica","(Thunb.) Lindl.",species,,accepted,present,introduced,adventive,Loquat,,,Rosaceae
+cc880f2b-9d1c-491f-92a7-a4fbcdf94101,"Eryngium vesiculosum",Labill.,species,,accepted,present,native,native,Prickfoot,,,Apiaceae
+41f856b7-c55c-45bd-a5ca-813f2355ef6a,"Eschscholzia californica",Cham,species,,accepted,present,introduced,naturalised,"Californian Poppy",,,Papaveraceae
+538b5c02-cc74-4043-be5d-ab029ee66bb6,"Eucalyptus aromaphloia","L.D.Pryor & J.H.Willis",species,,accepted,present,native,native,Scent-bark,,,Myrtaceae
+62da9b94-c0c1-43bf-92ca-3500e7a7ad0c,"Eucalyptus behriana",F.Muell.,species,,accepted,present,native,native,"Bull Mallee",,,Myrtaceae
+ef5731d8-9dec-47ea-b9de-9d72d7d4fc47,"Eucalyptus bosistoana",F.Muell.,species,,accepted,present,native,native,"Coast Grey-box | Gippsland Grey-box",,,Myrtaceae
+a4091cc9-62a0-4d9d-896c-17593758a4b1,"Eucalyptus botryoides",Sm.,species,,accepted,present,native,native,"Southern Mahogany",,1,Myrtaceae
+776f5b3a-06e0-4717-a38b-cdeabcb21889,"Eucalyptus bridgesiana",R.T.Baker,species,,accepted,present,native,native,"But But | Apple Box",,,Myrtaceae
+b81ef7c6-89a0-45d7-9b2b-cebb16c7033a,"Eucalyptus camaldulensis",Dehnh.,species,,accepted,present,native,native,"River Red-gum",,,Myrtaceae
+2a8fd3b6-cbb4-48ee-8b82-948eedb8c0e8,"Eucalyptus camaldulensis subsp. camaldulensis",,subspecies,,accepted,present,native,native,,,,Myrtaceae
+c1d81b41-92e1-47c7-9ca0-521fd3a513e5,"Eucalyptus cephalocarpa",Blakely,species,,accepted,present,native,native,"Mealy Stringybark",,,Myrtaceae
+e03f7916-3683-4b87-b9b0-3043b9ccc72d,"Eucalyptus cladocalyx",F.Muell.,species,,accepted,present,introduced,naturalised,"Sugar Gum",,,Myrtaceae
+0fb2aaa8-3e57-4b0f-9046-2f32dfb2b906,"Eucalyptus dives",Schauer,species,,accepted,present,native,native,"Broad-leaved Peppermint",,,Myrtaceae
+9bb63e24-56c2-4691-8486-0efe7a35e15e,"Eucalyptus elata",Dehnh.,species,,accepted,present,native,native,"River Peppermint | Wang-ngara",,,Myrtaceae
+78d38913-6a2a-49c5-9538-a5f52deed645,"Eucalyptus globoidea",Blakely,species,,accepted,present,native,native,"White Stringybark",,,Myrtaceae
+1dfdd922-7fa3-4fc4-bb6e-96cfa112337a,"Eucalyptus globulus",Labill.,species,,accepted,present,native,native,"Southern Blue-gum",,,Myrtaceae
+31b2d5b0-23f9-47a6-bb36-0a7bab28e659,"Eucalyptus globulus subsp. globulus",,subspecies,,accepted,present,native,native,,,,Myrtaceae
+373f6949-3ef7-40b3-8b65-4aeb60e21f35,"Eucalyptus goniocalyx",F.Muell,species,,accepted,present,native,native,"Bundy | Long-leaf Box",,,Myrtaceae
+2d91bdc1-4243-4949-bb55-aa26cb06fa7d,"Eucalyptus leucoxylon",F.Muell.,species,,accepted,present,native,native,"Yellow Gum",,,Myrtaceae
+75266c6b-6f92-4ef8-832f-466051f443b1,"Eucalyptus leucoxylon subsp. megalocarpa",Boland,subspecies,,accepted,present,native,native,,,1,Myrtaceae
+47673d96-7020-4c29-b3d6-fef1775448cb,"Eucalyptus longifolia",Link,species,,accepted,present,introduced,adventive,,,,Myrtaceae
+7eaa9d84-9108-4fcf-9ed3-9962365d2193,"Eucalyptus macrorhyncha","F.Muell. ex Benth.",species,,accepted,present,native,native,"Red Stringybark",,,Myrtaceae
+88981ca8-2834-4c0a-a06f-5b82401971c5,"Eucalyptus melliodora","A.Cunn. ex Schauer",species,,accepted,present,native,native,"Yellow Box",,,Myrtaceae
+6ae01342-1266-4eea-91f7-1fbe65ccee02,"Eucalyptus molyneuxii",Rule,species,,accepted,present,native,native,,,,Myrtaceae
+080ef661-c542-4ae3-94d0-9e57c3629818,"Eucalyptus obliqua",L’Hér.,species,,accepted,present,native,native,"Messmate Stringybark",,,Myrtaceae
+0ace770d-d8bf-43f6-be31-dfbf4ae1a4b7,"Eucalyptus ovata",Labill.,species,,accepted,present,native,native,"Swamp Gum",,,Myrtaceae
+e6af0a73-8138-4c14-8c07-10ea809c0dbc,"Eucalyptus ovata subsp. ovata",,subspecies,,accepted,present,native,native,,,,Myrtaceae
+f6c2d8e7-9d03-4677-b4c8-1caee39964c7,"Eucalyptus pauciflora","Sieber ex Spreng.",species,,accepted,present,native,native,"Snow Gum",,,Myrtaceae
+62d07a5d-631e-4efc-aa2e-f68907eba729,"Eucalyptus perriniana","F.Muell. ex Rodway",species,,accepted,present,native,native,"Spinning Gum",,,Myrtaceae
+1cefd4dc-2bad-45ec-9559-b5f104ad6e2f,"Eucalyptus phenax","Brooker & Slee",species,,accepted,present,native,native,,,,Myrtaceae
+60c3cd9d-5527-48ac-b04a-f720f9490472,"Eucalyptus phenax subsp. phenax",,subspecies,,accepted,present,native,native,,,,Myrtaceae
+b5562066-fc53-4d62-8927-03ecfd50e1fe,"Eucalyptus polyanthemos",Schauer,species,,accepted,present,native,native,"Red Box",,,Myrtaceae
+161c29e7-7b60-41d0-af4d-ac0e3dff3dee,"Eucalyptus radiata","Sieber ex DC.",species,,accepted,present,native,native,,,,Myrtaceae
+1e46e312-c0e4-4cc2-b8ca-c8fb9fe8cca3,"Eucalyptus radiata subsp. radiata",,subspecies,,accepted,present,native,native,"Narrow-leaved Peppermint",,,Myrtaceae
+46b30d64-1f21-4d71-a770-027910050d6c,"Eucalyptus tricarpa","(L.A.S.Johnson) L.A.S.Johnson & K.D.Hill",species,,accepted,present,native,native,Ironbark,,,Myrtaceae
+bf268cbe-85c8-48b2-a504-b7bb6ffab959,"Eucalyptus tricarpa subsp. tricarpa",,subspecies,,accepted,present,native,native,,,,Myrtaceae
+4986f096-0923-4a4b-8d65-fbb209ae0042,"Eucalyptus viminalis",Labill.,species,,accepted,present,native,native,"Manna Gum | Ribbon Gum",,,Myrtaceae
+b1874c17-804a-4d14-be6e-825d978a219a,"Eucalyptus viminalis subsp. pryoriana","(L.A.S.Johnson) Brooker & Slee",subspecies,,accepted,present,native,native,,,,Myrtaceae
+f1c8ed2d-3d62-4750-ad6e-a16c746a2eed,"Eucalyptus viminalis subsp. viminalis",,subspecies,,accepted,present,native,native,,,,Myrtaceae
+a80d1767-1be6-4844-a167-ab296eb3333f,"Eucalyptus yarraensis","Maiden & Cambage",species,,accepted,present,native,native,"Yarra Gum",,,Myrtaceae
+8e309ea7-10aa-40a9-a52d-4ba93b1ce194,"Eucalyptus ×studleyensis",Maiden,species,,accepted,present,native,native,,,,Myrtaceae
+004eaddb-80a5-4fc5-8d99-b649eda0bab9,"Euchiton involucratus","(G.Forst.) Anderb.",species,,accepted,present,native,native,"Common Cudweed",,,Asteraceae
+b13c7491-faf2-4ce5-9955-e5dd877bb311,"Euchiton japonicus","(Thunb.) Holub",species,,accepted,present,native,native,,,,Asteraceae
+b7a0cf7f-c224-454d-a0de-2ecf76657f6c,"Euchiton sphaericus","(Willd.) Anderb.",species,,accepted,present,native,native,"Star Cudweed",,,Asteraceae
+9f4b3fa9-7a7b-4c4a-9102-0885c1f43359,"Euphorbia peplus",L.,species,,accepted,present,introduced,naturalised,"Petty Spurge",,,Euphorbiaceae
+10a16917-01e0-46cc-8bd8-359df2467806,"Exocarpos cupressiformis",Labill.,species,,accepted,present,native,native,"Cherry Ballart; Ballee | Ballot",,,Santalaceae
+2c00a14d-5ed8-4081-a2b0-de1b5a289b20,"Festuca arundinacea",Schreb.,species,,accepted,present,introduced,naturalised,"Tall Fescue",,,Poaceae
+96ad1181-51b2-44ed-8527-479f41630b95,"Festuca rubra",L.,species,,accepted,present,introduced,naturalised,"Red Fescue | Creeping Fescue",,,Poaceae
+099b7885-fd5e-4013-9af6-349167a73544,"Ficinia marginata","(Thunb.) Fourc.",species,,accepted,present,native,native,,,,Cyperaceae
+e0de79b0-f314-40ad-8420-a429a174bd3f,"Fissidens leptocladus","Müll.Hal. ex Rodway",species,,accepted,present,native,native,,,,Fissidentaceae
+adaed0a8-be6d-498f-a306-1e9142928481,"Fissidens taylorii",Müll.Hal.,species,,accepted,present,native,native,,,,Fissidentaceae
+cd10828b-4e96-47b8-99a2-285c3a9970cc,"Foeniculum vulgare",Mill.,species,,accepted,present,introduced,naturalised,Fennel,,,Apiaceae
+4cf89d61-b451-4196-8ef3-8cec520a2183,"Fraxinus angustifolia",Vahl,species,,accepted,present,introduced,,,,,Oleaceae
+3d1123e7-17cd-4347-b8c5-50903be6e5cd,"Fumaria bastardii",Boreau,species,,accepted,present,introduced,naturalised,"Bastard's Fumitory",,,Papaveraceae
+3219d186-9dc9-4929-a2b6-a831727580c6,"Fumaria capreolata",L.,species,,accepted,present,introduced,naturalised,"White Fumitory",,,Papaveraceae
+0912a535-1e6c-460b-bf8a-1b1f385926f3,"Funaria hygrometrica",Hedw.,species,,accepted,present,native,native,,,,Funariaceae
+bbc972c2-c68f-4266-bfb3-039776533ae4,"Gahnia radula","(R.Br.) Benth.",species,,accepted,present,native,native,"Thatch Saw-sedge",,,Cyperaceae
+9a903500-2fa6-4571-be89-85a1963c198c,"Gahnia sieberiana",Kunth,species,,accepted,present,native,native,"Red-fruit Saw-sedge",,,Cyperaceae
+9f4c8df1-414a-4c68-b376-0b069387bc51,"Galinsoga parviflora",Cav.,species,,accepted,present,introduced,naturalised,"Gallant Soldier | Potato Weed",,,Asteraceae
+a44b2334-eac3-4a51-b38d-f6451bc9d7a5,"Galium aparine",L.,species,,accepted,present,introduced,naturalised,Cleavers,,,Rubiaceae
+aef93450-34d9-4b24-84fc-0ae945713211,"Galium gaudichaudii",DC.,species,,accepted,present,native,native,"Rough Bedstraw",,,Rubiaceae
+a2a7f901-67cb-44c7-8bc0-20509d53fb72,"Galium gaudichaudii subsp. gaudichaudii",,subspecies,,accepted,present,native,native,,,,Rubiaceae
+1c9f970a-f039-4018-b1fe-d99d7113914c,"Gamochaeta americana","(Mill.) Wedd.",species,,accepted,present,introduced,naturalised,Cudweed,,,Asteraceae
+97801afc-2890-488c-97c2-a7f43bfab852,"Gamochaeta purpurea","(L.) Cabrera",species,,accepted,present,introduced,naturalised,"Spike Cudweed",,,Asteraceae
+cceb9dbe-48dc-494b-84a8-8a84693b48e0,"Gaudium laevigatum","(Gaertn.) Peter G.Wilson",species,,accepted,present,native,native,,,,Myrtaceae
+02feed26-e4ba-403f-8488-bf48ef6ad8f2,"Gaudium myrsinoides","(Schltdl.) Peter G.Wilson",species,,accepted,present,native,native,,,,Myrtaceae
+ea11888e-b9ec-4704-8ce2-8a6352d62770,"Genista linifolia",L.,species,,accepted,present,introduced,naturalised,"Flax-leaf Broom",,,Fabaceae
+6b57486f-adba-4eb4-8817-bc1f924c04cf,"Genista monspessulana","(L.) L.A.S.Johnson",species,,accepted,present,introduced,naturalised,"Montpellier Broom",,,Fabaceae
+4e6edcf0-1f61-492c-b6af-da9eed2fe869,"Geranium dissectum",L.,species,,accepted,present,introduced,naturalised,"Cut-leaf Crane's-bill",,,Geraniaceae
+b738eb2a-da4c-45ae-8424-344df8e49cbf,"Geranium molle",L.,species,,accepted,present,introduced,naturalised,,,,Geraniaceae
+f100b669-ec8d-4e33-8342-81316f256c56,"Geranium retrorsum","L’Hér. ex DC.",species,,accepted,present,native,native,"Grassland Crane's-bill",,,Geraniaceae
+76015d0c-43e5-40b6-a7e7-fb32a696da59,"Geranium solanderi",Carolin,species,,accepted,present,native,native,,,,Geraniaceae
+162fa749-3baf-4fc7-b92f-d85cb30c8d30,"Gladiolus carneus",D.Delaroche,species,,accepted,present,introduced,adventive,,,,Iridaceae
+61b71a4c-e815-44df-a89f-97377c991694,"Gladiolus undulatus",L.,species,,accepted,present,introduced,naturalised,"Wild Gladiolus",,,Iridaceae
+544a8ad8-f41d-4197-9208-8a6b8b0c3c1f,"Gleichenia dicarpa",R.Br.,species,,accepted,present,native,native,"Pouched Coral-fern | Wiry Coral Fern",,,Gleicheniaceae
+4b23cbe1-ae0d-4180-84bc-44248cebe045,"Gleichenia microphylla",R.Br.,species,,accepted,present,native,native,"Scrambling Coral-fern",,,Gleicheniaceae
+f60fd9f0-dadb-49e1-b2e8-9bd5890b9ab4,"Glossodia major",R.Br.,species,,accepted,present,native,native,"Wax-lip Orchid",,,Orchidaceae
+29464a13-47e1-4ab0-b198-9c6f2f57db2d,"Glyceria australis",C.E.Hubb.,species,,accepted,present,native,native,"Australian Sweet-grass",,,Poaceae
+27aea429-98f2-448a-ac06-d82159e0a6ae,"Glyceria declinata",Bréb,species,,accepted,present,introduced,naturalised,"Manna grass",,,Poaceae
+4441818f-b0dc-40a4-b2ec-268db551d025,"Glycine clandestina",J.C.Wendl.,species,,accepted,present,native,native,"Twining Glycine",,,Fabaceae
+a8745161-decb-4346-a37c-df1b836d4a38,"Gompholobium huegelii",Benth.,species,,accepted,present,native,native,"Common Wedge-pea | Karaite",,,Fabaceae
+39b0b690-e5c4-43d6-a0be-614d807711e6,"Gonocarpus micranthus",Thunb.,species,,accepted,present,native,native,,,,Haloragaceae
+30e2eae1-bc70-4ba6-ab94-f73d6f7fbd4b,"Gonocarpus micranthus subsp. micranthus",,subspecies,,accepted,present,native,native,"Creeping Raspwort",,,Haloragaceae
+a920a154-52a3-4baf-8300-29d53e7727d2,"Gonocarpus micranthus subsp. ramosissimus",Orchard,subspecies,,accepted,present,native,native,,,,Haloragaceae
+d0f6b05e-71c5-4a92-bdb4-be7d13580349,"Gonocarpus tetragynus",Labill.,species,,accepted,present,native,native,"Common Raspwort",,,Haloragaceae
+8f1106a7-55c8-45e8-96c7-aaa712c80139,"Goodenia elongata",Labill.,species,,accepted,present,native,native,"Lanky Goodenia",,,Goodeniaceae
+28f1f741-e940-4988-93e0-abc159e0f95c,"Goodenia geniculata",R.Br.,species,,accepted,present,native,native,"Bent Goodenia",,,Goodeniaceae
+b0e42d68-6692-49a3-af0d-9dfd191b0854,"Goodenia humilis",R.Br.,species,,accepted,present,native,native,"Swamp Goodenia",,,Goodeniaceae
+7c262d05-5380-49b4-8470-2510a01b5ac9,"Goodenia ovata",Sm.,species,,accepted,present,native,native,"Hop Goodenia",,,Goodeniaceae
+1e01581b-51fc-419e-9541-93ee20d1492e,"Goodenia radicans"," (Cav.) Pers.",species,,accepted,present,native,native,"Shiny Swamp-mat",,,Goodeniaceae
+6ece0f8f-f267-492b-8754-7f2f29766f04,"Goodia lotifolia",Salisb.,species,,accepted,present,native,native,Golden-tip,,,Fabaceae
+454f321c-0dbd-4245-be3e-fd57a8b302eb,"Gratiola peruviana",L.,species,,accepted,present,native,native,"Austral Brooklime",,,Plantaginaceae
+0a1834a4-f1df-4df0-afa3-78bfec745164,"Grevillea ilicifolia","(R.Br.) R.Br.",species,,accepted,present,native,native,"Holly Grevillea | Holly-leaf Grevillea",,,Proteaceae
+12a091f0-8345-4eae-91d4-b9cb4b0fb4c0,"Grevillea ilicifolia subsp. ilicifolia",,subspecies,,accepted,present,native,native,,,,Proteaceae
+6d5b593f-e5e1-407d-883a-7a51b1cbcfc6,"Grevillea robusta","A.Cunn. ex R.Br.",species,,accepted,present,introduced,adventive,"Silky Oak",,,Proteaceae
+4936d954-8945-41d9-8e59-315bd11a9fe5,"Grevillea rosmarinifolia",A.Cunn.,species,,accepted,present,native,native,"Rosemary Grevillea",,1,Proteaceae
+2fcfbd6e-7bcb-4c31-a34d-0edbd92fa9af,"Grevillea rosmarinifolia subsp. rosmarinifolia",,subspecies,,accepted,present,native,native,,,1,Proteaceae
+5b043bce-9f10-458d-8899-30adc6f6872c,"Gynatrix pulchella","(Willd.) Alef.",species,,accepted,present,native,native,"Hemp Bush",,,Malvaceae
+9e041a12-c521-4e23-8d3a-8318be8c7bf8,"Hakea decurrens",R.Br.,species,,accepted,present,native,native,"Bushy Needlewood",,,Proteaceae
+83cbec27-e5bf-48c1-a1bd-44cb53e10447,"Hakea drupacea","(C.F.Gaertn.) Roem. & Schult.",species,,accepted,present,introduced,naturalised,"Sweet-scented Hakea",,,Proteaceae
+7b86bd43-4513-4e46-8fea-a0be34ae0bf8,"Hakea eriantha",R.Br.,species,,accepted,present,native,native,"Tree Hakea",,,Proteaceae
+2baee038-d35b-4149-84c9-97e9184cf88e,"Hakea nodosa",R.Br.,species,,accepted,present,native,native,"Yellow Hakea",,,Proteaceae
+97535ce1-0e96-4caa-a7cb-d07d9a961972,"Hakea salicifolia","(Vent.) B.L.Burtt",species,,accepted,present,introduced,,,,,Proteaceae
+7c130d84-42f3-470a-a557-147fdc367b9b,"Hakea salicifolia subsp. salicifolia",,subspecies,,accepted,present,introduced,naturalised,"Willow-leaved Hakea",,,Proteaceae
+58679623-1c49-4934-b842-7652d21605f0,"Hakea sericea","Schrad. & J.C.Wendl.",species,,accepted,present,introduced,naturalised,"Silky Hakea",,,Proteaceae
+366d6cda-7045-4d4f-bcf0-ee9b265f3ab9,"Hakea ulicina",R.Br.,species,,accepted,present,native,native,"Furze Hakea",,,Proteaceae
+b0aae4f9-9366-431a-b65d-7bd7de457797,"Hardenbergia violacea","(Schneev.) Stearn",species,,accepted,present,native,native,"Purple Coral-pea",,1,Fabaceae
+c4a3febc-0516-4d68-83ff-3712dd984839,"Hedera helix",L.,species,,accepted,present,introduced,naturalised,"English Ivy",,,Araliaceae
+577f9845-9a10-4dc5-be4f-ab588cf0c9d4,"Helianthus annuus",L.,species,,accepted,present,introduced,naturalised,"Common Sunflower",,,Asteraceae
+9dbd3806-9685-42c4-9d21-f40a7c25975b,"Helminthotheca echioides","(L.) Holub",species,,accepted,present,introduced,naturalised,Ox-tongue,,,Asteraceae
+bbfd42be-c546-4334-b92e-b3af3199c506,"Hemarthria uncinata",R.Br.,species,,accepted,present,native,native,,,,Poaceae
+93b2f917-3c98-4e45-956f-1c2cd9406eda,"Hemarthria uncinata var. uncinata",,variety,,accepted,present,native,native,"Mat Grass",,,Poaceae
+da7b050d-282e-4a2a-9605-1a421a0691bc,"Hennediella stanfordensis","(Steere) Blockeel",species,,accepted,present,native,native,,,,Pottiaceae
+584c86f6-d38b-4c0f-a439-de66d22cb8e1,"Hibbertia acicularis","(Labill.) F.Muell.",species,,accepted,present,native,native,"Prickly Guinea-flower",,,Dilleniaceae
+68cbbf3e-7606-4126-9176-030173b88c18,"Hibbertia fasciculata","R.Br. ex DC.",species,,accepted,present,native,native,,,,Dilleniaceae
+2737c588-39b4-4ac4-ba31-579d464cef75,"Hibbertia fasciculata var. prostrata","(Hook.) Hook.f.",variety,,accepted,present,native,native,,,,Dilleniaceae
+917575cc-0970-4fc2-90ad-48061af6e425,"Hibbertia riparia","(R.Br. ex DC.) Hoogland",species,,accepted,present,native,native,,,,Dilleniaceae
+2ac7629d-09df-4aa8-b005-372057239c35,"Holcus lanatus",L.,species,,accepted,present,introduced,naturalised,"Yorkshire Fog",,,Poaceae
+2cd1aa83-f866-4514-9614-a942ee80f202,"Hordeum hystrix",Roth,species,,accepted,present,introduced,naturalised,"Mediterranean Barley Grass",,,Poaceae
+133106b2-d560-40d4-866f-41e3d812981c,"Hovea heterophylla","A.Cunn. ex Hook.f.",species,,accepted,present,native,native,,,,Fabaceae
+499390e6-1946-4567-b012-6d8860b9de43,"Hydrocotyle hirta",A.Rich.,species,,accepted,present,native,native,"Hairy Pennywort",,,Araliaceae
+23faf8a7-1a76-4671-987b-de070bc9bde0,"Hydrocotyle laxiflora",DC.,species,,accepted,present,native,native,"Stinking Pennywort",,,Araliaceae
+9b0b8a1e-8c7d-4fa8-b9ec-8900f21b854a,"Hydrocotyle sibthorpioides",Lam.,species,,accepted,present,native,native,,,,Araliaceae
+309ed971-13c8-46b7-9776-d4b47d8ac962,"Hypericum gramineum",G.Forst.,species,,accepted,present,native,native,"Small St John's Wort",,,Hypericaceae
+6494d110-7304-47b0-9e13-19ddf43d9224,"Hypericum perforatum",L.,species,,accepted,present,introduced,,"St Johns Wort",,,Hypericaceae
+dcd38c5f-2cb8-45c4-bc33-66242ca0fa8e,"Hypericum perforatum subsp. veronense","(Schrank) H.Lindb.",subspecies,,accepted,present,introduced,naturalised,,,,Hypericaceae
+7deffe0b-990b-4741-8315-133c7e94b777,"Hypnum cupressiforme",Hedw.,species,,accepted,present,native,native,,,,Hypnaceae
+5b3ddfa7-d2ea-4ed8-9072-d774239bc6cf,"Hypochaeris glabra",L.,species,,accepted,present,introduced,naturalised,"Smooth Cat's-ear",,,Asteraceae
+caa25649-6aac-4f6a-9685-1eafe5b4e021,"Hypochaeris radicata",L.,species,,accepted,present,introduced,naturalised,"Cat's-ear | Flat-weed",,,Asteraceae
+439eaceb-d4c7-425f-b560-26ef69198386,"Hypolaena fastigiata",R.Br.,species,,accepted,present,native,native,"Tassel Rope-rush",,,Restionaceae
+5f30640a-3b29-4572-a97b-05f9b68d9622,"Hypolepis rugosula","(Labill.) J.Sm.",species,,accepted,present,native,native,"Ruddy Ground-fern",,,Dennstaedtiaceae
+8eca351a-55ed-473b-b827-6111c5efe90e,"Hypoxis hygrometrica",Labill.,species,,accepted,present,native,native,"Golden Weather-grass",,,Hypoxidaceae
+5189158c-7d55-468e-b4ea-4eae4ff8cf28,"Imperata cylindrica","(L.) Raeusch.",species,,accepted,present,native,native,"Blady Grass | Kunai in Papua New Guinea",,,Poaceae
+85e9c6d3-3e10-4ef1-a935-10f57ca0bb87,"Indigofera australis",Willd.,species,,accepted,present,native,native,"Austral Indigo",,,Fabaceae
+45134e90-fa94-4998-a391-1f22cb2060de,"Indigofera australis subsp. australis",,subspecies,,accepted,present,native,native,,,,Fabaceae
+63ea7585-806d-48c8-9190-e6721ecbd5bc,"Ipomoea indica","(Burm.f.) Merr.",species,,accepted,present,introduced,naturalised,"Blue Morning Glory",,,Convolvulaceae
+d7b33a22-0bd3-4e31-9f4b-8589d2eae67c,"Isolepis cernua","(Vahl) Roem. & Schult.",species,,accepted,present,native,native,"Nodding Club-rush",,,Cyperaceae
+160bc8c9-7a9f-49c7-837a-9da63e1540d0,"Isolepis fluitans","(L.) R.Br.",species,,accepted,present,native,native,"Floating Club-rush",,,Cyperaceae
+dd957ca6-9ca6-44e8-b862-9cb3d8b557da,"Isolepis hookeriana",Boeck.,species,,accepted,present,native,native,,,,Cyperaceae
+eee07df5-bbbd-410f-b761-28bb24028eb2,"Isolepis inundata",R.Br.,species,,accepted,present,native,native,,,,Cyperaceae
+b5066077-4258-4293-a121-2ab368da7fe5,"Isolepis levynsiana","Muasya & D.A.Simpson",species,,accepted,present,introduced,naturalised,,,,Cyperaceae
+af1aced6-0647-45fc-abb7-678f3b0916ce,"Isolepis platycarpa","(S.T.Blake) Soják",species,,accepted,present,native,native,,,,Cyperaceae
+51886dd6-3889-4a9c-ae54-c9b2994fe2f2,"Isolepis prolifera","(Rottb.) R.Br.",species,,accepted,present,introduced,naturalised,,,,Cyperaceae
+20065706-0592-40d4-ae50-a1d3a1d8c94c,"Isolepis stellata","(C.B.Clarke) K.L.Wilson",species,,accepted,present,native,native,"Star Club-rush",,,Cyperaceae
+6d7726e7-c8be-4324-8977-d21f01d7758e,"Isopogon ceratophyllus",R.Br.,species,,accepted,present,native,native,"Horny Cone-bush",,,Proteaceae
+a23068b0-61a6-4134-9bba-2268df1e60a6,"Isotoma fluviatilis","(R.Br.) F.Muell. ex Benth.",species,,accepted,present,native,native,,,,Campanulaceae
+c98ad1ba-078c-4f8a-88b7-b1b0cf9111a5,"Isotoma fluviatilis subsp. australis",McComb,subspecies,,accepted,present,native,native,"Swamp Isotome",,,Campanulaceae
+6f9216d9-9a20-48b0-8e85-fe4c81e62f09,"Juncus amabilis",Edgar,species,,accepted,present,native,native,,,,Juncaceae
+7779b0bf-b81d-4b0b-b289-bdd7cd88e146,"Juncus articulatus",L.,species,,accepted,present,introduced,,,,,Juncaceae
+0ad46503-cf6d-4e2c-bcdd-4b8045ec38d5,"Juncus articulatus subsp. articulatus",,subspecies,,accepted,present,introduced,naturalised,"Jointed Rush",,,Juncaceae
+dd692e58-12ca-4ce0-a242-99ff851e02eb,"Juncus australis",Hook,species,,accepted,present,native,native,"Austral        Rush",,,Juncaceae
+d21e4e75-cb76-4a2f-a28c-306d8ecdb1e8,"Juncus bufonius",L.,species,,accepted,present,uncertain,,"Toad Rush",,,Juncaceae
+aa1f0ade-7b9a-41ef-956b-e447ebb27b99,"Juncus caespiticius",E.Mey.,species,,accepted,present,native,native,"Grassy Rush | Tufted Rush",,,Juncaceae
+d86b975d-bca3-49b7-894f-65b2929670bb,"Juncus capitatus",Weigel,species,,accepted,present,introduced,naturalised,,,,Juncaceae
+f5908b70-9955-4560-98a1-6b4333a2b7b1,"Juncus gregiflorus",L.A.S.Johnson,species,,accepted,present,native,native,,,,Juncaceae
+cbe86db4-ad1f-4a6e-8fd5-0c371683a6a1,"Juncus holoschoenus",R.Br.,species,,accepted,present,native,native,,,,Juncaceae
+5aa91bff-7c7a-439c-9191-cad0dcb1711c,"Juncus pallescens",Lam.,species,,accepted,present,introduced,naturalised,,,,Juncaceae
+7f5aacda-d46b-4f5e-b187-b6af0c43408d,"Juncus pallidus",R.Br.,species,,accepted,present,native,native,,,,Juncaceae
+e0c1ce6a-70b5-4811-a011-196b8c1d6642,"Juncus pauciflorus",R.Br.,species,,accepted,present,native,native,"Loose-flower Rush",,,Juncaceae
+c52ee118-735f-478d-a9c5-b71874fd6bed,"Juncus planifolius",R.Br.,species,,accepted,present,native,native,"Broad-leaf Rush",,,Juncaceae
+4bd8c199-0651-478b-8ac4-59ad95f78b27,"Juncus procerus",E.Mey.,species,,accepted,present,native,native,,,,Juncaceae
+607f4b29-ad7a-4419-8024-5c59a131b779,"Juncus sarophorus",L.A.S.Johnson,species,,accepted,present,native,native,"Broom Rush",,,Juncaceae
+6a7d4c4a-bf2f-4691-af5a-dc1cf9818ea8,"Juncus subsecundus",N.A.Wakef.,species,,accepted,present,native,native,"Finger Rush",,,Juncaceae
+cb13d436-a7a7-442e-b02c-f5d026753a7b,"Juncus usitatus",L.A.S.Johnson,species,,accepted,present,native,native,"Common Rush",,,Juncaceae
+5eeb73fc-e77c-474b-9c5f-e7c232abbd66,"Kennedia prostrata",R.Br.,species,,accepted,present,native,native,"Running Postman",,,Fabaceae
+6363aa7b-6f95-4a8b-a19c-d667fae99723,"Kindbergia praelonga","(Hedw.) Ochyra",species,,accepted,present,introduced,naturalised,,,,Brachytheciaceae
+5287d207-8bdc-4620-b4b7-3638dd9ddbe3,"Lachnagrostis filiformis","(G.Forst.) Trin.",species,,accepted,present,native,native,,,,Poaceae
+2d05edb5-3c08-43f8-852b-fd6220ded0ec,"Lactuca serriola",L.,species,,accepted,present,introduced,,"Prickly Lettuce",,,Asteraceae
+80e4f506-62c1-4c00-9032-4a0009af93cc,"Lagenophora stipitata","(Labill.) Druce",species,,accepted,present,native,native,"Blue Bottle-daisy",,,Asteraceae
+79ed5365-45cd-4627-bcef-94c97a55717d,"Lagenophora sublyrata","(Cass.) A.R.Bean & Jian Wang ter",species,,accepted,present,native,native,"Slender Bottle-daisy",,,Asteraceae
+aeee7042-5a41-4478-8da2-dd4cc238a7a8,"Laphangium luteoalbum",(L.)Tzvelev,species,,accepted,present,native,native,"Jersey Cudweed",,,Asteraceae
+0f445714-d08f-4f4c-afc0-6726ba01289c,"Lapsana communis",L.,species,,accepted,present,introduced,,,,,Asteraceae
+891a8d2a-812a-4147-8f5f-c7db235f379e,"Lapsana communis subsp. communis",,subspecies,,accepted,present,introduced,naturalised,Nipplewort,,,Asteraceae
+813da228-da0a-4e6a-bb3d-b76a2d6b94a4,"Lemna disperma",Hegelm.,species,,accepted,present,native,native,"Common Duckweed",,,Araceae
+a6ccf192-80ad-4e3d-bffe-2c1d9c8d4a03,"Leontodon saxatilis",Lam.,species,,accepted,present,introduced,,"Lesser Hawkbit | Hairy Hawkbit",,,Asteraceae
+08d7ba37-b14c-4bf5-b548-ceb009b8aa74,"Leontodon saxatilis subsp. saxatilis",,subspecies,,accepted,present,introduced,naturalised,"Lesser Hawkbit | Hairy Hawkbit",,,Asteraceae
+fcbe10d3-db39-4f76-bd46-061d1f133d16,"Lepidium africanum","(Burm.f.) DC.",species,,accepted,present,introduced,naturalised,"Common Peppercress | Rubble Peppercress",,,Brassicaceae
+1044cc3a-2983-4f71-a52d-f5a836ec150a,"Lepidium didymum",L.,species,,accepted,present,introduced,naturalised,"Lesser Swine's Cress",,,Brassicaceae
+b2f97b1e-a797-4ab4-824d-556287357e58,"Lepidosperma elatius",Labill.,species,,accepted,present,native,native,"Tall Sword-sedge",,,Cyperaceae
+4d47d540-6814-4592-93ac-fe6664508b56,"Lepidosperma filiforme",Labill.,species,,accepted,present,native,native,"Common Rapier-sedge",,,Cyperaceae
+e52dc5f3-8015-4bdd-8467-6ce6f304fd3e,"Lepidosperma gladiatum",Labill.,species,,accepted,present,native,native,"Coast Sword-sedge",,,Cyperaceae
+e4a6f353-bbee-44f1-bbf2-7b06238b2e4e,"Lepidosperma gunnii",Boeck.,species,,accepted,present,native,native,"Little Sword-sedge",,,Cyperaceae
+7ee66c32-5fe7-4c26-a134-b71cc208e44b,"Lepidosperma laterale",R.Br.,species,,accepted,present,native,native,"Variable Sword-sedge",,,Cyperaceae
+5212db17-3075-44ff-9c4a-bc4fa83a6f3b,"Lepidosperma longitudinale",Labill.,species,,accepted,present,native,native,"Pithy Sword-sedge",,,Cyperaceae
+ee5496e9-6145-4d6b-8179-afb68bcd67f5,"Lepidosperma sieberi",Kunth,species,,accepted,present,native,native,"Sandhill Sword-sedge",,,Cyperaceae
+d9250f5d-b8bd-456e-ad39-456961abf24e,"Leptinella reptans","(Benth.) D.G.Lloyd & C.J.Webb",species,,accepted,present,native,native,,,,Asteraceae
+5a4176f7-7b40-4791-a1ed-7c8584681d40,"Leptobryum pyriforme","(Hedw.) Wilson",species,,accepted,present,uncertain,,,,,Meesiaceae
+fe0cc9c8-a54c-498b-955a-a0a1abda62fe,"Leptocarpus tenax","(Labill.) R.Br.",species,,accepted,present,native,native,"Slender Twine-rush",,,Restionaceae
+6162161f-2d18-4af4-8c33-800d5995ed84,"Leptoceras menziesii","(R.Br.) Lindl.",species,,accepted,present,native,native,,,,Orchidaceae
+4a59029d-1341-4065-bf24-7048e7496dfe,"Leptodictyum riparium","(Hedw.) Warnst.",species,,accepted,present,native,native,,,,Amblystegiaceae
+0334d706-d368-4243-bf08-6250d650b3ec,"Leptorhynchos squamatus","(Labill.) Less.",species,,accepted,present,native,native,"Scaly Buttons",,,Asteraceae
+e0c57172-8099-41ec-bf61-d181965d9c6d,"Leptorhynchos tenuifolius",F.Muell.,species,,accepted,present,native,native,"Wiry Buttons",,,Asteraceae
+532b199d-298c-4dd8-9abd-c442b03afd43,"Leptospermum continentale","Joy Thomps.",species,,accepted,present,native,native,"Prickly Teatree",,,Myrtaceae
+fd4cb81c-65e7-4317-8579-c4ddb955f769,"Leptospermum lanigerum","(Aiton) Sm.",species,,accepted,present,native,native,"Woolly Teatree",,,Myrtaceae
+c8643adb-3750-4d1f-a896-d5d2278b2ab5,"Leptospermum scoparium","J.R.Forst. & G.Forst.",species,,accepted,present,native,native,"Manuka | Broom Teatree",,,Myrtaceae
+dce64a84-2037-4fe4-a78c-6e64693cb23f,"Lepyrodia muelleri",Benth.,species,,accepted,present,native,native,"Common Scale-rush | Erect Scale-rush",,,Restionaceae
+1c165fca-558c-4b1a-95b2-ce61d1e747f4,"Leucophyta brownii",Cass.,species,,accepted,present,native,native,"Cushion Bush",,,Asteraceae
+a0c8b368-801a-4fd9-bc60-1a8f39bd01a6,"Leucopogon parviflorus","(Andrews) Lindl.",species,,accepted,present,native,native,"Coast Beard-heath",,,Ericaceae
+c1d11fa5-92f8-416f-8034-807ed7a86db7,"Leucopogon virgatus","(Labill.) R.Br.",species,,accepted,present,native,native,"Common Beard-heath",,,Ericaceae
+3563533e-56de-46cd-acf4-7043c993b6d6,"Leucopogon virgatus var. virgatus",,variety,,accepted,present,native,native,,,,Ericaceae
+24812ef8-e9d9-41ea-80ee-80507cfa40a4,"Levenhookia dubia",Sond.,species,,accepted,present,native,native,"Hairy Stylewort",,,Stylidiaceae
+0a36991d-04e4-4e32-8a40-00fdf4c0e8fd,"Lewinskya tasmanica","(Hook.f. & Wilson) F.Lara, Garilleti & Goffinet",species,,accepted,present,native,native,,,,Orthotrichaceae
+c8b4bfae-0f5c-4f5e-b80d-bf4f2df586ec,"Lewinskya tasmanica var. tasmanica",,variety,,accepted,present,native,native,,,,Orthotrichaceae
+a3f30408-1ea4-4336-82cf-db1554a0de02,"Ligustrum lucidum",W.T.Aiton,species,,accepted,present,introduced,naturalised,"Large-leaved Privet",,,Oleaceae
+7a7993aa-350f-4fd5-a467-c4d748de6bb0,"Ligustrum ovalifolium",Hassk.,species,,accepted,present,introduced,adventive,"Japanese Privet | Hedge Privet | California Privet",,,Oleaceae
+70f0ddf1-57ec-482e-9337-054a7ef89bf7,"Lindsaea linearis",Sw.,species,,accepted,present,native,native,"Screw Fern",,,Lindsaeaceae
+5434efcb-3720-4fe5-9727-203e6ec26a78,"Linum trigynum",L.,species,,accepted,present,introduced,naturalised,"French Flax",,,Linaceae
+86f77174-3a20-4940-831e-b706381308ca,"Lobelia anceps",L.f.,species,,accepted,present,native,native,"Angled Lobelia",,,Campanulaceae
+94e601b1-fdc3-4c79-9fa7-54a6c51dddb0,"Lobelia concolor",R.Br.,species,,accepted,present,native,native,"Poison Pratia",,,Campanulaceae
+1d03cf72-b1c2-4b47-9d2c-925d96dbd1f1,"Lobelia gibbosa",Labill.,species,,accepted,present,native,native,"Tall Lobelia",,,Campanulaceae
+164e01e1-4712-4348-8307-5501b7378ae8,"Lobelia pedunculata",R.Br.,species,,accepted,present,native,native,"Matted Pratia",,,Campanulaceae
+31acaf2f-eb35-4b41-840b-d1705b75e75a,"Lobelia pratioides",Benth.,species,,accepted,present,native,native,"Poison Lobelia",,,Campanulaceae
+fd91440b-55a9-46bc-ab83-b39d71c4d728,"Lobelia simplicicaulis",R.Br.,species,,accepted,present,native,native,,,,Campanulaceae
+4c077d0d-b9a2-4fcb-9d42-dec9e60c420c,"Lobularia maritima","(L.) Desv.",species,,accepted,present,introduced,naturalised,"Sweet Alyssum | Sweet Alice",,,Brassicaceae
+0836e5d4-ac61-4277-8f89-e6b044e9e4da,"Lolium perenne",L.,species,,accepted,present,introduced,naturalised,"Perennial Ryegrass",,,Poaceae
+9c039cf8-8ef4-45de-9570-94be7262c1ea,"Lolium rigidum",Gaudich.,species,,accepted,present,introduced,naturalised,"Wimmera Rye-grass",,,Poaceae
+7b21fa2e-14c5-4bbb-a4ba-6ee64e3d0b48,"Lomandra filiformis","(Thunb.) Britten",species,,accepted,present,native,native,,,,Asparagaceae
+d2e291e9-1594-4ce8-a1ce-7ab85939c4af,"Lomandra filiformis subsp. coriacea",A.T.Lee,subspecies,,accepted,present,native,native,"Wattle Mat-rush",,,Asparagaceae
+5b1289fe-bdac-41e5-bfea-c7990a308b99,"Lomandra filiformis subsp. filiformis",,subspecies,,accepted,present,native,native,,,,Asparagaceae
+379477a3-2398-4a47-b81f-46dd3a735115,"Lomandra longifolia",Labill.,species,,accepted,present,native,native,"Spiny-headed Mat-rush | Karawun",,,Asparagaceae
+3422d6d0-a21e-435c-b05a-ae5d3db909bb,"Lomandra longifolia subsp. longifolia",,subspecies,,accepted,present,native,native,,,,Asparagaceae
+37e65bc2-7ac4-434d-8d52-dfd597d7780e,"Lomandra multiflora","(R.Br.) Britten",species,,accepted,present,native,native,,,,Asparagaceae
+26775cca-0017-41a7-ba73-f581b88777d6,"Lomandra multiflora subsp. multiflora",,subspecies,,accepted,present,native,native,"Many-flowered Mat-rush",,,Asparagaceae
+d9329bb7-e23b-43b4-9898-f2b6f17bc0ac,"Lonicera japonica",Thunb.,species,,accepted,present,introduced,naturalised,"Japanese Honeysuckle",,,Caprifoliaceae
+5ef7d930-edc1-46f5-8d1b-c46e0226bbbc,"Lotus angustissimus",L.,species,,accepted,present,introduced,naturalised,"Slender Bird's-foot Trefoil",,,Fabaceae
+d5f222f5-59d2-4003-a9dd-e999e2008369,"Lotus subbiflorus",Lag,species,,accepted,present,introduced,naturalised,,,,Fabaceae
+bd57aa20-354d-4a31-935a-4f9bd83fc44f,"Lotus uliginosus",Schkuhr,species,,accepted,present,introduced,naturalised,"Greater Bird's-foot Trefoil",,,Fabaceae
+0e72d851-c673-4006-a54a-42a677b0ce46,"Luzula meridionalis",Nordensk.,species,,accepted,present,native,native,,,,Juncaceae
+772d714e-176d-4f6d-99ca-a05ce9c2a55c,"Luzula meridionalis var. densiflora",Nordensk.,variety,,accepted,present,native,native,,,,Juncaceae
+447fbfc2-65b0-48ac-b129-241897e020bd,"Lycopodiella lateralis","(R.Br.) B.Ollg.",species,,accepted,present,native,native,"Slender Club-moss",,,Lycopodiaceae
+e8691544-05f2-40f0-8b73-82026eaad60d,"Lyperanthus suaveolens",R.Br.,species,,accepted,present,native,native,Brown-beaks,,,Orchidaceae
+81d00da9-aee0-4758-9d3e-eb312ed9bc95,"Lysimachia arvensis","(L.) U.Manns & Anderb.",species,,accepted,present,introduced,naturalised,Pimpernel,,,Primulaceae
+202c5a71-cb51-4f5d-ba1f-26585ef4d84f,"Lysimachia minima","(L.) U.Manns & Anderb.",species,,accepted,present,introduced,naturalised,"Kause Chaffweed",,,Primulaceae
+23fb671c-b693-4b6c-9edf-f240374c10fb,"Lythrum hyssopifolia",L.,species,,accepted,present,uncertain,,"Lesser Loosestrife | Small Loosestrife",,,Lythraceae
+61b5a32a-4524-4c2d-892c-d0b0b3113155,"Lythrum junceum","Banks & Sol.",species,,accepted,present,introduced,naturalised,"Mediterranean Loosestrife",,,Lythraceae
+3735e1b9-28f1-446b-8265-5edb6c021bef,"Lythrum salicaria",L.,species,,accepted,present,uncertain,,"Purple Loosestrife",,,Lythraceae
+c51229d3-b2ce-4e2e-afea-fc929aa3c112,"Machaerina acuta","(Labill.) J.Kern ",species,,accepted,present,native,native,,,,Cyperaceae
+cdb074ec-20bd-4a97-84f7-46e6e9e984e2,"Machaerina articulata","(R.Br.) T.Koyama ",species,,accepted,present,native,native,,,,Cyperaceae
+dca31da8-8410-4091-84b5-4fcdf604b057,"Machaerina juncea","(R.Br.) T.Koyama ",species,,accepted,present,native,native,,,,Cyperaceae
+22ba7c15-ca39-4915-8a0b-0d9f635a7180,"Machaerina rubiginosa","(Spreng.) T.Koyama",species,,accepted,present,native,native,,,,Cyperaceae
+d3f57ed3-11d5-4323-86ee-109cd20508ac,"Malva nicaeensis",All.,species,,accepted,present,introduced,naturalised,"Mallow of Nice",,,Malvaceae
+28d3c8f5-cf57-452d-aa97-b9056270d862,"Malva parviflora",L.,species,,accepted,present,introduced,naturalised,"Small-flowered Mallow",,,Malvaceae
+19658de0-6891-44d7-8ea0-ce76407f3bdd,"Marrubium vulgare",L.,species,,accepted,present,introduced,naturalised,Horehound,,,Lamiaceae
+fee054b5-e9c6-4b6d-b543-ccc2d9afabbd,"Marsilea mutica",Mett.,species,,accepted,present,uncertain,,"Smooth Nardoo",,,Marsileaceae
+0eeb0488-dbd3-4a6d-b7ab-65eb02113433,"Matthiola incana","(L.) W.T.Aiton",species,,accepted,present,introduced,naturalised,"Stock | Gilliflower",,,Brassicaceae
+4e0b80ac-6858-4b7e-8949-1300dd2eb6b5,"Medicago arabica","(L.) Huds.",species,,accepted,present,introduced,naturalised,"Spotted Medic",,,Fabaceae
+00cfca83-345f-4af5-b273-fda2513882fd,"Medicago polymorpha",L.,species,,accepted,present,introduced,naturalised,"Burr Medic",,,Fabaceae
+a1d05c75-145e-472c-b93b-9bb6792feb0e,"Melaleuca armillaris","(Sol. ex Gaertn.) Sm.",species,,accepted,present,native,native,,,,Myrtaceae
+aee04d1d-f4a0-4714-9ece-08e5b6401e33,"Melaleuca armillaris subsp. armillaris",,subspecies,,accepted,present,native,native,"Giant Honey-myrtle",,1,Myrtaceae
+e91dc560-84d5-40c5-94bb-033f16503403,"Melaleuca ericifolia",Sm.,species,,accepted,present,native,native,"Swamp Paperbark",,,Myrtaceae
+915ac5c3-27a2-474d-b250-c76782e2e3bb,"Melaleuca lanceolata",Otto,species,,accepted,present,native,native,,,,Myrtaceae
+e99abe88-e63c-48a5-92c5-e536c0f789ec,"Melaleuca squarrosa","Donn. ex Sm.",species,,accepted,present,native,native,"Scented Paperbark",,,Myrtaceae
+8331e735-33a4-47c1-a809-d91f6bd3adc2,"Melia azedarach",L.,species,,accepted,present,introduced,naturalised,"White Cedar",,,Meliaceae
+8c04cf97-95bf-425f-8a8f-f23f874c01ef,"Melicytus dentatus","(R.Br. ex DC.) Molloy & Mabb.",species,,accepted,present,native,native,,,,Violaceae
+c07e6892-942b-41de-bb6e-515108ee79ba,"Mentha australis",R.Br.,species,,accepted,present,native,native,"River Mint",,,Lamiaceae
+d68a6c49-9295-426e-a4a7-a98fb560a2b1,"Mentha pulegium",L.,species,,accepted,present,introduced,naturalised,Pennyroyal,,,Lamiaceae
+ed63c743-9670-45b8-85d3-a641e25b16bd,"Mentha ×rotundifolia","(L.) Huds.",species,,accepted,present,introduced,naturalised,"Apple Mint",,,Lamiaceae
+09e75b09-e077-4643-a246-0090a5712667,"Microlaena stipoides","(Labill.) R.Br.",species,,accepted,present,native,native,,,,Poaceae
+cdb5fd29-90df-4c5b-a63e-0dab68542a3d,"Microlaena stipoides var. stipoides",,variety,,accepted,present,native,native,"Weeping grass",,,Poaceae
+0227cb8c-4a85-47ae-9b9e-24d4ba831aae,"Microseris scapigera","(G.Forst.) Sch.Bip.",species,,accepted,present,native,native,,,,Asteraceae
+ab97c075-edbb-49cf-8b70-82b4cae02c6b,"Microtis atrata",Lindl.,species,,accepted,present,native,native,"Yellow Onion-orchid | Swamp Onion-orchid",,,Orchidaceae
+77963ad6-3c64-4d2b-8ca6-ab37e5edb04f,"Microtis parviflora",R.Br.,species,,accepted,present,native,native,"Slender Onion-orchid",,,Orchidaceae
+04ea0c61-7fdf-41b0-bbff-f2d2e0e2a516,"Microtis unifolia","(G.Forst.) Rchb.f.",species,,accepted,present,native,native,"Common Onion-orchid",,,Orchidaceae
+eb67b69e-7cd1-47a2-8719-31dc0b22c9a6,"Mirabilis jalapa",L.,species,,accepted,present,introduced,adventive,"Marvel of Peru",,,Nyctaginaceae
+03251f00-1b0a-48a0-966d-e2e0d4e50513,"Modiola caroliniana","(L.) Don",species,,accepted,present,introduced,naturalised,"Red-flowered Mallow",,,Malvaceae
+adba071a-4549-44c1-bc62-6fd8eca2a039,"Moenchia erecta","(L.) Gaertn.et al",species,,accepted,present,introduced,naturalised,"Erect Chickweed | Upright Chickweed",,,Caryophyllaceae
+f3692446-74c6-4dec-b9e2-804c23d62e81,"Monotoca scoparia","(Sm.) R.Br.",species,,accepted,present,native,native,"Prickly Broom-heath",,,Ericaceae
+97c7bfd1-cb1d-49d6-8593-41bd8f830deb,"Montia australasica","(Hook.f.) Pax & K.Hoffm.",species,,accepted,present,native,native,,,,Montiaceae
+75569a04-b255-44e7-b2c9-8b0e6cac4051,"Muellerina celastroides","(Sieber ex Schult. & Schult.f.) Tiegh.",species,,accepted,present,native,native,"Coast Mistletoe",,,Loranthaceae
+a255ba28-ab87-4857-91a2-5b3be6de4464,"Muellerina eucalyptoides","(DC.) Barlow",species,,accepted,present,native,native,"Creeping Mistletoe",,,Loranthaceae
+1eca2f52-7fbe-46d6-be97-60feb3c44a82,"Myosotis sylvatica",Hoffm.,species,,accepted,present,introduced,naturalised,"Wood Forget-me-not",,,Boraginaceae
+80e1e019-aa32-4ba7-a6f3-a0886a7044cd,"Myriophyllum crispatum",Orchard,species,,accepted,present,native,native,Water-milfoil,,,Haloragaceae
+f1526ecf-dcfe-41ac-8cc7-edcaa53b2558,"Myriophyllum integrifolium","(Hook.f.) Hook.f.",species,,accepted,present,native,native,"Tiny Water-milfoil",,,Haloragaceae
+ec20485d-49a0-4372-8189-589dadac1ea1,"Myrsine howittiana","(F.Muell. ex Mez) Jackes",species,,accepted,present,native,native,,,,Primulaceae
+5a69fe1d-8641-4d6c-b526-f43d8b09fd33,"Nassella trichotoma","(Nees) Hack",species,,accepted,present,introduced,naturalised,"Serrated Tussock",,,Poaceae
+cc8f5838-8fd9-4454-86da-4bd45da737d1,"Nasturtium officinale",R.Br.,species,,accepted,present,introduced,naturalised,,,,Brassicaceae
+de0d78a7-6fa8-4c92-995e-4cd4d5467876,"Navarretia squarrosa","(Eschsch.) Hook. & Arn.",species,,accepted,present,introduced,naturalised,"Californian Stinkweed",,,Polemoniaceae
+f9579821-44cc-4c1e-ad09-56586636536e,"Olearia astroloba","Lander & N.G.Walsh",species,,accepted,present,native,native,"Marble Daisy-bush",,,Asteraceae
+8079f417-9415-46fc-a43f-edfc9abc3a7b,"Olearia axillaris","(DC.) Benth.",species,,accepted,present,native,native,"Coast Daisy-bush",,,Asteraceae
+2f1dd403-3435-4c53-a8fc-0e2fa1f85cc5,"Olearia glandulosa","(Labill.) Benth.",species,,accepted,present,native,native,"Swamp Daisy-bush",,,Asteraceae
+55255cd3-6f87-4fcf-871e-a8c6d9e9e424,"Olearia iodochroa","(F.Muell.) F.Muell. ex Benth.",species,,accepted,present,native,native,,,,Asteraceae
+14be27e2-f2ea-4cc9-8b55-4354b7281109,"Olearia ramulosa","(Labill.) Benth.",species,,accepted,present,native,native,"Twiggy Daisy-bush",,,Asteraceae
+1d476ba4-2df1-43d6-8138-03e09295b3d0,"Oloptum miliaceum","(L.) M.Roser & H.R.Hamasha",species,,accepted,present,introduced,naturalised,"Rice Millet",,,Poaceae
+719a7d2a-6b44-4aa7-84f6-1a0fa6c61a0a,"Ononis repens",L.,species,,accepted,present,introduced,adventive,Restharrow,,,Fabaceae
+232ba7f1-03ce-46a0-823d-5789870e7935,"Opercularia ovata",Hook.f.,species,,accepted,present,native,native,"Broad-leaf Stinkweed",,,Rubiaceae
+30e2fb71-1adc-46ce-b188-5378d9bc515d,"Opercularia varia",Hook.f.,species,,accepted,present,native,native,"Variable Stinkweed",,,Rubiaceae
+7f2be8b2-3928-4991-a018-e7305169de75,"Ornduffia reniformis","(R.Br.) Tippery & Les",species,,accepted,present,native,native,,,,Menyanthaceae
+6464c337-dcff-40c7-ae8a-aaf6ef259587,"Orthoceras strictum",R.Br.,species,,accepted,present,native,native,"Horned Orchid",,,Orchidaceae
+03e89a07-eece-441a-b2c5-ccdb949c862a,"Oxalis corniculata",L.,species,,accepted,present,introduced,,"Yellow Wood-sorrel | Creeping Wood-sorrel",,,Oxalidaceae
+d364247f-032c-41e0-b809-6ef7ffabce04,"Oxalis exilis",A.Cunn.,species,,accepted,present,native,native,"Shade Wood-sorrel",,,Oxalidaceae
+a7098483-e890-49d1-9e7d-3a8a8425cf76,"Oxalis incarnata",L.,species,,accepted,present,introduced,naturalised,"Pale Wood-sorrel",,,Oxalidaceae
+08d48e28-8213-46c5-9716-090b0d64ae60,"Oxalis latifolia",Kunth,species,,accepted,present,introduced,naturalised,"Fish-tail Wood-sorrel",,,Oxalidaceae
+7f6da3bf-4027-41ad-abaf-11221224bc5d,"Oxalis perennans",Haw.,species,,accepted,present,native,native,"Grassland Wood-sorrel",,,Oxalidaceae
+8f712b1a-9175-4ec0-8ff7-b81d69bcc522,"Oxalis pes-caprae",L.,species,,accepted,present,introduced,naturalised,Soursob,,,Oxalidaceae
+967209ba-864c-4f1b-a3f8-7ad51fb32c66,"Oxalis purpurea",L.,species,,accepted,present,introduced,naturalised,"Large-flower Wood-sorrel",,,Oxalidaceae
+39cdfd34-fac0-44a7-b36c-40424bcbed73,"Ozothamnus ferrugineus","(Labill.) Sweet",species,,accepted,present,native,native,"Tree Everlasting",,,Asteraceae
+fcc31af0-2150-44c9-ac51-45dd4f0d302f,"Ozothamnus obcordatus",DC.,species,,accepted,present,native,native,"Grey Everlasting",,,Asteraceae
+d862cc94-9701-4986-9c8a-a6f1780230df,"Panicum effusum",R.Br.,species,,accepted,present,native,native,"Hairy Panic",,,Poaceae
+66bb8e0c-0d3e-42e3-97df-7b1ff5af2941,"Panicum miliaceum",L.,species,,accepted,present,introduced,adventive,"Common Millet",,,Poaceae
+8f26effe-b489-4a81-9814-7fc8d4859d65,"Paraserianthes lophantha","(Willd.) I.C.Nielsen",species,,accepted,present,introduced,,,,,Fabaceae
+81f34c23-0ba6-4c4e-9c61-1e56bd4fe16a,"Paraserianthes lophantha subsp. lophantha",,subspecies,,accepted,present,introduced,naturalised,"Cape Wattle | Crested Wattle",,,Fabaceae
+a653e3a1-861f-4066-b6ba-821bd461fe5f,"Paronychia brasiliana",DC.,species,,accepted,present,introduced,naturalised,"Whitlow Wort",,,Caryophyllaceae
+03809a3d-80fd-47d7-a854-364ac5d995b7,"Paspalum dilatatum",Poir.,species,,accepted,present,introduced,naturalised,Paspalum,,,Poaceae
+b329d925-fb55-458e-b408-7baa0f6539db,"Paspalum distichum",L.,species,,accepted,present,introduced,naturalised,"Water Couch",,,Poaceae
+12ad7929-47ba-4f3e-9c21-46a254f6e699,"Paspalum quadrifarium",Lam.,species,,accepted,present,introduced,naturalised,"Golden-top Grass",,,Poaceae
+58cd11a9-d3c8-43a6-871e-293192edcbae,"Patersonia occidentalis",R.Br.,species,,accepted,present,native,native,"Long Purple-flag",,,Iridaceae
+76c3f814-3b1f-45f7-becb-4438c194ae4e,"Patersonia occidentalis var. occidentalis",,variety,,accepted,present,native,native,,,,Iridaceae
+dce295c0-5608-4860-8764-147347c9ef88,"Pauridia glabella","(R.Br.) Snijman & Kocyan",species,,accepted,present,native,native,,,,Hypoxidaceae
+8a2ef24f-d337-434b-b1be-8be8e7dd1d43,"Pauridia glabella var. glabella",,variety,,accepted,present,native,native,,,,Hypoxidaceae
+bda6d15f-3d26-471c-880d-a96150611e13,"Pauridia vaginata","(Schltdl.) Snijman & Kocyan",species,,accepted,present,native,native,,,,Hypoxidaceae
+e2badaef-0f67-4899-a0d3-4d5a6d0a857a,"Pauridia vaginata var. vaginata",,variety,,accepted,present,native,native,,,,Hypoxidaceae
+2a89a3f9-d669-4638-82d3-2a575e7ca722,"Pelargonium australe",Willd.,species,,accepted,present,native,native,"Austral Stork's-bill",,,Geraniaceae
+870508cb-0d21-4744-aabc-a1b62ea521a1,"Pelargonium inodorum",Willd.,species,,accepted,present,native,native,Kopata,,,Geraniaceae
+ecc63ae7-81c9-457c-bcd8-b7124a6cbffc,"Pelargonium ×domesticum",L.H.Bailey,species,,accepted,present,introduced,adventive,"Garden Geranium",,,Geraniaceae
+2a9bc4f8-ae57-40d7-9304-71ca53fc263c,"Pentapogon quadrifidus","(Labill.) Baill",species,,accepted,present,native,native,"Five-awned Spear-grass",,,Poaceae
+0082cbea-bfaf-4333-8135-7b64a1305904,"Pentapogon quadrifidus var. quadrifidus",,variety,,accepted,present,native,native,,,,Poaceae
+3df54b79-34e0-4bb4-9154-df6c8d53fde4,"Persicaria decipiens","(R.Br.) K.L.Wilson",species,,accepted,present,native,native,"Slender Knotweed",,,Polygonaceae
+eabe7ad1-687a-4568-854e-b4591ac9ee9b,"Persicaria hydropiper","(L.) Spach",species,,accepted,present,uncertain,,"Water Pepper",,,Polygonaceae
+bead6955-b123-4bd9-af29-f116802b962a,"Persicaria maculosa",Gray,species,,accepted,present,introduced,naturalised,Redshank,,,Polygonaceae
+e241b2d5-2ad9-425f-9079-a778b9cb6faf,"Persicaria odorata","(Lour.) Sojak",species,,accepted,present,introduced,naturalised,"Vietnamese Mint",,,Polygonaceae
+a444652c-2fcb-4aab-96fe-521955244b4d,"Persicaria praetermissa","(Hook.f.) H.Hara",species,,accepted,present,native,native,"Spotted Knotweed",,,Polygonaceae
+b85f531c-d2c0-4334-852c-fa2bd461bc23,"Persoonia juniperina",Labill.,species,,accepted,present,native,native,"Prickly Geebung",,,Proteaceae
+ba32e468-467e-4eb6-9fca-4b98d97c9476,"Phalaris aquatica",L.,species,,accepted,present,introduced,naturalised,"Toowoomba Canary-grass",,,Poaceae
+b2f88216-d903-4e8c-ae25-b1ecc00fa4cf,"Phalaris arundinacea",L.,species,,accepted,present,introduced,,"Reed Canary-grass",,,Poaceae
+0dd52886-3df5-46cb-b96b-68b6efa1668a,"Phalaris arundinacea var. arundinacea",,variety,,accepted,present,introduced,naturalised,"Reed Canary-grass",,,Poaceae
+079021a8-f213-48ed-ab3d-666f48c6fb62,"Phalaris canariensis",L.,species,,accepted,present,introduced,naturalised,,,,Poaceae
+a3860b68-24a3-424a-8906-1f43be6d3497,"Phoenix canariensis",H.Wildpret,species,,accepted,present,introduced,naturalised,"Canary Island Date-palm",,,Arecaceae
+53fba474-8d64-4488-a8d3-28b1ed218314,"Phragmites australis","(Cav.) Trin. ex Steud.",species,,accepted,present,native,native,"Common Reed | Djarg",,,Poaceae
+38adb039-76cb-49f8-908e-f4e735ac0bbe,"Phyllanthus hirtellus",Müll.Arg.,species,,accepted,present,native,native,"Thyme Spurge",,,Phyllanthaceae
+fd5f90aa-6a59-442c-b5c2-04d39143c266,"Phytolacca octandra",L.,species,,accepted,present,introduced,naturalised,"Red-ink Weed",,,Phytolaccaceae
+74a66232-8dc8-4fbf-a5e6-2f1de8350801,"Pimelea humilis",R.Br.,species,,accepted,present,native,native,"Common Rice-flower",,,Thymelaeaceae
+f3baff79-d9a3-475a-97d4-2dd7e05e4cfe,"Pimelea octophylla",R.Br.,species,,accepted,present,native,native,"Woolly Rice-flower",,,Thymelaeaceae
+895c5782-8276-41f1-aa4c-578ff80de45a,"Pimelea phylicoides",Meisn.,species,,accepted,present,native,native,"Heath Rice-flower",,,Thymelaeaceae
+e8152c79-5ab0-4e24-8f65-c210a70532bb,"Pinus radiata",D.Don,species,,accepted,present,introduced,naturalised,"Radiata Pine | Monterey Pine | Insignis Pine",,,Pinaceae
+3f3f9dc4-294e-415c-b628-3f643323e78a,"Pittosporum undulatum",Vent.,species,,accepted,present,native,native,"Sweet Pittosporum",,1,Pittosporaceae
+4ae3dc67-ea4a-412b-bf58-a506292e41f5,"Plantago coronopus",L.,species,,accepted,present,introduced,,"Buck's-horn Plantain",,,Plantaginaceae
+b1559c26-06e6-4e13-8145-0bb6fe515dae,"Plantago coronopus subsp. coronopus",,subspecies,,accepted,present,introduced,naturalised,,,,Plantaginaceae
+f24aac80-95c1-4012-b3c7-b774d0d8d30c,"Plantago gaudichaudii",Barnéoud,species,,accepted,present,native,native,"Narrow Plantain",,,Plantaginaceae
+99cf228a-b007-4cc8-9751-16a9b81b7902,"Plantago lanceolata",L.,species,,accepted,present,introduced,naturalised,Ribwort,,,Plantaginaceae
+68b1fb30-e4de-4d17-9b7e-ed332716aabf,"Plantago major",L.,species,,accepted,present,introduced,naturalised,"Greater Plantain",,,Plantaginaceae
+8bc0c93e-561e-4b2a-b601-8ede98d2049e,"Plantago varia",R.Br.,species,,accepted,present,native,native,"Variable Plantain",,,Plantaginaceae
+caf9d416-8ab0-4776-b75e-05367ff7e505,"Platylobium obtusangulum",Hook.,species,,accepted,present,native,native,"Common Flat-pea",,,Fabaceae
+e21e5c87-de29-4561-83cb-a12a7c2800a5,"Platysace heterophylla","(Benth.) Norman",species,,accepted,present,native,native,,,,Apiaceae
+01d8dd72-f44a-454a-8669-32f58fe39c27,"Platysace heterophylla var. heterophylla",,variety,,accepted,present,native,native,"Slender Platysace",,,Apiaceae
+89e05640-952e-48fa-95c1-836e530f80ea,"Platysace lanceolata","(Labill.) C.Norman",species,,accepted,present,native,native,"Shrubby Platysace",,,Apiaceae
+4ce0ee55-e636-4c08-af57-4d241fa1e1db,"Pleuridium nervosum","(Hook.) Mitt.",species,,accepted,present,native,native,,,,Ditrichaceae
+7852f14d-7e44-4b1a-b8aa-065ffb7a76bf,"Poa annua",L.,species,,accepted,present,introduced,naturalised,"Annual Meadow-grass | Goose-grass | Winter-grass",,,Poaceae
+ecbd8f67-5aa4-4f4d-9398-c661b032c3d7,"Poa bulbosa",L.,species,,accepted,present,introduced,,,,,Poaceae
+5ca301b1-96a6-4aa6-8613-da878ba1ae42,"Poa bulbosa var. bulbosa",,variety,,accepted,present,introduced,naturalised,"Bulbous Meadow-grass",,,Poaceae
+b5dd411d-ca1e-4886-a989-7745ffd40afb,"Poa labillardierei",Steud.,species,,accepted,present,native,native,,,,Poaceae
+cf4809be-cafe-48f1-9599-bc29cabf1554,"Poa labillardierei var. labillardierei",,variety,,accepted,present,native,native,,,,Poaceae
+c006642a-7b17-4789-a7cf-9e8024bf99e6,"Poa morrisii",Vickery,species,,accepted,present,native,native,,,,Poaceae
+2d8ead40-0bef-4f34-bf83-f3c973e170fc,"Poa pratensis",L.,species,,accepted,present,introduced,naturalised,"Kentucky Blue-grass | Smooth Meadow-grass",,,Poaceae
+7d70972f-8c71-4738-83d5-77de7bbb6915,"Poa rodwayi",Vickery,species,,accepted,present,native,native,,,,Poaceae
+9343454b-4d9a-417b-8551-c815ce0114ff,"Poa sieberiana",Spreng.,species,,accepted,present,native,native,,,,Poaceae
+7135aacd-1772-4db6-94d6-87a5916d150e,"Poa tenera","F.Muell. ex Hook.f.",species,,accepted,present,native,native,"Slender Tussock-grass",,,Poaceae
+9bcf0640-3312-4021-b8fd-4b2159ecbc66,"Poa trivialis",L.,species,,accepted,present,introduced,naturalised,"Rough Meadow-grass",,,Poaceae
+1129a852-5c51-4c6a-84a5-4ce195f356ec,"Podolepis decipiens",Jeanes,species,,accepted,present,native,native,,,,Asteraceae
+4486aa3a-78d5-4801-8be5-5aa5dbc20106,"Podolepis jaceoides","(Sims) Voss",species,,accepted,present,native,native,"Showy Podolepis",,,Asteraceae
+b6cbef80-4527-49d6-b5d9-4f316cb14bda,"Polycarpon tetraphyllum","(L.) L.",species,,accepted,present,introduced,naturalised,"Four-leaved Allseed",,,Caryophyllaceae
+e9ea3d6b-3d71-4d68-88f4-4b36ecd995de,"Polygala virgata",Thunb.,species,,accepted,present,introduced,naturalised,"Broom Milkwort",,,Polygalaceae
+e9dbbe5e-9597-402f-a6d5-a5bff7c13d55,"Polygonum aviculare",L.,species,,accepted,present,introduced,naturalised,"Hogweed | Wireweed",,,Polygonaceae
+e9903705-eb8e-419a-ae94-545baad27e92,"Polypogon monspeliensis","(L.) Desf.",species,,accepted,present,introduced,naturalised,,,,Poaceae
+346e388f-0720-4155-9daf-f303e37700cb,"Polyscias sambucifolia","(Sieber ex DC.) Harms",species,,accepted,present,native,native,,,,Araliaceae
+030abd27-00bd-40d8-8d7e-6857a1f773ba,"Polytrichum juniperinum","Willd. ex Hedw.",species,,accepted,present,native,native,,,,Polytrichaceae
+60baf536-459d-461b-b074-571467dba028,"Pomaderris racemosa",Hook.,species,,accepted,present,native,native,,,,Rhamnaceae
+b0635b4e-1b1b-465e-86b9-f7326bf94e34,"Populus alba",L.,species,,accepted,present,introduced,naturalised,"White Poplar",,,Salicaceae
+1c20c070-4ac6-4e25-a236-b9563c4bb9ea,"Poranthera microphylla",Brongn.,species,,accepted,present,native,native,"Small Poranthera",,,Phyllanthaceae
+cd5fc762-22ae-45a5-ab93-02f7cef0a5c0,"Portulaca oleracea",L.,species,,accepted,present,uncertain,,"Pigweed | Common Purslane",,,Portulacaceae
+9c14b1c1-4721-49e4-8441-8964fc2a14ad,"Potamogeton crispus",L.,species,,accepted,present,native,native,"Curly Pondweed",,,Potamogetonaceae
+ce47bb91-1823-45f1-9847-a98cdf6b80fc,"Potentilla indica","(Jacks.) Th.Wolf",species,,accepted,present,introduced,naturalised,"Indian Strawberry",,,Rosaceae
+14facc03-bf2e-4a1c-ba73-739d50439e05,"Prasophyllum elatum",R.Br.,species,,accepted,present,native,native,"Tall Leek-orchid",,,Orchidaceae
+9cf51b39-f012-43be-a28c-98ce7e5e0fd1,"Prasophyllum frenchii",F.Muell,species,,accepted,present,native,native,"Swamp Leek-orchid",,,Orchidaceae
+ade0ed07-10a5-4ab0-a8ab-800b49488888,"Prasophyllum odoratum",R.S.Rogers,species,,accepted,present,native,native,"Fragrant Leek-orchid | Pretty Leek-orchid",,,Orchidaceae
+ea703b78-5fba-4748-aee8-7654fbfd36c7,"Prostanthera lasianthos",Labill.,species,,accepted,present,native,native,"Victorian Christmas Bush",,,Lamiaceae
+2545174e-4b86-4506-a7f3-f32e28b14cf9,"Prunella vulgaris",L.,species,,accepted,present,introduced,naturalised,Self-heal,,,Lamiaceae
+b5b27e90-c220-4b46-af6e-26ae29e199d6,"Prunus cerasifera",Ehrh.,species,,accepted,present,introduced,naturalised,Cherry-plum,,,Rosaceae
+9f6fd70f-6c8a-4a82-afb1-9a44293d3fe4,"Psoralea pinnata",L.,species,,accepted,present,introduced,naturalised,"Blue Psoralea",,,Fabaceae
+0ec90dc4-fac5-43e1-875a-3fe53f3c7187,"Pteridium esculentum","(G.Forst.) Cockayne",species,,accepted,present,native,native,"Bracken | Austral Bracken",,,Dennstaedtiaceae
+09288612-5310-4fa0-95f2-1b3a384d22f5,"Pteridium esculentum subsp. esculentum",,subspecies,,accepted,present,native,native,,,,Dennstaedtiaceae
+1c07f938-afed-44ac-bd63-c83f8611be94,"Pterostylis melagramma",D.L.Jones,species,,accepted,present,native,native,,,,Orchidaceae
+9ee3e225-0053-4385-b1ab-cdccb79ccefe,"Pterostylis nutans",R.Br.,species,,accepted,present,native,native,"Nodding Greenhood",,,Orchidaceae
+67485718-ffdd-400a-a376-305c1bc93a60,"Pterostylis parviflora",R.Br.,species,,accepted,present,native,native,"Tiny Greenhood",,,Orchidaceae
+4da7b12e-6e6d-457d-8397-39a5dfbd4079,"Pterostylis pedoglossa",W.Fitzg.,species,,accepted,present,native,native,"Prawn Greenhood",,,Orchidaceae
+47c4258a-ab19-49ba-a152-878a64eaed53,"Pterostylis striata",Fitzg.,species,,accepted,present,native,native,,,,Orchidaceae
+acdab3d1-1a48-4f1e-b93e-2e503d4f0876,"Pterostylis tasmanica",D.L.Jones,species,,accepted,present,native,native,,,,Orchidaceae
+d5cc08b5-bd0d-4894-a1b8-4339f8c25b90,"Pultenaea dentata",Labill.,species,,accepted,present,native,native,"Clustered Bush-pea",,,Fabaceae
+c4921906-2034-44a0-931d-2c6148069e58,"Pultenaea sericea","(Benth.) Corrick",species,,accepted,present,native,native,"Chaffy Bush-pea",,,Fabaceae
+bc7ee8d5-eb6b-4fac-84a3-a64ce76e495a,"Pultenaea stricta",Sims,species,,accepted,present,native,native,"Rigid Bush-pea",,,Fabaceae
+63bb779d-5077-437d-a9cf-4a34e81363e8,"Pyrorchis nigricans","(R.Br.) D.L.Jones & M.A.Clem.",species,,accepted,present,native,native,"Red Beaks",,,Orchidaceae
+b7415528-aa5c-435d-a13c-a2b33d726385,"Quercus robur",L.,species,,accepted,present,introduced,naturalised,"English Oak",,,Fagaceae
+1a948106-756c-42dc-9c6e-877e861bfee8,"Racopilum cuspidigerum","(Schwägr.) Ångstr.",species,,accepted,present,native,native,,,,Racopilaceae
+4fe08199-060c-41e7-9f68-7eb82e17586e,"Racopilum cuspidigerum var. convolutaceum","(Müll.Hal.) Zanten & Dijkstra",variety,,accepted,present,native,native,,,,Racopilaceae
+55bbb6a5-e28c-4701-99b8-933006cd83a6,"Ranunculus lappaceus",Sm.,species,,accepted,present,native,native,"Australian Buttercup",,,Ranunculaceae
+a8ac0b11-1a5b-490a-ba01-aeef52832695,"Ranunculus muricatus",L.,species,,accepted,present,introduced,naturalised,"Sharp Buttercup",,,Ranunculaceae
+637a5bce-467f-410d-b032-b9f61492ecdf,"Ranunculus repens",L.,species,,accepted,present,introduced,naturalised,"Creeping Buttercup",,,Ranunculaceae
+f0d61b54-5007-430e-98ee-b8878b3eb7a7,"Ranunculus sceleratus",L.,species,,accepted,present,introduced,,,,,Ranunculaceae
+7650e36d-f1fc-4a7c-859b-466c5906d10a,"Ranunculus sceleratus subsp. sceleratus",,subspecies,,accepted,present,introduced,naturalised,"Celery Buttercup",,,Ranunculaceae
+bd82b7b0-9c61-4ed2-8c24-bd8814d28ffb,"Raphanus raphanistrum",L.,species,,accepted,present,introduced,naturalised,"Wild Radish",,,Brassicaceae
+ea7b25df-c9d4-4d96-ba91-436d227ec570,"Raphanus sativus",L.,species,,accepted,present,introduced,naturalised,Radish,,,Brassicaceae
+d97b1f06-a72a-4309-ae70-2b7625f89a80,"Reseda lutea",L.,species,,accepted,present,introduced,naturalised,"Cut-leaf Mignonette",,,Resedaceae
+2d4efa68-1246-495c-9fa0-e601628d536b,"Rhagodia candolleana",Moq.,species,,accepted,present,native,native,,,,Chenopodiaceae
+e6e8fd1f-156d-4660-92e8-632a0852b233,"Rhaphidorrhynchium amoenum","(Hedw.) M.Fleisch.",species,,accepted,present,native,native,,,,Sematophyllaceae
+fc237352-3ac3-44c7-8aa5-a9bc801c4088,"Ricinocarpos pinifolius",Desf.,species,,accepted,present,native,native,"Wedding Bush",,,Euphorbiaceae
+fa29ec50-8e02-494f-9257-49b483133b31,"Romulea rosea","(L.) Eckl.",species,,accepted,present,introduced,,,,,Iridaceae
+55958dd1-d85a-4e63-aaf5-f3ea0448daa4,"Romulea rosea var. australis","(Ewart) M.P.de Vos",variety,,accepted,present,introduced,naturalised,Onion-grass,,,Iridaceae
+725428b1-922b-4da3-a591-69b91fcb3bbd,"Rorippa palustris","(L.) Besser",species,,accepted,present,introduced,naturalised,"Marsh Yellow-cress | Yellow Marsh-cress",,,Brassicaceae
+8c22e000-bb38-4376-b29b-d58f96abbe0a,"Rosa rubiginosa",L.,species,,accepted,present,introduced,naturalised,"Sweet Briar",,,Rosaceae
+390a7b22-b707-45b2-8ac5-6750bfaf4b12,"Rubus anglocandicans",A.Newton,species,,accepted,present,introduced,naturalised,,,,Rosaceae
+45744912-2329-4ddc-ada5-31de8148f418,"Rubus leucostachys","Schleich. ex Sm.",species,,accepted,present,introduced,naturalised,,,,Rosaceae
+bc19413d-6b07-4c94-84ee-4b5fef7e2f98,"Rubus parvifolius",L.,species,,accepted,present,native,native,"Small-leaf Bramble",,,Rosaceae
+6d3305fd-ab87-4cf1-b770-336a98e34fef,"Rumex brownii",Campd.,species,,accepted,present,native,native,"Slender Dock",,,Polygonaceae
+60b42d5e-535b-4b5a-897b-ab9c573a8953,"Rumex conglomeratus",Murray,species,,accepted,present,introduced,naturalised,"Clustered Dock",,,Polygonaceae
+9969bc3c-76c9-4aa9-aa0e-301b767d1e3c,"Rumex crispus",L.,species,,accepted,present,introduced,naturalised,"Curled Dock",,,Polygonaceae
+66a31e7b-5aef-4982-bb22-16d63c0beaf0,"Rumex obtusifolius",L.,species,,accepted,present,introduced,,,,,Polygonaceae
+c6cf41ea-b3f7-4e83-ba63-3e9f6bd85fd4,"Rumex obtusifolius subsp. obtusifolius",,subspecies,,accepted,present,introduced,naturalised,"Broadleaf Dock",,,Polygonaceae
+3a935e72-5dba-4702-b8b5-ef187c8db10f,"Rumex pulcher",L.,species,,accepted,present,introduced,,,,,Polygonaceae
+fe98898c-66e8-4b35-8ff7-3607b03abcdd,"Rumex pulcher subsp. pulcher",,subspecies,,accepted,present,introduced,naturalised,"Fiddle Dock",,,Polygonaceae
+7a1202c4-c34d-4b98-b6ba-535473c72ddd,"Rytidosperma bipartitum","(Kunth.) A.M.Humphreys & H.P.Linder",species,,accepted,present,native,native,,,,Poaceae
+238ec2f0-a3b8-462e-b33b-0a55a30b8d64,"Rytidosperma caespitosum","(Gaudich.) Connor & Edgar",species,,accepted,present,native,native,"Common Wallaby-grass",,,Poaceae
+ad34ce19-5006-4796-b013-eac5ef58b230,"Rytidosperma erianthum","(Lindl.) Connor & Edgar",species,,accepted,present,native,native,,,,Poaceae
+eecba53c-a0c5-4696-8cc9-4d52390acc7e,"Rytidosperma fulvum","(Vickery) A.M.Humphreys & H.P.Linder",species,,accepted,present,native,native,,,,Poaceae
+e181ab02-4912-4659-b246-c0d972d5e265,"Rytidosperma geniculatum","(J.M.Black) Connor & Edgar",species,,accepted,present,native,native,"Kneed Wallaby-grass",,,Poaceae
+dc605b4c-d75e-4584-8fe5-d42cf4c253e8,"Rytidosperma laeve","(Vickery) Connor & Edgar",species,,accepted,present,native,native,,,,Poaceae
+3f0f9744-26a9-4c27-a01b-243d17b00652,"Rytidosperma pallidum","(R.Br.) A.M.Humphreys & H.P.Linder",species,,accepted,present,native,native,"Silvertop Wallaby-grass",,,Poaceae
+3c93313f-6b55-4495-8285-884a2091de60,"Rytidosperma penicillatum","(Labill.) Connor & Edgar",species,,accepted,present,native,native,"Slender Wallaby-grass",,,Poaceae
+af474e50-22fb-4ab3-bd5e-c5bb5682c489,"Rytidosperma pilosum","(R.Br.) Connor & Edgar",species,,accepted,present,native,native,"Velvet Wallaby-grass",,,Poaceae
+7fd078d8-d212-49c3-a044-a0b561f2de29,"Rytidosperma racemosum","(R.Br.) Connor & Edgar",species,,accepted,present,native,native,,,,Poaceae
+3e71499a-ea2c-4db7-8469-1af79a2c2a28,"Rytidosperma racemosum var. racemosum",,variety,,accepted,present,native,native,,,,Poaceae
+e108e8fb-37f6-4440-8606-cf17cd1a4b96,"Rytidosperma semiannulare","(Labill.) Connor & Edgar",species,,accepted,present,native,native,,,,Poaceae
+e2616d14-0aa1-4d6b-8199-a65169039d10,"Rytidosperma setaceum","(R.Br.) Connor & Edgar",species,,accepted,present,native,native,"Bristly Wallaby-grass",,,Poaceae
+eb100cdd-48cf-40d6-a09f-a9f055850e7e,"Rytidosperma tenuius","(Steud.) A.Hansen & Sunding",species,,accepted,present,native,native,,,,Poaceae
+1142574f-4f29-4f7b-9021-cbd4d1ed6009,"Salix babylonica",L.,species,,accepted,present,introduced,naturalised,"Weeping Willow",,,Salicaceae
+3d93bba9-1049-42f2-9d53-cfe9e819112e,"Salix cinerea",L.,species,,accepted,present,introduced,,,,,Salicaceae
+ffe4f248-efe8-4641-afe7-02b34f4fa018,"Salix ×pendulina",Wender,species,,accepted,present,introduced,naturalised,"Weeping Willow",,,Salicaceae
+4b03fa74-a762-4655-91b3-de3a3a484427,"Salpichroa origanifolia","(Lam.) Thell.",species,,accepted,present,introduced,naturalised,"Pampas Lily-of-the-Valley",,,Solanaceae
+299f9111-ba21-4937-aae7-e7ee8bc5651c,"Salvinia molesta",D.S.Mitchell,species,,accepted,present,introduced,adventive,Salvinia,,,Salviniaceae
+6fb8db7b-ea25-4129-b09a-9aafa7621188,"Schenkia australis","(R.Br.) G.Mans.",species,,accepted,present,native,native,,,,Gentianaceae
+aee009ae-48c5-470b-bc11-1cb0982506a0,"Schizaea bifida",Willd.,species,,accepted,present,native,native,"Forked Comb-fern",,,Schizaeaceae
+14e92c6c-66c2-4386-aeb6-b79a3fbd3659,"Schizaea fistulosa",Labill.,species,,accepted,present,native,native,"Narrow Comb-fern",,,Schizaeaceae
+8f3cba6f-ced9-45a5-b296-b7bd312ba589,"Schoenoplectus tabernaemontani","(C.C.Gmel.) Palla",species,,accepted,present,native,native,,,,Cyperaceae
+a2f40db4-36e8-4da1-b2f0-0a4560956188,"Schoenus apogon","Roem. & Schult.",species,,accepted,present,native,native,"Common Bog-rush",,,Cyperaceae
+807946db-2715-46b7-81eb-aa777ac6c563,"Schoenus brevifolius",R.Br.,species,,accepted,present,native,native,,,,Cyperaceae
+7703f7b6-c0cc-46b3-9cf2-f8c647ea4dc1,"Schoenus lepidosperma","(F.Muell.) K.L.Wilson",species,,accepted,present,native,native,,,,Cyperaceae
+b0e4662f-ea5b-419c-9ab2-2c9c953ee54e,"Schoenus lepidosperma subsp. lepidosperma",,subspecies,,accepted,present,native,native,,,,Cyperaceae
+dff09ea0-7359-431b-a61c-fce169cd77d8,"Scorpiurium cucullatum","(Mitt.) Hedenäs",species,,accepted,present,native,native,,,,Brachytheciaceae
+cf93f22c-885d-464f-9901-1a1af84783a4,"Sebaea ovata","(Labill.) R.Br.",species,,accepted,present,native,native,"Yellow Sebaea",,,Gentianaceae
+131a1708-a93d-44da-bfe4-f640bfbd4eb2,"Selaginella uliginosa","(Labill.) Spring",species,,accepted,present,native,native,"Swamp Selaginella",,,Selaginellaceae
+fe892c9c-ad23-4571-aa90-48b83982b2d3,"Senecio glomeratus","Desf. ex Poir.",species,,accepted,present,native,native,,,,Asteraceae
+b5226da4-fe27-4570-90a9-5b9156fe755a,"Senecio glomeratus subsp. glomeratus",,subspecies,,accepted,present,native,native,,,,Asteraceae
+39e43de2-f644-4e2c-bf51-30d21d88decb,"Senecio hispidulus",A.Rich.,species,,accepted,present,native,native,"Rough Fireweed | Hill Fireweed | Hispid Fireweed",,,Asteraceae
+815c4c96-ff9c-4015-9e0e-bbe427615e09,"Senecio jacobaea",L.,species,,accepted,present,introduced,naturalised,Ragwort,,,Asteraceae
+8a8710a0-70cb-44c1-ab96-473296d44fbd,"Senecio minimus",Poir.,species,,accepted,present,native,native,,,,Asteraceae
+690e0b3b-daad-4ef8-b3d5-f2f34c8b704b,"Senecio pinnatifolius",A.Rich.,species,,accepted,present,native,native,"Variable Groundsel",,,Asteraceae
+4bc725ec-a4bd-4193-a790-eead29559aee,"Senecio pinnatifolius var. lanceolatus","(Benth.) I.Thomps.",variety,,accepted,present,native,native,,,,Asteraceae
+011e5663-6439-4ea3-8d08-d73e2e5bc9ca,"Senecio quadridentatus",Labill.,species,,accepted,present,native,native,"Cottony Fireweed",,,Asteraceae
+639a8967-0cd4-44ab-8a20-98563a83beb7,"Senecio vulgaris",L.,species,,accepted,present,introduced,naturalised,"Common Groundsel",,,Asteraceae
+d821759f-a0aa-43a5-9620-c5e381709129,"Setaria italica","(L.) P.Beauv.",species,,accepted,present,introduced,naturalised,"Italian Millet",,,Poaceae
+b6b7365b-4b7f-4dbb-9064-9198415c2321,"Setaria parviflora","(Poir.) Kerguelen",species,,accepted,present,introduced,naturalised,"Slender Pigeon-grass",,,Poaceae
+d5a5cbd5-6b62-4f85-afe7-262e8fb1cbbd,"Setaria pumila","(Poir.) Roem. & Schult.",species,,accepted,present,introduced,naturalised,"Pale pigeon-grass",,,Poaceae
+b0cab6bb-b1d5-4e4a-b9dd-1159e86e6555,"Silene gallica",L.,species,,accepted,present,introduced,,,,,Caryophyllaceae
+533a2176-54fc-4b69-b91c-9f16d5a18012,"Silene gallica var. quinquevulnera","(L.) Koch",variety,,accepted,present,introduced,naturalised,"Spotted Catchfly | Five-wounded Catchfly",,,Caryophyllaceae
+9f341971-4a4b-4eac-8b08-cfe975e219c9,"Silene longicaulis","Pourr. ex Lag.",species,,accepted,present,introduced,naturalised,"Portuguese Catchfly",,,Caryophyllaceae
+f175f9a3-67ad-4be4-8b2e-ccffe872feb1,"Sisyrinchium micranthum",Cav.,species,,accepted,present,introduced,naturalised,"Blue Pigroot",,,Iridaceae
+614cd1c6-dd84-46e7-a01c-edd3918eef1b,"Solanum americanum",Mill.,species,,accepted,present,introduced,naturalised,"Glossy Nightshade",,,Solanaceae
+c016037c-901d-445f-abb3-ab681d0e11fb,"Solanum aviculare",G.Forst.,species,,accepted,present,native,native,"Kangaroo Apple",,,Solanaceae
+405b3c14-17cb-41ab-a549-f3aab34e2281,"Solanum laciniatum",Aiton,species,,accepted,present,native,native,"Large Kangaroo-apple",,,Solanaceae
+bede19ce-e3ad-48cd-a1bb-69d1348bfdb8,"Solanum lycopersicum",L.,species,,accepted,present,introduced,adventive,Tomato,,,Solanaceae
+c3127990-5562-42aa-b676-5e9927591591,"Solanum mauritianum",Scop.,species,,accepted,present,introduced,naturalised,Tobacco-bush,,,Solanaceae
+6cbcccd1-0091-401e-ada9-5341a2dec101,"Solanum nigrum",L.,species,,accepted,present,introduced,naturalised,"Black Nightshade",,,Solanaceae
+f11c9d48-bd36-45d9-9e78-58b882c1b9eb,"Solanum pseudocapsicum",L.,species,,accepted,present,introduced,naturalised,"Madeira Winter-cherry",,,Solanaceae
+664360c6-d55c-4749-91b4-5cb942bf0336,"Solenogyne dominii",L.G.Adams,species,,accepted,present,native,native,,,,Asteraceae
+7ce09cd3-f295-4155-afa3-c0311b5cd74d,"Solenogyne gunnii","(Hook.f.) Cabrera",species,,accepted,present,native,native,,,,Asteraceae
+24a3fdab-f307-46b8-bd6a-6876b625fcbe,"Soliva sessilis","Ruiz & Pav.",species,,accepted,present,introduced,naturalised,"Jo Jo | Bindyi",,,Asteraceae
+9f85b9a7-dcd3-47b1-ac51-a22015d5c61f,"Sonchus asper","(L.) Hill",species,,accepted,present,introduced,,"Rough Sow-thistle | Prickly Sow-thistle",,,Asteraceae
+2d2a6397-1be9-43c4-91d6-12033d6e1de0,"Sonchus asper subsp. asper",,subspecies,,accepted,present,introduced,naturalised,,,,Asteraceae
+05d32d07-7c25-46c1-be96-adc822095b01,"Sonchus oleraceus",L.,species,,accepted,present,introduced,naturalised,"Sow Thistle",,,Asteraceae
+983da6b6-04d5-4ad7-8ea2-7eaeabd5fbb7,"Spergula arvensis",L.,species,,accepted,present,introduced,naturalised,"Corn Spurrey",,,Caryophyllaceae
+4b30ce07-2e74-46be-b949-14c05642b5bb,"Spergularia bocconei","(Scheele) Graebn.",species,,accepted,present,introduced,naturalised,,,,Caryophyllaceae
+ec41f1a2-57aa-40eb-98dc-48e87a4d5d79,"Sphaerolobium minus",Labill.,species,,accepted,present,native,native,Globe-pea,,,Fabaceae
+ed5b7a65-2ad7-457a-8bd5-f1138dc8a66e,"Sphaerolobium vimineum",Sm.,species,,accepted,present,native,native,"Leafless Globe-pea",,,Fabaceae
+c3a953e8-6b41-4fce-ad82-7c0e0b89fbf4,"Spirodela punctata","(G.Mey.) C.H.Thomps.",species,,accepted,present,native,native,"Thin Duckweed",,,Araceae
+02a9be14-cffb-432e-8f70-34c1ffc36854,"Sporobolus africanus","(Poir.) Robyns & Tournay",species,,accepted,present,introduced,naturalised,"Rat-tail Grass",,,Poaceae
+7339cd2e-1dcd-4045-9f57-434b821a2877,"Sprengelia incarnata",Sm.,species,,accepted,present,native,native,"Pink Swamp-heath",,,Ericaceae
+c92f01ea-defb-421d-b819-7ed1db939aaf,"Spyridium parvifolium","(Hook.) F.Muell.",species,,accepted,present,native,native,"Dusty Miller",,,Rhamnaceae
+da22bd95-334b-46a8-9e9b-0ab802059472,"Stachys arvensis","(L.) L.",species,,accepted,present,introduced,naturalised,"Stagger Weed",,,Lamiaceae
+39b67dbc-26ba-4e9a-8b61-5a939155dbf3,"Stackhousia monogyna",Labill.,species,,accepted,present,native,native,"Creamy Candles",,,Celastraceae
+f8f7625a-0a18-4be2-bcf1-600159e554dc,"Stellaria media","(L.) Vill.",species,,accepted,present,introduced,naturalised,Chickweed,,,Caryophyllaceae
+e3254a65-85b8-41b1-becb-466879516db8,"Stenotaphrum secundatum","(Walter) Kuntze",species,,accepted,present,introduced,naturalised,"Buffalo Grass",,,Poaceae
+fe73fd80-6602-421e-a22a-5510d350724d,"Stylidium armeria","(Labill.) Labill.",species,,accepted,present,native,native,,,,Stylidiaceae
+78dbb92e-6b98-481d-994c-c84ed064df86,"Stylidium armeria subsp. armeria",,subspecies,,accepted,present,native,native,,,,Stylidiaceae
+58357cac-5db3-4a90-8b1f-21b4b552470b,"Stylidium despectum",R.Br.,species,,accepted,present,native,native,"Small Triggerplant",,,Stylidiaceae
+b3874d32-36d9-4f3b-a0c7-21e92e1e34a8,"Stylidium graminifolium",Sw.,species,,accepted,present,native,native,"Grass Triggerplant",,,Stylidiaceae
+dba10cd5-f57d-459d-a053-c2da8e99c652,"Stylidium perpusillum",Hook.f.,species,,accepted,present,native,native,"Slender Triggerplant",,,Stylidiaceae
+7875b303-cd9e-40dd-9894-304dbe0c29b9,"Styphelia humifusa","(Cav.) Pers.",species,,accepted,present,native,native,"Cranberry Heath",,,Ericaceae
+287ab0c5-e90d-4775-969c-51750cfe5c3c,"Symphyotrichum subulatum","(Michx.) G.L.Nesom",species,,accepted,present,introduced,naturalised,Aster-weed,,,Asteraceae
+4e303824-a7e2-4d2f-9b46-4d47e2555d41,"Syzygium smithii","(Poir.) Nied.",species,,accepted,present,native,native,,,1,Myrtaceae
+f496a318-a259-45d5-8673-808fc94d5fb5,"Tayloria octoblepharum","(Hook.) Mitt.",species,,accepted,present,native,native,,,,Splachnaceae
+5ae47f9c-245e-445f-b508-cea354d6717c,"Tetratheca ciliata",Lindl.,species,,accepted,present,native,native,Pink-bells,,,Elaeocarpaceae
+546361e3-8ef3-4e03-8aaf-e425b4604055,"Thelionema caespitosum","(R.Br.) R.J.F.Hend.",species,,accepted,present,native,native,"Tufted Blue Lily",,,Asphodelaceae
+6fce17da-94b1-4d03-80eb-3f1003502f9e,"Thelymitra antennifera","(Lindl.) Hook.f.",species,,accepted,present,native,native,Rabbit-ears,,,Orchidaceae
+1cf18d5e-e289-40af-a3f1-cbded205039e,"Thelymitra flexuosa",Endl.,species,,accepted,present,native,native,"Twisted Sun-orchid",,,Orchidaceae
+920b172b-c827-44b9-8a97-157745304b88,"Thelymitra ixioides",Sw.,species,,accepted,present,native,native,"Dotted Sun-orchid | Spotted Sun-orchid",,,Orchidaceae
+44bf3133-f9af-43c4-8340-003c853db49a,"Thelymitra pauciflora",R.Br.,species,,accepted,present,native,native,,,,Orchidaceae
+790926e5-8ec2-4990-af63-076948d11bc9,"Thelymitra rubra",Fitzg.,species,,accepted,present,native,native,"Salmon Sun-orchid",,,Orchidaceae
+5c4beccd-3eef-434d-9769-4d187abb91e9,"Themeda triandra",Forssk.,species,,accepted,present,native,native,"Kangaroo Grass",,,Poaceae
+4c83ac42-14c5-4705-a8f3-0914b8b345e5,"Thesium australe",R.Br.,species,,accepted,present,native,native,"Austral Toad-flax",,,Santalaceae
+7280eef0-b823-4555-a35c-b90335fd4bfb,"Thuidiopsis furfurosa","(Hook. & Wilson) M.Fleisch.",species,,accepted,present,native,native,,,,Thuidiaceae
+680a7133-5f44-480f-8665-a3ddbec43a6f,"Thysanotus patersonii",R.Br.,species,,accepted,present,native,native,"Twining Fringe Lily",,,Asparagaceae
+8aa2b107-3794-4198-9488-5e657ac40f3a,"Thysanotus tuberosus",R.Br.,species,,accepted,present,native,native,"Common Fringe Lily",,,Asparagaceae
+0c8f6587-b902-4643-9394-2d40dbad4d41,"Thysanotus tuberosus subsp. tuberosus",,subspecies,,accepted,present,native,native,,,,Asparagaceae
+678ec15d-b603-4bb3-9ea9-162f32cf6e17,"Todea barbara","(L.) T.Moore",species,,accepted,present,native,native,"Austral King-fern",,,Osmundaceae
+369b6bb9-f7cc-4923-8487-63391d52dd49,"Tortula truncata","(Hedw.) Mitt.",species,,accepted,present,introduced,naturalised,,,,Pottiaceae
+acc75962-5bea-4e2a-a199-0e8a6b50ea17,"Trachymene composita","(Domin) B.L.Burtt",species,,accepted,present,native,native,,,,Araliaceae
+69c60676-8bd9-4283-b1f9-03fa12b0386c,"Trachymene composita var. composita",,variety,,accepted,present,native,native,,,,Araliaceae
+08fde7aa-d79a-4632-be80-30bb6fbce245,"Trachymene pilosa",Sm.,species,,accepted,present,native,native,"Dwarf Trachymene",,,Araliaceae
+fc60f8b2-271b-4913-ba1d-ff00791f5a51,"Tradescantia fluminensis",Vell.,species,,accepted,present,introduced,naturalised,"Wandering Trad | Wandering Creeper | Wandering Jew",,,Commelinaceae
+4460359d-28be-4ee7-9b8d-879b51fe6713,"Tribolium obliterum","(Hemsl.) Renvoize",species,,accepted,present,introduced,naturalised,"Capetown Grass",,,Poaceae
+9c3b49b8-ff03-4dd9-bc2b-1466a5657903,"Tricoryne elatior",R.Br.,species,,accepted,present,native,native,"Yellow Rush Lily",,,Asphodelaceae
+4e7a0e0b-29ad-4701-86dc-8bda24018ada,"Trifolium angustifolium",L.,species,,accepted,present,introduced,,,,,Fabaceae
+b30f0951-db2f-428b-8485-dfbdc8305fbc,"Trifolium angustifolium var. angustifolium",,variety,,accepted,present,introduced,naturalised,"Narrow-leaved Clover",,,Fabaceae
+a7511a8a-3f6e-425d-9c69-6e0e5fb6d52c,"Trifolium cernuum",Brot.,species,,accepted,present,introduced,naturalised,"Drooping-flower Clover",,,Fabaceae
+06176248-1ee8-4717-9972-5c388e1f254c,"Trifolium dubium",Sibth.,species,,accepted,present,introduced,naturalised,"Suckling Clover",,,Fabaceae
+667f591a-c824-453e-bf53-516000695801,"Trifolium fragiferum",L.,species,,accepted,present,introduced,,,,,Fabaceae
+0bcbd7a4-fd6f-41d4-8fa3-b1a2020b5ac9,"Trifolium fragiferum var. fragiferum",,variety,,accepted,present,introduced,naturalised,"Strawberry Clover",,,Fabaceae
+704cbae3-cb48-45f0-918f-a45649bb6199,"Trifolium glomeratum",L.,species,,accepted,present,introduced,naturalised,"Clustered Clover",,,Fabaceae
+35497e19-bc2c-4856-bdf7-c0972690a223,"Trifolium incarnatum",L.,species,,accepted,present,introduced,,,,,Fabaceae
+9869a10e-1bff-4a30-8274-27b1c525adda,"Trifolium michelianum",Savi,species,,accepted,present,introduced,,,,,Fabaceae
+1667ce3d-746b-46cb-af30-3778a118d0f4,"Trifolium michelianum var. michelianum",,variety,,accepted,present,introduced,naturalised,"Annual White Clover",,,Fabaceae
+d696e3c0-77b6-4528-b4ed-39fb98e44a1b,"Trifolium pratense",L.,species,,accepted,present,introduced,naturalised,"Red Clover",,,Fabaceae
+dd9c4fbe-3c56-4ca7-b4a5-ef1181feb581,"Trifolium repens",L.,species,,accepted,present,introduced,,,,,Fabaceae
+7ff32f65-9d6a-45fd-9a64-4046b5093123,"Trifolium repens var. repens",,variety,,accepted,present,introduced,naturalised,"White Clover",,,Fabaceae
+1439474f-ea71-4c71-b386-fcbd208009f3,"Trifolium resupinatum",L.,species,,accepted,present,introduced,,"Shaftal Clover",,,Fabaceae
+f66800da-9b82-4b05-8229-eb2508be0aa0,"Trifolium striatum",L.,species,,accepted,present,introduced,naturalised,"Knotted Clover",,,Fabaceae
+2b79d3c6-25c8-4317-a89c-5ae21cc09f78,"Trifolium subterraneum",L.,species,,accepted,present,introduced,naturalised,"Subterranean Clover",,,Fabaceae
+0f724285-4044-4ca3-8cb0-fbb43b75022e,"Trifolium vesiculosum",Savi,species,,accepted,present,introduced,,,,,Fabaceae
+9bcf7b59-91b6-4488-8ad6-251f61411fe1,"Trifolium vesiculosum var. vesiculosum",,variety,,accepted,present,introduced,naturalised,"Arrowleaf Clover",,,Fabaceae
+ec7703de-924a-420b-b765-bc4946510f5e,"Triglochin striata","Ruiz & Pav.",species,,accepted,present,native,native,,,,Juncaginaceae
+702a622d-a096-4d58-bf06-5b03ff192472,"Typha domingensis",Pers.,species,,accepted,present,native,native,"Narrowleaf Cumbungi | Gumbung",,,Typhaceae
+0e7587fa-9d0a-443e-b3ee-9bbbcef2423a,"Typha latifolia",L.,species,,accepted,present,introduced,naturalised,"Lesser Reed-mace",,,Typhaceae
+d8e250bb-40c8-422d-aa20-c93bfce43664,"Typha orientalis",C.Presl,species,,accepted,present,native,native,"Broadleaf Cumbungi",,,Typhaceae
+75b5ba13-59cf-4c9d-93ab-34f63a2e1a35,"Ulex europaeus",L.,species,,accepted,present,introduced,naturalised,"Gorse | Furze",,,Fabaceae
+71259ee6-6827-4db2-b49c-10523176c069,"Urtica urens",L.,species,,accepted,present,introduced,naturalised,"Small Nettle",,,Urticaceae
+a45ff555-d4e7-4ed2-9c3f-9d75aba4539b,"Utricularia dichotoma",Labill.,species,,accepted,present,native,native,"Fairies' Aprons | Purple Bladderwort",,,Lentibulariaceae
+e273e04f-ed93-4228-a9cb-02abbb0177e8,"Utricularia lateriflora",R.Br.,species,,accepted,present,native,native,"Tiny Bladderwort",,,Lentibulariaceae
+0b98d30e-39b5-4c45-8c93-0e21d261c495,"Utricularia tenella",R.Br.,species,,accepted,present,native,native,"Pink Bladderwort",,,Lentibulariaceae
+a61c20d3-bd29-4dd6-884d-71ce839a426b,"Vellereophyton dealbatum","(Thunb.) Hilliard & B.L.Burtt",species,,accepted,present,introduced,naturalised,"White Cudweed",,,Asteraceae
+61f26f26-4a2e-465c-b8a6-8ac9ce7179ed,"Veronica arvensis",L.,species,,accepted,present,introduced,naturalised,"Wall Speedwell",,,Plantaginaceae
+ff8c1d83-53b4-4ca3-a0ab-61ec888042d1,"Veronica calycina",R.Br.,species,,accepted,present,native,native,"Hairy Speedwell",,,Plantaginaceae
+2d29f66d-8bde-4093-b209-c5529e65bfd1,"Veronica gracilis",R.Br.,species,,accepted,present,native,native,"Slender Speedwell",,,Plantaginaceae
+d5ef573e-319f-4c61-9a96-aace07756d66,"Veronica persica",Poir.,species,,accepted,present,introduced,naturalised,"Creeping Speedwell",,,Plantaginaceae
+c6f98220-926e-45a4-8046-bd6a8a321e19,"Veronica plebeia",R.Br.,species,,accepted,present,native,native,"Trailing Speedwell",,,Plantaginaceae
+5d8e2494-6b27-44fb-a7ef-e552e1148337,"Veronica serpyllifolia",L.,species,,accepted,present,uncertain,,"Thyme Speedwell",,,Plantaginaceae
+20a05898-e331-4a6a-a552-60f37de75488,"Viburnum tinus",L.,species,,accepted,present,introduced,naturalised,Laurestinus,,,Caprifoliaceae
+c6b6b601-dbf3-43af-b4c7-1e953f451be6,"Vicia hirsuta","(L.) Gray",species,,accepted,present,introduced,naturalised,"Tiny Vetch",,,Fabaceae
+ab68a78b-7125-4f3f-8c4a-4e00cd051f64,"Vicia sativa",L.,species,,accepted,present,introduced,,"Common Vetch",,,Fabaceae
+67f59559-026c-43b8-937e-ccb7a5ab37ac,"Vicia sativa subsp. sativa",,subspecies,,accepted,present,introduced,naturalised,,,,Fabaceae
+3691c137-b8cc-433d-9eb0-27b677ca1863,"Vicia tetrasperma","(L.) Schreb.",species,,accepted,present,introduced,naturalised,"Slender Vetch",,,Fabaceae
+0beda23b-e1ca-4873-944a-0d3f6999f4bd,"Viminaria juncea","(Schrad. & J.C.Wendl.) Hoffmanns.",species,,accepted,present,native,native,"Golden Spray",,,Fabaceae
+c419789b-5659-4a05-891e-735053c34881,"Viola hederacea",Labill.,species,,accepted,present,native,native,"Ivy-leaved Violet",,,Violaceae
+b6285e9e-1d44-41ef-bc4d-f2e9d8bf4ad9,"Viola odorata",L.,species,,accepted,present,introduced,naturalised,"Common Violet | Sweet Violet",,,Violaceae
+8f0015c2-6cce-47e1-9fd3-8be22bedb84f,"Vulpia bromoides","(L.) Gray",species,,accepted,present,introduced,naturalised,"Squirrel-tail Fescue",,,Poaceae
+15997c70-5601-4dc5-b1ee-d3698a83ae4e,"Vulpia myuros","(L.) C.C.Gmelin",species,,accepted,present,introduced,,"Rat's-tail Fescue",,,Poaceae
+a7a80ae8-dbe9-4469-9a76-eb7829fe1ee7,"Vulpia myuros f. myuros",,forma,,accepted,present,introduced,naturalised,,,,Poaceae
+d4b462a2-4032-480b-8e3d-eff4df062036,"Wahlenbergia gracilis","(G.Forst.) A.DC.",species,,accepted,present,native,native,"Sprawling Bluebell",,,Campanulaceae
+c42eeff6-2b3b-4c87-b808-f3bc59b4d5e0,"Wahlenbergia gymnoclada",Lothian,species,,accepted,present,native,native,"Naked Bluebell",,,Campanulaceae
+6bb997f1-15bf-471b-be01-72ee8a037731,"Wahlenbergia multicaulis",Benth.,species,,accepted,present,native,native,,,,Campanulaceae
+d1959d98-5bd2-4994-8779-b8d4fb33ffa1,"Wahlenbergia stricta","(R.Br.) Sweet",species,,accepted,present,native,native,,,,Campanulaceae
+d355d943-d980-4d0e-9ab1-572f1b5a5cb8,"Wahlenbergia stricta subsp. stricta",,subspecies,,accepted,present,native,native,"Tall Bluebell",,,Campanulaceae
+441d086c-13c1-4a8b-b063-7c2300488c70,"Watsonia meriana","(L.) Mill",species,,accepted,present,introduced,naturalised,,,,Iridaceae
+4a24e6f4-a1e8-4920-be6d-58126303ba6f,"Watsonia meriana var. bulbillifera","(J.W.Mathews & L.Bolus) D.A.Cooke",variety,,accepted,present,introduced,naturalised,,,,Iridaceae
+dee19e49-779c-470b-81ce-59f9303589fb,"Wurmbea dioica","(R.Br.) F.Muell.",species,,accepted,present,native,native,,,,Colchicaceae
+b4c7f2ef-515c-4a6a-84e2-057af297046b,"Wurmbea dioica subsp. dioica",,subspecies,,accepted,present,native,native,"Early Nancy",,,Colchicaceae
+31dc939b-6c47-46cb-b28b-c5e78e560313,"Xanthorrhoea minor",R.Br.,species,,accepted,present,native,native,,,,Asphodelaceae
+6d19e559-ce05-4752-8d82-14fb95893c7a,"Xanthorrhoea minor subsp. lutea",D.J.Bedford,subspecies,,accepted,present,native,native,"Small Grass-tree | Toolimerin",,,Asphodelaceae
+084d02c0-413f-4a00-9506-5e49fa8e26e3,"Xanthosia dissecta",Hook.f.,species,,accepted,present,native,native,"Cut-leaved Xanthosia",,,Apiaceae
+292b376c-48b5-480e-bf47-1a28e0e12e34,"Xyris gracilis",R.Br.,species,,accepted,present,native,native,"Slender Yellow-eye",,,Xyridaceae
+780dd766-22c5-462a-8e32-7ea1a66311f9,"Zantedeschia aethiopica","(L.) Spreng.",species,,accepted,present,introduced,naturalised,"White Arum-lily",,,Araceae

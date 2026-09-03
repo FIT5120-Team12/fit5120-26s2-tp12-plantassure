@@ -1,0 +1,91 @@
+Iteration 1 Data Analysis — Findings
+
+7.1 Cross-Dataset Overlap Verification
+  VBA (Monash extract) unique species: 527
+  Advisory List unique species:        1759
+  Overlap (species-level key match):   216
+
+7.2 Subspecies Collision Analysis
+  Species affected by species-only matching: 17
+    chrysanthemoides monilifera:
+      Chrysanthemoides monilifera subsp. monilifera: High Risk
+      Chrysanthemoides monilifera subsp. rotundata: Very High Risk
+    grevillea poorinda:
+      Grevillea 'Poorinda Constance': High Risk
+      Grevillea 'Poorinda Queen': Moderately High Risk
+    narcissus tazetta:
+      Narcissus tazetta subsp. aureus: Medium Risk
+      Narcissus tazetta subsp. italicus: Lower Risk
+      Narcissus tazetta subsp. tazetta: Lower Risk
+    olea europaea:
+      Olea europaea subsp. cuspidata: Potential Risk
+      Olea europaea subsp. europaea: Very High Risk
+    plantago coronopus:
+      Plantago coronopus subsp. commutata: High Risk
+      Plantago coronopus subsp. coronopus: Moderately High Risk
+    poa bulbosa:
+      Poa bulbosa var. bulbosa: High Risk
+      Poa bulbosa var. vivipara: Very High Risk
+    populus yunnanensis:
+      Populus yunnanensis: High Risk
+      Populus yunnanensis: Very High Risk
+    prunus persica:
+      Prunus persica var. nucipersica: Moderately High Risk
+      Prunus persica var. persica: High Risk
+    romulea rosea:
+      Romulea rosea var. australis: Medium Risk
+      Romulea rosea var. reflexa: High Risk
+    salix alba:
+      Salix alba var. alba: High Risk
+      Salix alba var. vitellina: Moderately High Risk
+    sanguisorba minor:
+      Sanguisorba minor subsp. magnolii: High Risk
+      Sanguisorba minor subsp. muricata: Medium Risk
+    sedum rubrotinctum:
+      Sedum rubrotinctum: Moderately High Risk
+      Sedum ×rubrotinctum: Very High Risk
+    silene gallica:
+      Silene gallica var. gallica: High Risk
+      Silene gallica var. quinquevulnera: Medium Risk
+    taraxacum sect:
+      Taraxacum sect. Hamata: Lower Risk
+      Taraxacum sect. Taraxacum: Medium Risk
+    trifolium resupinatum:
+      Trifolium resupinatum var. majus: Medium Risk
+      Trifolium resupinatum var. resupinatum: High Risk
+    verbena officinalis:
+      Verbena officinalis var. africana: Lower Risk
+      Verbena officinalis var. halei: Medium Risk
+      Verbena officinalis var. officinalis: Lower Risk
+    vicia sativa:
+      Vicia sativa subsp. cordata: Lower Risk
+      Vicia sativa subsp. nigra: Medium Risk
+      Vicia sativa subsp. sativa: Medium Risk
+
+7.3 Risk Category / Verdict Distribution
+  Not Assessed: 597
+  Use Caution: 129
+  Reconsider Planting: 128
+  Lower Concern: 26
+
+7.4 Assessment Coverage
+  Total species (Iteration 1 output): 880
+  Assessed:                            283 (32.2%)
+  Not Assessed:                        597 (67.8%)
+
+8.5 Foresight: Early-Warning Candidates Among Unassessed Species
+  Total unassessed species:                     597
+  Of those, introduced/naturalised:             44
+  Of those, with >=1 iNaturalist record:        38
+  Of those, with a recent (2024+) observation:  13
+  Top 10 by iNaturalist record count:
+    Trifolium repens ((no common name)): 1948 records, most recent NaT
+    Romulea rosea ((no common name)): 1203 records, most recent 2026-08-08 14:38:00
+    Vicia sativa (Common Vetch): 846 records, most recent NaT
+    Plantago coronopus (Buck's-horn Plantain): 693 records, most recent NaT
+    Sonchus asper (Rough Sow-thistle | Prickly Sow-thistle): 652 records, most recent 2026-07-11 10:57:00
+    Hypericum perforatum (St Johns Wort): 528 records, most recent NaT
+    Lactuca serriola (Prickly Lettuce): 472 records, most recent NaT
+    Bromus catharticus (Prairie Grass): 404 records, most recent NaT
+    Trifolium angustifolium ((no common name)): 384 records, most recent NaT
+    Agapanthus praecox ((no common name)): 326 records, most recent 2026-08-08 15:42:00

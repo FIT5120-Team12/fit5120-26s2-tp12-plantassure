@@ -3,18 +3,11 @@ Iteration 2 Data Processing Pipeline -- Epic 2: Find a Better Plant + Compare
 
 Inputs: VicFlora + 2022 Advisory List (reuses I1 logic) + AusTraits v7.0.0
         + GRIIS Australia + VBA_FLORA100 + ALA Monash occurrence records
-
-Legal-status filtering: NOT applied in this version. The correct Victorian
-legal dataset was not available (the "alert-list-alien-plant-species-act"
-file turned out to be ACT jurisdiction, not Victoria), so filtering of
-legally regulated plants is a known limitation of this iteration.
-
-iNaturalist: NOT used in this version. The supplied iNaturalist.csv is
-Victoria-wide and was not filtered to the Monash boundary, so per the
-team's conservative decision it is excluded rather than guessed/clipped.
 """
 import re
 import json
+import os
+from pathlib import Path
 from collections import defaultdict, Counter
 
 import pandas as pd
@@ -22,12 +15,18 @@ import openpyxl
 import shapefile  # pyshp
 import pyarrow.parquet as pq
 
-BASE = "/home/claude/data_check/extracted/Archive"
+
+import sys
+SCRIPT_DIR = Path(__file__).resolve().parent
+if len(sys.argv) > 1:
+    BASE = sys.argv[1]
+elif os.environ.get("PLANTASSURE_DATA_DIR"):
+    BASE = os.environ["PLANTASSURE_DATA_DIR"]
+else:
+    BASE = str(SCRIPT_DIR / "data")
 
 
-# ============================================================
 # Step 1: Scientific-name normalisation (identical to I1)
-# ============================================================
 def normalize_name(raw_name):
     if raw_name is None:
         return None
@@ -50,9 +49,7 @@ def normalize_name(raw_name):
     return key if key else None
 
 
-# ============================================================
 # Step 2a: VicFlora (same as I1)
-# ============================================================
 def load_vicflora(path):
     df = pd.read_csv(path, dtype=str)
     df["match_key"] = df["scientific_name"].apply(normalize_name)
@@ -61,7 +58,7 @@ def load_vicflora(path):
         "scientific_name", "vernacular_name", "family",
         "establishment_means", "degree_of_establishment", "match_key",
     ]
-    # NOTE: the base table is NOT de-duplicated on match_key. Different
+    #the base table is NOT de-duplicated on match_key. Different
     # subspecies/varieties of the same species in VicFlora (e.g.
     # Acacia longifolia subsp. longifolia / subsp. sophorae) share the
     # same match_key (genus + species epithet only), but they are
@@ -75,9 +72,7 @@ def load_vicflora(path):
     return df
 
 
-# ============================================================
 # Step 2b: Advisory List (same as I1, only Risk Rating is kept)
-# ============================================================
 def load_advisory(path, sheet_name="Advisory list 2022"):
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
     ws = wb[sheet_name]
@@ -99,29 +94,70 @@ def load_advisory(path, sheet_name="Advisory list 2022"):
     df = pd.DataFrame(records).drop_duplicates(subset="match_key", keep="first")
     return df.reset_index(drop=True)
 
-
-# ============================================================
 # Step 6: Rule engine (same as I1)
-# ============================================================
 def apply_rule(risk_rating):
     if risk_rating is None or risk_rating == "" or risk_rating == "Not Assessed / No exact match":
         return "Not Assessed"
     rr = risk_rating.lower()
+    # "Moderately High" and "Medium" must be checked BEFORE the generic
+    # "high" check below -- "moderately high" contains the substring
+    # "high", so checking "very high"/"high" first would incorrectly
+    # catch "Moderately High Risk" and return "Reconsider Planting"
+    # instead of the agreed "Use Caution". Order matters here.
+    if "moderately high" in rr or "medium" in rr:
+        return "Use Caution"
     if "very high" in rr or "high" in rr:
         return "Reconsider Planting"
-    if "medium" in rr:
-        return "Use Caution"
     return "Lower Concern"
 
 
-# ============================================================
+
 # Step 2c: AusTraits -- long format pivoted to wide format
 # Categorical fields (growth_form/woodiness/life_history): take the mode;
 #   ties are broken in favour of PREFERRED_DATASET.
 # Numeric field (height): take the union of the observed range (min-max).
-# ============================================================
-TARGET_TRAITS = {"plant_growth_form", "woodiness", "life_history", "plant_height"}
-PREFERRED_DATASET = "Wenk_2023"
+
+TARGET_TRAITS = {"plant_growth_form", "woodiness_detailed", "life_history", "plant_height"}
+# Per-trait tie-break preference, per the validated design: Wenk_2022 is
+# preferred for growth form and woodiness specifically; Wenk_2023 is
+# preferred for life history specifically. A single global constant here
+# would incorrectly apply Wenk_2023 to growth form and woodiness too.
+PREFERRED_DATASET_BY_TRAIT = {
+    "plant_growth_form": "Wenk_2022",
+    "woodiness_detailed": "Wenk_2022",
+    "life_history": "Wenk_2023",
+}
+
+# woodiness_detailed has 7 fine-grained categories (per AusTraits' own
+# trait definitions: herbaceous, semi_woody, woody, woody_base,
+# woody_like_inflorescence, woody_like_stem, woody_root). Exact-set
+# matching on all 7 would be too strict for alternative-plant matching
+# (e.g. "woody" would not match "woody_base" even though both are
+# essentially woody plants), so we collapse them into 3 coarser buckets
+# before comparing -- similar to the old binary woody/herbaceous split,
+# but backed by data that actually has ~30k taxa of coverage instead of
+# ~4k for the old raw "woodiness" trait.
+WOODINESS_GROUPS = {
+    "herbaceous": "herbaceous",
+    "semi_woody": "semi_woody",
+    "woody": "woody",
+    "woody_base": "woody",
+    "woody_like_inflorescence": "woody",
+    "woody_like_stem": "woody",
+    "woody_root": "woody",
+}
+
+
+def simplify_woodiness(value):
+    """Collapse woodiness_detailed's 7 categories into 3 coarser buckets
+    (herbaceous / semi_woody / woody) for matching purposes. Handles
+    multi-value strings (e.g. "woody woody_base") by mapping each token
+    and de-duplicating."""
+    if value is None:
+        return None
+    tokens = str(value).split()
+    mapped = {WOODINESS_GROUPS.get(t, t) for t in tokens}
+    return " ".join(sorted(mapped))
 
 
 def load_austraits_traits(parquet_path):
@@ -154,8 +190,9 @@ def load_austraits_traits(parquet_path):
             else:
                 cat_obs[key][t].append((value[i], dsid[i]))
 
-    def resolve_categorical(observations):
-        """Mode; ties are broken in favour of PREFERRED_DATASET."""
+    def resolve_categorical(observations, trait_name):
+        """Mode; ties are broken in favour of that trait's preferred
+        dataset per PREFERRED_DATASET_BY_TRAIT."""
         if not observations:
             return None
         counts = Counter(v for v, _ in observations)
@@ -163,17 +200,19 @@ def load_austraits_traits(parquet_path):
         tied = [v for v, c in counts.items() if c == max_count]
         if len(tied) == 1:
             return tied[0]
+        preferred = PREFERRED_DATASET_BY_TRAIT.get(trait_name)
         for v, ds in observations:
-            if v in tied and ds == PREFERRED_DATASET:
+            if v in tied and ds == preferred:
                 return v
         return tied[0]
 
     rows = []
     all_keys = set(cat_obs.keys()) | set(height_obs.keys())
     for key in all_keys:
-        gf = resolve_categorical(cat_obs[key].get("plant_growth_form", []))
-        wd = resolve_categorical(cat_obs[key].get("woodiness", []))
-        lh = resolve_categorical(cat_obs[key].get("life_history", []))
+        gf = resolve_categorical(cat_obs[key].get("plant_growth_form", []), "plant_growth_form")
+        wd_raw = resolve_categorical(cat_obs[key].get("woodiness_detailed", []), "woodiness_detailed")
+        wd = simplify_woodiness(wd_raw)
+        lh = resolve_categorical(cat_obs[key].get("life_history", []), "life_history")
         heights = height_obs.get(key, [])
         h_min = min(heights) if heights else None
         h_max = max(heights) if heights else None
@@ -188,12 +227,12 @@ def load_austraits_traits(parquet_path):
     return pd.DataFrame(rows)
 
 
-# ============================================================
+
 # Step 2d: GRIIS Australia -- only whether a species is listed
 # (used as a supplementary-evidence flag).
 # Rule: this flag is only surfaced in the display layer when VicFlora
 # already classifies the species as Introduced in Victoria.
-# ============================================================
+
 def load_griis(dwca_dir):
     taxon = pd.read_csv(f"{dwca_dir}/taxon.txt", sep="\t", dtype=str)
     profile = pd.read_csv(f"{dwca_dir}/speciesprofile.txt", sep="\t", dtype=str)
@@ -208,10 +247,10 @@ def load_griis(dwca_dir):
     return out[["match_key", "griis_listed", "griis_is_invasive"]]
 
 
-# ============================================================
+
 # Step 2e: VBA_FLORA100 (aggregated by SCI_NAME, same logic as I1's
 # VBA25 handling)
-# ============================================================
+
 def load_vba100(shp_path):
     sf = shapefile.Reader(shp_path)
     field_names = [f[0] for f in sf.fields[1:]]
@@ -239,10 +278,10 @@ def load_vba100(shp_path):
     return pd.DataFrame(rows)
 
 
-# ============================================================
+
 # Step 2f: ALA Monash occurrence records (geographic extent already
 # confirmed to fall correctly within Monash)
-# ============================================================
+
 def load_ala(csv_path):
     df = pd.read_csv(csv_path, dtype=str, low_memory=False)
     df["match_key"] = df["scientificName"].apply(normalize_name)
@@ -254,16 +293,19 @@ def load_ala(csv_path):
     return agg
 
 
-# ============================================================
+
 # Step 3: Similarity-matching engine
 # growth_form / woodiness / life_history must match exactly (compared as
 #   sets, to handle multi-value strings).
 # height is matched by range overlap.
 # Alternatives are only searched for species whose recommendation is
 #   Reconsider Planting or Use Caution.
-# Candidate pool: species with recommendation == Lower Concern AND a
-#   complete set of traits.
-# ============================================================
+# Candidate pool: species with recommendation in CANDIDATE_RECOMMENDATIONS
+#   AND a complete set of traits.
+
+CANDIDATE_RECOMMENDATIONS = {"Lower Concern", "Not Assessed"}
+
+
 def tokenize(val):
     if val is None:
         return None
@@ -278,7 +320,7 @@ def height_overlap(a_min, a_max, b_min, b_max):
 
 def find_alternatives(merged_df, max_alternatives=3):
     candidates = merged_df[
-        (merged_df["recommendation"] == "Lower Concern")
+        merged_df["recommendation"].isin(CANDIDATE_RECOMMENDATIONS)
         & merged_df["growth_form"].notna()
         & merged_df["woodiness"].notna()
         & merged_df["life_history"].notna()
@@ -321,10 +363,18 @@ def find_alternatives(merged_df, max_alternatives=3):
     return alternatives_map
 
 
-# ============================================================
+
 # Main pipeline
-# ============================================================
 def run_pipeline():
+    if not Path(BASE).is_dir():
+        raise FileNotFoundError(
+            f"Data directory not found: {BASE}\n"
+            f"Either create a 'data' folder next to this script containing the "
+            f"input files, set PLANTASSURE_DATA_DIR, or pass the path as an "
+            f"argument: python3 {Path(__file__).name} /path/to/data"
+        )
+    print(f"Using data directory: {BASE}")
+
     print("Step 2a: VicFlora ...")
     vf = load_vicflora(f"{BASE}/vicflora_monash_2026.csv")
     print(f"  -> {len(vf)} records")
@@ -440,11 +490,19 @@ def run_pipeline():
 if __name__ == "__main__":
     result, merged_df = run_pipeline()
 
-    with open("/home/claude/output_i2.json", "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2, default=str)
-    merged_df.to_csv("/home/claude/output_i2.csv", index=False, encoding="utf-8-sig")
+    # Output directory: same override pattern as BASE above -- an env
+    # var takes priority, otherwise outputs land next to this script.
+    OUTPUT_DIR = os.environ.get("PLANTASSURE_OUTPUT_DIR", str(SCRIPT_DIR))
+    Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
+    json_path = Path(OUTPUT_DIR) / "output_i2.json"
+    csv_path = Path(OUTPUT_DIR) / "output_i2.csv"
 
-    print(f"\nDone! {len(result)} species processed in total")
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2, default=str)
+    merged_df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+
+    print(f"\nOutputs written to: {OUTPUT_DIR}")
+    print(f"Done! {len(result)} species processed in total")
     from collections import Counter as C
     print("Recommendation distribution:", C(r["recommendation"] for r in result))
     need_alt = [r for r in result if r["recommendation"] in ("Reconsider Planting", "Use Caution")]

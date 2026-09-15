@@ -21,3 +21,17 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+.venv/
+**/.venv/
+**/__pycache__/
+**/*.pyc
+**/.DS_Store
+AI/5120-pre train model/**/dataset/
+AI/5120-pre train model/**/dataset_large/
+AI/5120-pre train model/**/raw_dataset/
+AI/5120-pre train model/**/models/
+AI/5120-pre train model/**/invalid_images/
+AI/5120-pre train model/**/dataset_large_backup_215/
+AI/5120-pre train model/**/dataset_large_backup*/
+AI/5120-pre train model/**/dataset_large_backup*/
+AI/5120-pre train model/**/dataset_large_backup*/

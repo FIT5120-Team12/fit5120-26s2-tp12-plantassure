@@ -58,7 +58,7 @@ def load_vicflora(path):
         "scientific_name", "vernacular_name", "family",
         "establishment_means", "degree_of_establishment", "match_key",
     ]
-    #the base table is NOT de-duplicated on match_key. Different
+    # the base table is NOT de-duplicated on match_key. Different
     # subspecies/varieties of the same species in VicFlora (e.g.
     # Acacia longifolia subsp. longifolia / subsp. sophorae) share the
     # same match_key (genus + species epithet only), but they are
@@ -94,6 +94,7 @@ def load_advisory(path, sheet_name="Advisory list 2022"):
     df = pd.DataFrame(records).drop_duplicates(subset="match_key", keep="first")
     return df.reset_index(drop=True)
 
+
 # Step 6: Rule engine (same as I1)
 def apply_rule(risk_rating):
     if risk_rating is None or risk_rating == "" or risk_rating == "Not Assessed / No exact match":
@@ -109,7 +110,6 @@ def apply_rule(risk_rating):
     if "very high" in rr or "high" in rr:
         return "Reconsider Planting"
     return "Lower Concern"
-
 
 
 # Step 2c: AusTraits -- long format pivoted to wide format
@@ -227,7 +227,6 @@ def load_austraits_traits(parquet_path):
     return pd.DataFrame(rows)
 
 
-
 # Step 2d: GRIIS Australia -- only whether a species is listed
 # (used as a supplementary-evidence flag).
 # Rule: this flag is only surfaced in the display layer when VicFlora
@@ -247,10 +246,8 @@ def load_griis(dwca_dir):
     return out[["match_key", "griis_listed", "griis_is_invasive"]]
 
 
-
 # Step 2e: VBA_FLORA100 (aggregated by SCI_NAME, same logic as I1's
 # VBA25 handling)
-
 def load_vba100(shp_path):
     sf = shapefile.Reader(shp_path)
     field_names = [f[0] for f in sf.fields[1:]]
@@ -278,10 +275,8 @@ def load_vba100(shp_path):
     return pd.DataFrame(rows)
 
 
-
 # Step 2f: ALA Monash occurrence records (geographic extent already
 # confirmed to fall correctly within Monash)
-
 def load_ala(csv_path):
     df = pd.read_csv(csv_path, dtype=str, low_memory=False)
     df["match_key"] = df["scientificName"].apply(normalize_name)
@@ -291,7 +286,6 @@ def load_ala(csv_path):
         ala_most_recent_date=("eventDate", lambda s: max([x for x in s if isinstance(x, str) and x], default=None)),
     ).reset_index()
     return agg
-
 
 
 # Step 3: Similarity-matching engine
@@ -353,7 +347,19 @@ def find_alternatives(merged_df, max_alternatives=3):
                 lambda c: height_overlap(row["height_min"], row["height_max"], c["height_min"], c["height_max"]),
                 axis=1,
             )
-        ]
+        ].copy()
+
+        # Family tie-breaker note: NOT applied in this version by team
+        # decision -- matching stays on growth_form/woodiness/life_history/
+        # height only. (A family-sort variant exists separately if the
+        # team decides to use it later.)
+
+        # Dedupe on match_key before taking the top N: subspecies/varieties
+        # share a match_key and identical inherited trait data (see the
+        # taxonomy-collapse note in normalize_name/load_vicflora), so
+        # without this a single underlying species could fill 2+ of the
+        # 3 alternative slots under different subspecies names.
+        matches = matches.drop_duplicates(subset="match_key")
 
         alt_list = matches[["match_key", "scientific_name"]].head(max_alternatives).to_dict("records")
         alternatives_map[row["match_key"]] = {
@@ -361,7 +367,6 @@ def find_alternatives(merged_df, max_alternatives=3):
             "alternatives": alt_list,
         }
     return alternatives_map
-
 
 
 # Main pipeline

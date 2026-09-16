@@ -2,60 +2,51 @@
   defineProps<{
     icon: string;
     title: string;
+    tone?: 'green' | 'warm';
   }>();
 </script>
 
 <template>
   <article class="feature-card">
-    <div class="feature-card__icon" aria-hidden="true">
-      <i :class="['mdi', icon]" aria-hidden="true"></i>
-    </div>
+    <v-avatar
+      size="44"
+      rounded="circle"
+      class="feature-card__icon"
+      :class="{ 'feature-card__icon--warm': tone === 'warm' }"
+      aria-hidden="true"
+    >
+      <v-icon :icon="icon" :size="20" aria-hidden="true" />
+    </v-avatar>
     <h3>{{ title }}</h3>
-    <p><slot /></p>
+    <p><slot></slot></p>
   </article>
 </template>
 
 <style scoped>
-  .feature-card {
-    min-height: 214px;
-    padding: var(--space-lg);
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
+  .feature-card__icon {
+    margin-bottom: var(--space-sm);
+    background: var(--color-success-soft);
+    color: var(--color-primary);
   }
 
-  .feature-card__icon {
-    width: 44px;
-    height: 44px;
-    display: grid;
-    place-items: center;
-    margin-bottom: var(--space-md);
-    border: 1px solid var(--color-border-strong);
-    border-radius: var(--radius-pill);
-    color: var(--color-ink-soft);
-    font-size: 20px;
+  .feature-card__icon--warm {
+    background: var(--color-accent-soft);
+    color: var(--color-accent);
   }
 
   .feature-card h3 {
     margin: 0 0 var(--space-xs);
     color: var(--color-primary);
     font-family: var(--font-body);
-    font-size: 0.9375rem;
+    font-size: 1.125rem;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.3;
   }
 
   .feature-card p {
     margin: 0;
     color: var(--color-ink-soft);
-    font-size: 0.875rem;
-    line-height: 1.6;
-  }
-
-  @media (max-width: 767px) {
-    .feature-card {
-      min-height: 0;
-      padding: var(--space-lg);
-    }
+    font-size: 0.9375rem;
+    line-height: 1.55;
   }
 </style>

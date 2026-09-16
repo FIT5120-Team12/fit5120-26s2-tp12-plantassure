@@ -68,6 +68,17 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+.v-btn:not(.v-btn--icon) {
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.plant-btn--secondary.v-btn--variant-outlined {
+  background: var(--color-surface);
+}
+
 *:focus-visible {
   outline: 3px solid var(--color-focus);
   outline-offset: 3px;

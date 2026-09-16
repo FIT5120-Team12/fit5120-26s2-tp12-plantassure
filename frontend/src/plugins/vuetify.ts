@@ -39,11 +39,7 @@ export default createVuetify({
   defaults: {
     VBtn: {
       elevation: 0,
-      rounded: 'lg',
-    },
-    VCard: {
-      elevation: 0,
-      rounded: 'lg',
+      height: 44,
     },
   },
 });

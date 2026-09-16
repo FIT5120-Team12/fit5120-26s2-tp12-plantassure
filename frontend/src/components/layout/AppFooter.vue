@@ -1,14 +1,5 @@
 <script setup lang="ts">
   import logoUrl from '@/assets/images/plantassure-logo.png';
-
-  withDefaults(
-    defineProps<{
-      homeHrefPrefix?: string;
-    }>(),
-    {
-      homeHrefPrefix: '',
-    },
-  );
 </script>
 
 <template>
@@ -18,10 +9,6 @@
         <img :src="logoUrl" alt="" aria-hidden="true" />
         <p>Designed for residential gardeners in the City of Monash.</p>
       </div>
-      <nav class="app-footer__nav" aria-label="Footer navigation">
-        <a :href="`${homeHrefPrefix}#why-it-matters`">About</a>
-        <a :href="`${homeHrefPrefix}#about-data`">Data Sources</a>
-      </nav>
       <p class="app-footer__note">Plant information for more informed planting decisions.</p>
     </div>
   </footer>
@@ -34,11 +21,11 @@
   }
 
   .app-footer__inner {
-    min-height: 120px;
+    min-height: 96px;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
-    gap: 20px;
+    gap: var(--space-xl);
     font-size: 0.82rem;
   }
 
@@ -58,26 +45,6 @@
     margin: 0;
   }
 
-  .app-footer__nav {
-    display: flex;
-    gap: var(--space-lg);
-  }
-
-  .app-footer__nav a {
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-    border-radius: var(--radius-sm);
-    color: var(--color-ink-soft);
-    text-decoration: none;
-  }
-
-  .app-footer__nav a:hover {
-    color: var(--color-primary);
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-
   .app-footer__note {
     max-width: 250px;
     justify-self: end;
@@ -93,10 +60,6 @@
 
     .app-footer__brand {
       align-items: flex-start;
-    }
-
-    .app-footer__nav {
-      gap: var(--space-xl);
     }
 
     .app-footer__note {

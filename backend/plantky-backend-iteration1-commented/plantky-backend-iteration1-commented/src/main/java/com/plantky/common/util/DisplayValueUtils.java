@@ -1,5 +1,7 @@
 package com.plantky.common.util;
 
+import java.math.BigDecimal;
+
 import org.springframework.util.StringUtils;
 
 /**
@@ -16,14 +18,10 @@ public final class DisplayValueUtils {
     /**
      * 将字符串首字母转换为大写，并去除首尾空格。
      *
-     * <p>数据库中的 establishment 值可能保存为 {@code introduced}，
-     * API 希望展示为 {@code Introduced}。</p>
-     *
      * @param value 原始文本
      * @return 首字母大写后的文本；null/空白输入返回 null
      */
     public static String capitalizeFirst(String value) {
-        // Spring StringUtils.hasText 会同时判断 null、"" 和纯空格字符串。
         if (!StringUtils.hasText(value)) {
             return null;
         }
@@ -39,15 +37,6 @@ public final class DisplayValueUtils {
     /**
      * 转义 SQL LIKE 查询中的特殊字符。
      *
-     * <p>LIKE 语义中：</p>
-     * <ul>
-     *     <li>{@code %} 表示任意长度字符；</li>
-     *     <li>{@code _} 表示任意一个字符；</li>
-     * </ul>
-     *
-     * <p>用户搜索植物名时，我们希望把用户输入视为普通文本，而不是让用户无意中改变 LIKE 语义，
-     * 因此提前转义这些字符。MyBatis-Plus 仍通过参数绑定生成 SQL，不进行字符串拼接。</p>
-     *
      * @param value 已经完成非空校验的搜索关键词
      * @return 转义后的 LIKE 关键词
      */
@@ -55,5 +44,37 @@ public final class DisplayValueUtils {
         return value.replace("\\", "\\\\")
                 .replace("%", "\\%")
                 .replace("_", "\\_");
+    }
+
+    /**
+     * Iteration 2：把 height_min / height_max 转换为统一展示文本。
+     *
+     * <p>规则只负责格式化真实数据，不推断缺失值：</p>
+     * <ul>
+     *     <li>min/max 都缺失 -> null</li>
+     *     <li>只有一个值 -> "0.5 m"</li>
+     *     <li>两者相同 -> "1 m"</li>
+     *     <li>两者不同 -> "0.3–1 m"</li>
+     * </ul>
+     */
+    public static String formatHeightRange(Double min, Double max) {
+        if (min == null && max == null) {
+            return null;
+        }
+        if (min == null) {
+            return formatNumber(max) + " m";
+        }
+        if (max == null) {
+            return formatNumber(min) + " m";
+        }
+        if (Double.compare(min, max) == 0) {
+            return formatNumber(min) + " m";
+        }
+        return formatNumber(min) + "–" + formatNumber(max) + " m";
+    }
+
+    /** 使用 BigDecimal 去除无意义的尾随 0，避免展示 1.0 m / 0.300000 m。 */
+    private static String formatNumber(Double value) {
+        return BigDecimal.valueOf(value).stripTrailingZeros().toPlainString();
     }
 }

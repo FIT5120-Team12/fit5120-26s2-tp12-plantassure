@@ -2,28 +2,27 @@ package com.plantky.domain.vo;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Getter;
 
 /**
- * GET /api/v1/plants/search 的完整成功响应。
+ * GET /api/v1/plants/search 成功响应。
  *
- * <pre>
- * {
- *   "query": "wattle",
- *   "results": [ ... ]
- * }
- * </pre>
- *
- * <p>没有匹配植物时仍然返回 HTTP 200，并且 results 是空数组，而不是返回 404。</p>
+ * <p>I1 前端读取 {@code results}，新的 Frontend Contract 使用 {@code items}。
+ * 为保证连续开发，本迭代临时同时序列化两个名称，内容完全相同；后续前端完成迁移后
+ * 可以在统一版本升级中移除旧别名。</p>
  */
 @Getter
 @Builder
 public class PlantSearchResponse {
 
-    /** 标准化后的原始搜索关键词，例如去除首尾空格后的 wattle。 */
     private final String query;
-
-    /** 所有匹配结果。多个结果必须全部保留，后端不能自动选择第一条。 */
     private final List<PlantSearchItemVO> results;
+
+    /** I2 contract 兼容别名，不复制业务数据。 */
+    @JsonProperty("items")
+    public List<PlantSearchItemVO> getItems() {
+        return results;
+    }
 }

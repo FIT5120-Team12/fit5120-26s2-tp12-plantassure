@@ -1,5 +1,5 @@
 # ============================================================
-# Plantky 公共配置
+# PlantAssure Iteration 2 公共配置
 # ============================================================
 # application.yml 会在所有环境加载。
 # environment-specific 配置放在 application-local.yml / application-prod.yml。
@@ -28,7 +28,8 @@ mybatis-plus:
   configuration:
     # 数据库 snake_case 自动映射到 Java camelCase：
     # scientific_name -> scientificName
-    # vba_record_count -> vbaRecordCount
+    # vba100_record_count -> vba100RecordCount
+    # ala_most_recent_date -> alaMostRecentDate
     map-underscore-to-camel-case: true
 
     # 当前项目不使用 MyBatis 二级缓存。

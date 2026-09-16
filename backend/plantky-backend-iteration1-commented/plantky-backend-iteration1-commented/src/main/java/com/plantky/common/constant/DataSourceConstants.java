@@ -1,44 +1,39 @@
 package com.plantky.common.constant;
 
 /**
- * Iteration 1 数据来源相关常量。
+ * PlantAssure 数据来源名称与职责常量。
  *
- * <p>把数据源名称和角色集中管理，避免在多个 Service 中重复写字符串。
- * 这样做有两个主要好处：</p>
- *
- * <ol>
- *     <li>避免拼写不一致，例如某处写 "VBA"，另一处写完整名称；</li>
- *     <li>未来如果产品文案调整，只需要修改一个类。</li>
- * </ol>
- *
- * <p>注意：这个类只负责“展示层面的固定元数据”，不负责数据库连接或数据读取。</p>
+ * <p>Iteration 2 继续强调“一个数据源负责一种语义”：VBA/ALA 只提供 occurrence evidence，
+ * AusTraits 只提供 traits，GRIIS 只作为 supplementary evidence；这些来源都不能替代
+ * 2022 Advisory List 去生成 environmental concern。</p>
  */
 public final class DataSourceConstants {
 
-    /** VicFlora 数据源展示名称。 */
     public static final String VICFLORA = "VicFlora";
+    public static final String VICFLORA_ROLE = "Plant identity and Victorian establishment/origin";
 
-    /** VicFlora 在本项目中的业务角色。 */
-    public static final String VICFLORA_ROLE = "Plant identity and establishment status";
-
-    /** Victorian Biodiversity Atlas 数据源展示名称。 */
-    public static final String VBA = "Victorian Biodiversity Atlas";
-
-    /** VBA 在 Iteration 1 中只用于 City of Monash 的本地出现记录证据。 */
-    public static final String VBA_ROLE = "City of Monash local occurrence evidence";
-
-    /** 2022 Environmental Weeds Advisory List 的标准展示名称。 */
-    public static final String ADVISORY_LIST = "2022 Advisory List of Environmental Weeds in Victoria";
-
-    /** Advisory List 在 Iteration 1 中用于环境杂草风险。 */
-    public static final String ADVISORY_LIST_ROLE = "Environmental weed risk";
-
-    /**
-     * 工具类不应该被实例化，因此声明私有构造器。
+    /*
+     * Iteration 1 旧常量：
+     * public static final String VBA = "Victorian Biodiversity Atlas";
+     * public static final String VBA_ROLE = "City of Monash local occurrence evidence";
      *
-     * <p>如果没有这个构造器，Java 会自动提供 public 无参构造器，
-     * 那么开发人员就可能错误地执行 {@code new DataSourceConstants()}。</p>
+     * Iteration 2 实际数据是 VBA_FLORA100，因此使用更精确名称，避免把新旧 extraction 混淆。
      */
+    public static final String VBA = "Victorian Biodiversity Atlas (VBA_FLORA100)";
+    public static final String VBA_ROLE = "City of Monash local occurrence evidence only";
+
+    public static final String ALA = "Atlas of Living Australia";
+    public static final String ALA_ROLE = "Supplementary City of Monash occurrence evidence";
+
+    public static final String ADVISORY_LIST = "2022 Advisory List of Environmental Weeds in Victoria";
+    public static final String ADVISORY_LIST_ROLE = "Environmental weed concern";
+
+    public static final String AUSTRAITS = "AusTraits";
+    public static final String AUSTRAITS_ROLE = "Growth form, life history, woodiness and height traits";
+
+    public static final String GRIIS = "Global Register of Introduced and Invasive Species (GRIIS)";
+    public static final String GRIIS_ROLE = "Supplementary introduced/invasive species evidence";
+
     private DataSourceConstants() {
     }
 }

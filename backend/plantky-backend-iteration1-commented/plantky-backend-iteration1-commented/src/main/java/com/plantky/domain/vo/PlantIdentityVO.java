@@ -6,28 +6,18 @@ import lombok.Getter;
 /**
  * Assessment API 中 Plant Identity + Establishment 区域的数据对象。
  *
- * <p>该对象由 PlantIdentityService 从 SpeciesDataEntity 转换得到。
- * Entity 使用数据库原始格式，VO 使用对 API 更友好的字段名和展示值。</p>
+ * <p>Iteration 2 在保持 I1 字段不变的基础上增加 imageUrl。当前数据集没有可靠图片 URL，
+ * 因此实际值为 null；前端可以继续使用自己的 fallback。</p>
  */
 @Getter
 @Builder
 public class PlantIdentityVO {
 
-    /** 数据库主键，对外作为 plantId。 */
     private final Long plantId;
-
-    /** Scientific name，当前 Assessment 页面要求必须显示。 */
     private final String scientificName;
-
-    /** Common name；数据缺失时允许为 null，由前端显示 Not available。 */
     private final String commonName;
-
-    /** Family name。 */
     private final String family;
-
-    /** Establishment means，例如 Introduced / Native。 */
+    private final String imageUrl;
     private final String establishmentMeans;
-
-    /** Degree of establishment，例如 Naturalised。 */
     private final String degreeOfEstablishment;
 }

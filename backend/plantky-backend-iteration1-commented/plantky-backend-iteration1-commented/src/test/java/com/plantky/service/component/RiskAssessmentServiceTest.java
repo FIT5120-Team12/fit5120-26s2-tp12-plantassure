@@ -47,4 +47,18 @@ class RiskAssessmentServiceTest {
         assertThat(result.getRating()).isNull();
         assertThat(result.getExplanation()).contains("No exact matching assessment");
     }
+
+    /** I2 显式 Not Assessed marker 也必须被识别为 NOT_ASSESSED。 */
+    @Test
+    void shouldTreatIteration2NotAssessedMarkerAsNotAssessed() {
+        SpeciesDataEntity entity = new SpeciesDataEntity();
+        entity.setRiskRating("Not Assessed / No exact match");
+        List<String> warnings = new ArrayList<>();
+
+        EnvironmentalRiskVO result = riskAssessmentService.build(entity, warnings);
+
+        assertThat(result.getAssessmentStatus()).isEqualTo(RiskAssessmentStatus.NOT_ASSESSED);
+        assertThat(result.getRating()).isNull();
+        assertThat(warnings).isEmpty();
+    }
 }

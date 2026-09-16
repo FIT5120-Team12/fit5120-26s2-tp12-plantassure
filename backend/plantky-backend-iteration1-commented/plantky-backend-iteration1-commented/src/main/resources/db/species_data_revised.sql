@@ -1,3 +1,6 @@
+-- ITERATION 1 REFERENCE ONLY: do not use this file to initialise Iteration 2.
+-- Use species_data_i2_backend.sql for the current backend.
+
 -- ============================================================
 -- Plantky Iteration 1 seed dataset
 -- ============================================================

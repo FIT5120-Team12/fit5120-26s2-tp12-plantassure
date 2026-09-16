@@ -139,16 +139,27 @@ The service boundary already exists so a verified legal dataset can be connected
 
 A strict rule such as “regulated candidates must never be returned” cannot be fully verified until that dataset exists. The current code will exclude a candidate automatically if LegalStatusService later returns REGULATED.
 
-## 7. Epic 1
+## 7. Epic 1 — AI-assisted identification
 
-Epic 1 AI Identification is intentionally not implemented here because the supplied backend API contract says it is out of scope and does not yet define:
+Epic 1 is now implemented using the separate Iteration 2 AI development document and Epic acceptance criteria.
 
-- identification endpoint;
-- multipart request contract;
-- supported file limits;
-- AI provider/service interface;
-- timeout/retry behaviour;
-- confidence response DTO;
-- model-to-PlantAssure record matching rules.
+Backend endpoint:
 
-Adding guessed interfaces now would create avoidable rework.
+```http
+POST /api/v1/plants/identify
+```
+
+The implementation uses:
+
+```text
+PlantIdentificationController
+PlantIdentificationServiceImpl
+ImageValidationService
+PlantIdentificationClient
+HttpPlantIdentificationClient
+SpeciesMatchingService
+```
+
+The backend returns up to Top 3 possible species matches by default. It never auto-confirms the highest-confidence result and never invokes Assessment automatically.
+
+The real AI provider URL/final JSON schema was not supplied, so provider-specific mapping remains isolated inside `HttpPlantIdentificationClient`. See `EPIC1_AI_IDENTIFICATION.md`.

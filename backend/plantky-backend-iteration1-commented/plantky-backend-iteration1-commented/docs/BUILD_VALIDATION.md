@@ -1,31 +1,46 @@
 # Build Validation
 
-## Completed in the provided execution environment
+## Validation performed in the artifact environment
 
-Main Java sources were compiled successfully using:
+The environment does not provide the `mvn` executable, so the complete Maven/JUnit lifecycle could not be executed here.
+
+Main source validation was performed using:
 
 ```text
 javac --release 17
 ```
 
-with the dependency JARs extracted from the previously built Iteration 1 Spring Boot fat JAR.
+with the compile/runtime dependency JARs extracted from the previously built Spring Boot fat JAR.
 
-This validates Java syntax, imports, Lombok annotation processing and main-source type compatibility after the I2 changes.
-
-## Not executed in the provided execution environment
+Result after Epic 1 integration:
 
 ```text
-mvn test
-mvn clean package
+105 main Java source files compiled successfully
 ```
 
-Reason: Maven executable is not installed in this environment.
+This verifies Java syntax/type compatibility for the current main source tree against the existing Spring Boot/MyBatis/Lombok dependencies.
 
-Before deploying the I2 backend, run locally:
+## Tests added for Epic 1
+
+```text
+PlantIdentificationControllerTest
+ImageValidationServiceTest
+PlantIdentificationServiceImplTest
+```
+
+They cover the HTTP response shape, missing multipart image handling, image signature validation, Top 3 behaviour, no-match state, and unmapped-AI-candidate behaviour.
+
+Because Maven/test-scope dependencies are unavailable in this execution environment, these JUnit tests must be run locally.
+
+## Required local validation before deployment
 
 ```bash
 mvn clean test
 mvn clean package
 ```
 
-Do not deploy the old Iteration 1 JAR with the new source code.
+Then start the backend and use the Apifox cases in:
+
+```text
+docs/EPIC1_APIFOX_TESTS.md
+```

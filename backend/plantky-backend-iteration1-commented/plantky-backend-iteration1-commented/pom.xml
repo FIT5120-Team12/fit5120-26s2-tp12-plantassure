@@ -19,7 +19,7 @@
     <!-- 当前项目 Maven 坐标。 -->
     <groupId>com.plantky</groupId>
     <artifactId>plantky-backend</artifactId>
-    <version>2.0.0</version>
+    <version>2.1.0</version>
     <name>plantky-backend</name>
     <!-- Iteration 1: Plantky Iteration 1 backend for FIT5120 Project 2 -->
     <description>PlantAssure Iteration 2 backend for FIT5120 Project 2</description>

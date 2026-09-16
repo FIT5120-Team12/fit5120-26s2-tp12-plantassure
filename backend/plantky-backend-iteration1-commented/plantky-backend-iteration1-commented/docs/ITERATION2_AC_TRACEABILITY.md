@@ -42,3 +42,13 @@
 | stable ID | `species_data_i2_backend.sql` |
 | I1 search response | `results` retained; `items` alias added |
 | I1 local occurrence year | `mostRecentRecordYear` retained; `latestRecordYear` alias added |
+
+## Epic 1 — AI-Assisted Plant Identification
+
+See the dedicated detailed matrix:
+
+```text
+docs/EPIC1_AC_TRACEABILITY.md
+```
+
+Backend coverage includes multipart image validation, AI-provider abstraction, Top-N possible matches, `identificationConfidence`, no-match state, provider-unavailable error, controlled PlantAssure scientific-name matching, and safe handoff to the existing verified Assessment API after user confirmation.

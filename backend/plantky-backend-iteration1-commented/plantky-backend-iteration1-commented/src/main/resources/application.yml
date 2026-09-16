@@ -24,6 +24,12 @@ spring:
     # 因此设置 always，不自动忽略 null。
     default-property-inclusion: always
 
+  servlet:
+    multipart:
+      # Epic 1 后端要求最大 10 MB 图片；request 略放宽以容纳 multipart headers。
+      max-file-size: 10MB
+      max-request-size: 11MB
+
 mybatis-plus:
   configuration:
     # 数据库 snake_case 自动映射到 Java camelCase：
@@ -54,3 +60,19 @@ plantky:
     # 可通过 FRONTEND_ORIGIN 环境变量覆盖。
     allowed-origins:
       - ${FRONTEND_ORIGIN:http://localhost:5173}
+
+  # ==========================================================
+  # Epic 1 — AI-assisted plant identification
+  # ==========================================================
+  identification:
+    # AI 团队接口未部署时保持 false，此时 /identify 返回 503，但 Search/Assessment 不受影响。
+    enabled: ${PLANT_IDENTIFICATION_ENABLED:false}
+    base-url: ${PLANT_IDENTIFICATION_BASE_URL:http://localhost:8000}
+    endpoint: ${PLANT_IDENTIFICATION_ENDPOINT:/identify}
+    api-key: ${PLANT_IDENTIFICATION_API_KEY:}
+    max-image-size-mb: 10
+    top-candidates: ${PLANT_IDENTIFICATION_TOP_CANDIDATES:3}
+    # 需求文档没有规定阈值；默认不额外过滤。AI 团队确认阈值后通过环境变量设置。
+    minimum-confidence: ${PLANT_IDENTIFICATION_MIN_CONFIDENCE:0.0}
+    connect-timeout: ${PLANT_IDENTIFICATION_CONNECT_TIMEOUT:3s}
+    read-timeout: ${PLANT_IDENTIFICATION_READ_TIMEOUT:15s}

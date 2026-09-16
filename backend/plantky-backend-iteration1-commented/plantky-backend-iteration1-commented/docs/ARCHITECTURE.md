@@ -34,3 +34,69 @@ The current dataset has roughly 777 read-only rows. MySQL lookup latency is alre
 ## Why Transactions Are Not Added
 
 Each Iteration 1 endpoint performs one read query and no multi-step write operation. A transaction is therefore not required for correctness.
+
+---
+
+# Iteration 2 Epic 1 Extension — AI-Assisted Plant Identification
+
+Epic 1 extends the existing architecture without changing the verified Assessment pipeline.
+
+```text
+Vue Frontend
+    │
+    │ multipart/form-data (image)
+    ▼
+PlantIdentificationController
+    │
+    ▼
+PlantIdentificationServiceImpl
+    ├──────────────► ImageValidationService
+    │                 MIME + size + file signature
+    │
+    ├──────────────► PlantIdentificationClient
+    │                    │
+    │                    ▼
+    │              External AI Provider
+    │                    │
+    │          scientificName + confidence
+    │                    │
+    └──────────────► SpeciesMatchingService
+                         │
+                         ▼
+                    species_data
+                         │
+                         ▼
+                   Top 3 matches
+                         │
+                         ▼
+                    Vue Frontend
+                         │
+                    User confirms
+                         │
+                         ▼
+            GET /plants/{plantId}/assessment
+                         │
+                         ▼
+              Existing AssessmentOrchestrator
+```
+
+## Boundary rule
+
+```text
+AI identification confidence
+        !=
+environmental concern / risk / recommendation
+```
+
+`PlantIdentificationServiceImpl` deliberately does not depend on `AssessmentOrchestrator`.
+The existing Assessment is entered only after the user confirms a candidate with a real PlantAssure `plantId`.
+
+## External-dependency isolation
+
+All provider-specific HTTP/schema handling lives behind:
+
+```text
+PlantIdentificationClient
+```
+
+This permits the AI team to replace its Python model/API without rewriting PlantAssure controllers or domain response objects.

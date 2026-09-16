@@ -8,6 +8,8 @@ import jakarta.validation.ConstraintViolationException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MissingServletRequestParameterException;
+import org.springframework.web.multipart.MaxUploadSizeExceededException;
+import org.springframework.web.multipart.support.MissingServletRequestPartException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
@@ -53,6 +55,32 @@ public class GlobalExceptionHandler {
      * 处理 enum/数字等 HTTP 参数类型错误。
      * Catalog 枚举值不合法时返回 INVALID_FILTER；其他转换问题保持 INVALID_REQUEST。
      */
+    /**
+     * Epic 1：multipart 请求缺少 image part 时属于 INVALID_IMAGE，而不是内部错误。
+     */
+    @ExceptionHandler(MissingServletRequestPartException.class)
+    public ResponseEntity<ErrorResponse> handleMissingRequestPart(
+            MissingServletRequestPartException exception,
+            HttpServletRequest request) {
+        ErrorCode errorCode = "image".equals(exception.getRequestPartName())
+                ? ErrorCode.INVALID_IMAGE
+                : ErrorCode.INVALID_REQUEST;
+        return ResponseEntity.status(errorCode.getHttpStatus())
+                .body(buildResponse(errorCode, errorCode.getDefaultMessage(), request.getRequestURI()));
+    }
+
+    /**
+     * Spring multipart 在进入 Controller 之前就可能拒绝过大的文件，因此这里统一映射为 INVALID_IMAGE。
+     */
+    @ExceptionHandler(MaxUploadSizeExceededException.class)
+    public ResponseEntity<ErrorResponse> handleMaxUploadSizeExceeded(
+            MaxUploadSizeExceededException exception,
+            HttpServletRequest request) {
+        ErrorCode errorCode = ErrorCode.INVALID_IMAGE;
+        return ResponseEntity.status(errorCode.getHttpStatus())
+                .body(buildResponse(errorCode, "Image size must not exceed 10 MB.", request.getRequestURI()));
+    }
+
     @ExceptionHandler(MethodArgumentTypeMismatchException.class)
     public ResponseEntity<ErrorResponse> handleTypeMismatch(
             MethodArgumentTypeMismatchException exception,

@@ -42,6 +42,21 @@ public enum ErrorCode {
             "INVALID_COMPARE_SELECTION",
             "plantIds must contain 2 to 3 unique positive integer IDs."),
 
+    INVALID_IMAGE(
+            HttpStatus.BAD_REQUEST,
+            "INVALID_IMAGE",
+            "Please upload a valid JPG, PNG or WebP image."),
+
+    IDENTIFICATION_FAILED(
+            HttpStatus.INTERNAL_SERVER_ERROR,
+            "IDENTIFICATION_FAILED",
+            "Plant identification could not be completed."),
+
+    IDENTIFICATION_SERVICE_UNAVAILABLE(
+            HttpStatus.SERVICE_UNAVAILABLE,
+            "IDENTIFICATION_SERVICE_UNAVAILABLE",
+            "Plant identification is temporarily unavailable. Please try again or search for the plant by name."),
+
     PLANT_NOT_FOUND(
             HttpStatus.NOT_FOUND,
             "PLANT_NOT_FOUND",

@@ -1,13 +1,14 @@
 import type {
-  EnvironmentalRisk,
+  EnvironmentalConcernDetails,
   LocalOccurrence,
-  PlantIdentity,
-  RecommendationLevel,
+  Recommendation,
+  VictorianEstablishment,
 } from '@/types/plant';
 
 export type AssessmentTone = 'concern' | 'caution' | 'lower' | 'neutral' | 'unavailable';
 
 export interface RecommendationPresentation {
+  label: string;
   tone: AssessmentTone;
   icon: string;
   guidance: string;
@@ -24,8 +25,6 @@ export interface EvidencePresentation {
 export interface EstablishmentPresentation {
   label: string;
   supporting: string;
-  explanation: string;
-  badges: string[];
   tone: AssessmentTone;
 }
 
@@ -39,18 +38,20 @@ function formatRawLabel(value: string): string {
 }
 
 export function getRecommendationPresentation(
-  level: RecommendationLevel | string,
+  level: Recommendation | string,
 ): RecommendationPresentation {
   switch (level) {
     case 'RECONSIDER_PLANTING':
       return {
+        label: 'Reconsider Planting',
         tone: 'concern',
         icon: 'mdi-alert-outline',
         guidance:
-          'Before purchasing or planting this species, consider whether another plant may be a more suitable choice.',
+          'This species can establish and spread in the local environment, so another plant may be a better choice for your garden.',
       };
     case 'USE_CAUTION':
       return {
+        label: 'Use Caution',
         tone: 'caution',
         icon: 'mdi-alert-circle-outline',
         guidance:
@@ -58,6 +59,7 @@ export function getRecommendationPresentation(
       };
     case 'LOWER_CONCERN':
       return {
+        label: 'Lower Concern',
         tone: 'lower',
         icon: 'mdi-leaf-circle-outline',
         guidance:
@@ -65,6 +67,7 @@ export function getRecommendationPresentation(
       };
     case 'NOT_ASSESSED':
       return {
+        label: 'Not Assessed',
         tone: 'neutral',
         icon: 'mdi-information-outline',
         guidance:
@@ -72,6 +75,7 @@ export function getRecommendationPresentation(
       };
     default:
       return {
+        label: 'Assessment unavailable',
         tone: 'neutral',
         icon: 'mdi-information-outline',
         guidance: 'Review the available evidence before making a planting decision.',
@@ -79,65 +83,20 @@ export function getRecommendationPresentation(
   }
 }
 
-export function getEstablishmentPresentation(plant: PlantIdentity): EstablishmentPresentation {
-  const badges: string[] = [];
-  if (plant.establishmentMeans) badges.push(plant.establishmentMeans);
-  if (plant.degreeOfEstablishment) badges.push(plant.degreeOfEstablishment);
-  const label = plant.establishmentMeans ?? 'Not provided';
-  const supporting = plant.degreeOfEstablishment ?? 'Establishment detail not provided';
-
-  switch (plant.degreeOfEstablishment) {
-    case 'Naturalised':
-      return {
-        label,
-        supporting,
-        badges,
-        tone: 'neutral',
-        explanation:
-          'Naturalised means the species has established self-sustaining populations outside cultivation in Victoria.',
-      };
-    case 'Native':
-      return {
-        label,
-        supporting,
-        badges,
-        tone: 'lower',
-        explanation:
-          'VicFlora identifies this species as native and naturally occurring in Victoria.',
-      };
-    case 'Adventive':
-      return {
-        label,
-        supporting,
-        badges,
-        tone: 'neutral',
-        explanation: 'VicFlora reports the degree of establishment as Adventive.',
-      };
-    case null:
-      return {
-        label,
-        supporting,
-        badges,
-        tone: 'neutral',
-        explanation: plant.establishmentMeans
-          ? `VicFlora identifies this plant as ${plant.establishmentMeans.toLowerCase()} in Victoria.`
-          : 'Victorian establishment information was not provided.',
-      };
-    default:
-      return {
-        label,
-        supporting,
-        badges,
-        tone: 'neutral',
-        explanation: `VicFlora reports the establishment detail as ${String(plant.degreeOfEstablishment)}.`,
-      };
-  }
+export function getEstablishmentPresentation(
+  establishment: VictorianEstablishment,
+): EstablishmentPresentation {
+  return {
+    label: establishment.label,
+    supporting: formatRawLabel(establishment.status),
+    tone: 'neutral',
+  };
 }
 
 export function getLocalOccurrencePresentation(occurrence: LocalOccurrence): EvidencePresentation {
   switch (occurrence.status) {
     case 'FOUND': {
-      const latest = occurrence.mostRecentRecordYear;
+      const latest = occurrence.latestRecordYear;
       return {
         label: occurrence.recordCount ?? 'Records found',
         supporting:
@@ -150,7 +109,7 @@ export function getLocalOccurrencePresentation(occurrence: LocalOccurrence): Evi
     }
     case 'NOT_FOUND':
       return {
-        label: 'No matching VBA records found',
+        label: 'No matching local records found',
         supporting: 'No matching records in the City of Monash',
         explanation:
           'No matching VBA records were found in the City of Monash. Absence of matching records does not confirm that the species is absent from the area.',
@@ -177,29 +136,54 @@ export function getLocalOccurrencePresentation(occurrence: LocalOccurrence): Evi
   }
 }
 
-function assessedRiskTone(rating: string | null): AssessmentTone {
+export function getEnvironmentalRiskTone(rating: string | null): AssessmentTone {
   switch (rating?.toLowerCase()) {
+    case 'very_high':
     case 'very high':
     case 'high':
       return 'concern';
+    case 'moderately_high':
     case 'moderately high':
     case 'medium':
       return 'caution';
     case 'lower':
       return 'lower';
+    case 'unavailable':
+      return 'unavailable';
     default:
       return 'neutral';
   }
 }
 
-export function getEnvironmentalRiskPresentation(risk: EnvironmentalRisk): EvidencePresentation {
-  switch (risk.assessmentStatus) {
-    case 'ASSESSED':
+export function getEnvironmentalConcernChipColor(
+  concern: string | null,
+): 'accent' | 'secondary' | 'primary' | undefined {
+  switch (getEnvironmentalRiskTone(concern)) {
+    case 'concern':
+      return 'accent';
+    case 'caution':
+      return 'secondary';
+    case 'lower':
+      return 'primary';
+    default:
+      return undefined;
+  }
+}
+
+export function getEnvironmentalConcernPresentation(
+  concern: EnvironmentalConcernDetails,
+): EvidencePresentation {
+  switch (concern.status) {
+    case 'VERY_HIGH':
+    case 'HIGH':
+    case 'MODERATELY_HIGH':
+    case 'MEDIUM':
+    case 'LOWER':
       return {
-        label: risk.rating ?? 'Assessed',
-        supporting: 'Environmental weed-risk rating',
-        explanation: risk.explanation,
-        tone: assessedRiskTone(risk.rating),
+        label: formatRawLabel(concern.status),
+        supporting: 'Environmental concern assessment',
+        explanation: 'Environmental concern information is available for this plant.',
+        tone: getEnvironmentalRiskTone(concern.status),
         icon: 'mdi-sprout-outline',
       };
     case 'NOT_ASSESSED':
@@ -214,18 +198,17 @@ export function getEnvironmentalRiskPresentation(risk: EnvironmentalRisk): Evide
     case 'UNAVAILABLE':
       return {
         label: 'Unavailable',
-        supporting: 'The environmental-risk check could not be completed',
+        supporting: 'The environmental concern check could not be completed',
         explanation:
-          'Environmental weed risk information is currently unavailable. This check could not be completed; the available establishment and occurrence evidence remains shown.',
+          'Environmental concern information is currently unavailable. This check could not be completed; the available establishment and occurrence evidence remains shown.',
         tone: 'unavailable',
         icon: 'mdi-information-outline',
       };
     default:
       return {
-        label: formatRawLabel(String(risk.assessmentStatus)),
-        supporting: 'Environmental weed-risk status',
-        explanation:
-          risk.explanation || 'Review the available environmental weed-risk information.',
+        label: formatRawLabel(String(concern.status)),
+        supporting: 'Environmental concern status',
+        explanation: 'Review the available environmental concern information.',
         tone: 'neutral',
         icon: 'mdi-sprout-outline',
       };

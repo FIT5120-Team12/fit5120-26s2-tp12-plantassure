@@ -1,9 +1,9 @@
 import { http } from '@/api/http';
 
 import type {
-  PlantAssessmentResponse,
   PlantAlternativesParams,
   PlantAlternativesResponse,
+  PlantAssessmentResponse,
   PlantCatalogParams,
   PlantCatalogResponse,
   PlantComparisonResponse,
@@ -53,10 +53,7 @@ export async function getAlternatives(
     throw new RangeError('plantId must be a positive integer.');
   }
 
-  if (
-    params?.limit !== undefined &&
-    (!Number.isSafeInteger(params.limit) || params.limit <= 0)
-  ) {
+  if (params?.limit !== undefined && (!Number.isSafeInteger(params.limit) || params.limit <= 0)) {
     throw new RangeError('limit must be a positive integer.');
   }
 

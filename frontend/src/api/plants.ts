@@ -24,7 +24,10 @@ export async function searchPlants(
   }
 
   const { data } = await http.get<PlantSearchResponse>('/plants/search', {
-    params: { q: query, limit: requestedLimit },
+    params: {
+      q: query,
+      limit: requestedLimit,
+    },
   });
 
   return data;
@@ -39,7 +42,9 @@ export async function getPlantAssessment(plantId: number): Promise<PlantAssessme
 export async function getPlants(params: PlantCatalogParams): Promise<PlantCatalogResponse> {
   const { data } = await http.get<PlantCatalogResponse>('/plants', {
     params,
-    paramsSerializer: { indexes: null },
+    paramsSerializer: {
+      indexes: null,
+    },
   });
 
   return data;
@@ -77,7 +82,9 @@ export async function comparePlants(plantIds: number[]): Promise<PlantComparison
   }
 
   const { data } = await http.get<PlantComparisonResponse>('/plants/compare', {
-    params: { plantIds: plantIds.join(',') },
+    params: {
+      plantIds: plantIds.join(','),
+    },
   });
 
   return data;

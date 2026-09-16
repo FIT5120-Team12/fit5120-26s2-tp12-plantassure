@@ -4,7 +4,7 @@ import { ref } from 'vue';
 import { searchPlants } from '@/api/plants';
 import type { PlantSearchResult } from '@/types/plant';
 
-const SEARCH_ERROR_MESSAGE = 'We couldn’t load plant results. Please try again.';
+const SEARCH_ERROR_MESSAGE = "We couldn't load plant results. Please try again.";
 
 export const useSearchStore = defineStore('search', () => {
   const query = ref('');
@@ -40,7 +40,7 @@ export const useSearchStore = defineStore('search', () => {
 
       if (requestId !== suggestionRequestId || query.value.trim() !== keyword) return;
 
-      suggestions.value = response.results;
+      suggestions.value = response.items;
     } catch {
       if (requestId !== suggestionRequestId || query.value.trim() !== keyword) return;
 
@@ -71,7 +71,7 @@ export const useSearchStore = defineStore('search', () => {
 
       if (requestId !== searchRequestId || query.value.trim() !== keyword) return;
 
-      results.value = response.results;
+      results.value = response.items;
     } catch {
       if (requestId !== searchRequestId || query.value.trim() !== keyword) return;
 

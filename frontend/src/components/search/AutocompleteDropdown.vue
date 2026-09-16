@@ -19,13 +19,28 @@
 <template>
   <div :id="id" class="autocomplete-dropdown" role="listbox" aria-label="Plant suggestions">
     <div v-if="isLoading" class="autocomplete-dropdown__status" role="status">
-      <i class="mdi mdi-loading mdi-spin" aria-hidden="true"></i>
+      <v-progress-circular
+        indeterminate
+        :size="18"
+        :width="2"
+        color="primary"
+        aria-hidden="true"
+      />
       <span>Loading plant results…</span>
     </div>
 
     <div v-else-if="error" class="autocomplete-dropdown__error" role="alert">
       <span>{{ error }}</span>
-      <button type="button" @click="$emit('retry')">Try again</button>
+      <v-btn
+        class="plant-btn--secondary"
+        color="primary"
+        variant="outlined"
+        height="44"
+        type="button"
+        @click="$emit('retry')"
+      >
+        Try again
+      </v-btn>
     </div>
 
     <div v-else-if="suggestions.length === 0" class="autocomplete-dropdown__status" role="status">
@@ -86,20 +101,9 @@
     background: var(--color-error-soft);
   }
 
-  .autocomplete-dropdown__error button {
-    min-height: 44px;
+  .autocomplete-dropdown__error .v-btn {
     flex: 0 0 auto;
     padding-inline: var(--space-md);
-    border: 1px solid var(--color-border-strong);
-    border-radius: var(--radius-sm);
-    background: var(--color-surface);
-    color: var(--color-primary);
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .autocomplete-dropdown__error button:hover {
-    background: var(--color-surface-muted);
   }
 
   .autocomplete-dropdown__option {

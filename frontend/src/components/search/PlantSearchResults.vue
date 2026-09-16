@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import { RouterLink } from 'vue-router';
+
   import type { PlantSearchResult } from '@/types/plant';
 
   defineProps<{
@@ -18,13 +20,28 @@
     <h2 id="plant-results-title">Search results</h2>
 
     <div v-if="isLoading" class="plant-results__status" role="status" aria-live="polite">
-      <i class="mdi mdi-loading mdi-spin" aria-hidden="true"></i>
+      <v-progress-circular
+        indeterminate
+        :size="18"
+        :width="2"
+        color="primary"
+        aria-hidden="true"
+      />
       <span>Searching plants…</span>
     </div>
 
     <div v-else-if="error" class="plant-results__error" role="alert">
       <span>{{ error }}</span>
-      <button type="button" @click="$emit('retry')">Try again</button>
+      <v-btn
+        class="plant-btn--secondary"
+        color="primary"
+        variant="outlined"
+        height="44"
+        type="button"
+        @click="$emit('retry')"
+      >
+        Try again
+      </v-btn>
     </div>
 
     <p v-else-if="results.length === 0" class="plant-results__status" role="status">
@@ -37,9 +54,9 @@
       </p>
       <ul class="plant-results__list">
         <li v-for="result in results" :key="result.plantId">
-          <a
+          <RouterLink
             class="plant-results__link"
-            :href="`/plants/${result.plantId}/assessment`"
+            :to="{ name: 'plant-assessment', params: { plantId: result.plantId } }"
             @click.prevent="$emit('select', result)"
           >
             <span class="plant-results__identity">
@@ -50,9 +67,9 @@
             </span>
             <span class="plant-results__action">
               View assessment
-              <i class="mdi mdi-arrow-right" aria-hidden="true"></i>
+              <v-icon icon="mdi-arrow-right" size="18" aria-hidden="true" />
             </span>
-          </a>
+          </RouterLink>
         </li>
       </ul>
     </template>
@@ -101,20 +118,9 @@
     border-radius: var(--radius-sm);
   }
 
-  .plant-results__error button {
-    min-height: 44px;
+  .plant-results__error .v-btn {
     flex: 0 0 auto;
     padding-inline: var(--space-md);
-    border: 1px solid var(--color-border-strong);
-    border-radius: var(--radius-sm);
-    background: var(--color-surface);
-    color: var(--color-primary);
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .plant-results__error button:hover {
-    background: var(--color-surface-muted);
   }
 
   .plant-results__summary {

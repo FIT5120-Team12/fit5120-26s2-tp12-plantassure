@@ -21,6 +21,7 @@
   const activeIndex = ref(-1);
   const suggestionQuery = ref('');
   const explicitQuery = ref('');
+  const validationError = ref<string | null>(null);
   const showExplicitResults = ref(false);
   let debounceTimer: ReturnType<typeof setTimeout> | null = null;
   let suggestionLoadId = 0;
@@ -63,6 +64,7 @@
     const value = (event.target as HTMLInputElement).value;
     const normalizedQuery = value.trim();
 
+    validationError.value = null;
     searchStore.setQuery(value);
     searchStore.clearResults();
     explicitQuery.value = '';
@@ -151,6 +153,7 @@
     suggestionQuery.value = '';
 
     if (!normalizedQuery) {
+      validationError.value = 'Enter a plant name to search.';
       showExplicitResults.value = false;
       searchStore.clearResults();
       input.value?.focus();
@@ -199,6 +202,7 @@
     ref="root"
     class="plant-search"
     role="search"
+    novalidate
     :aria-busy="isSearching"
     @submit.prevent="executeExplicitSearch"
   >
@@ -207,14 +211,13 @@
     </label>
     <div class="plant-search__autocomplete">
       <div class="plant-search__control">
-        <i class="plant-search__icon mdi mdi-magnify" aria-hidden="true"></i>
+        <v-icon class="plant-search__icon" icon="mdi-magnify" size="22" aria-hidden="true" />
         <input
           id="plant-search-input"
           ref="input"
           :value="query"
           type="search"
           name="plant-search"
-          required
           maxlength="255"
           autocomplete="off"
           placeholder="Search by common or scientific name"
@@ -223,11 +226,21 @@
           :aria-expanded="isOpen"
           :aria-controls="LISTBOX_ID"
           :aria-activedescendant="activeDescendant"
+          :aria-describedby="validationError ? 'plant-search-validation' : undefined"
+          :aria-invalid="Boolean(validationError)"
           @input="handleInput"
           @focus="handleFocus"
           @keydown="handleKeydown"
         />
-        <button type="submit" :disabled="isSearching">Search</button>
+        <v-btn
+          class="plant-search__submit"
+          type="submit"
+          color="primary"
+          variant="flat"
+          :disabled="isSearching"
+        >
+          Search
+        </v-btn>
       </div>
       <AutocompleteDropdown
         v-if="isOpen"
@@ -241,6 +254,14 @@
         @retry="retrySuggestions"
       />
     </div>
+    <p
+      v-if="validationError"
+      id="plant-search-validation"
+      class="plant-search__validation"
+      role="alert"
+    >
+      {{ validationError }}
+    </p>
     <PlantSearchResults
       v-if="showExplicitResults"
       :results="results"
@@ -286,7 +307,6 @@
   .plant-search__icon {
     margin-right: var(--space-sm);
     color: var(--color-muted);
-    font-size: 22px;
   }
 
   .plant-search input {
@@ -305,31 +325,14 @@
     opacity: 1;
   }
 
-  .plant-search button {
+  .plant-search__submit {
     min-width: 84px;
-    min-height: 44px;
-    padding: 0 18px;
-    border: 0;
-    border-radius: var(--radius-sm);
-    background: var(--color-primary);
-    color: var(--color-on-primary);
-    font-size: 0.875rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 160ms ease;
   }
 
-  .plant-search button:hover {
-    background: var(--color-primary-hover);
-  }
-
-  .plant-search button:disabled {
-    cursor: wait;
-    opacity: 0.72;
-  }
-
-  .plant-search button:active {
-    transform: translateY(1px);
+  .plant-search__validation {
+    margin: var(--space-xs) 0 0;
+    color: rgb(var(--v-theme-error));
+    font-size: 0.8125rem;
   }
 
   .plant-search input:focus-visible {
@@ -342,10 +345,9 @@
       padding: 3px 4px 3px var(--space-md);
     }
 
-    .plant-search button {
+    .plant-search__submit {
       grid-column: 1 / -1;
       width: 100%;
-      border-radius: var(--radius-sm);
     }
   }
 </style>

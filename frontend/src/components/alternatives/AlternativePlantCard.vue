@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { getEnvironmentalConcernChipColor } from '@/utils/assessmentPresentation';
+  import type { LegalStatus } from '@/types/plant';
 
   interface AlternativePlantCardProps {
     plantId: number;
@@ -8,6 +9,7 @@
     imageUrl?: string | null;
     environmentalConcern: string | null;
     originStatus: string | null;
+    legalStatus: LegalStatus;
     matchReasons: string[];
     growthForm?: string | null;
     lifeHistory?: string | null;
@@ -31,6 +33,17 @@
     select: [plantId: number];
     toggleCompare: [plantId: number];
   }>();
+
+  function formatLegalStatus(status: LegalStatus): string {
+    switch (status) {
+      case 'NOT_REGULATED':
+        return 'Not regulated';
+      case 'REGULATED':
+        return 'Regulated';
+      case 'UNAVAILABLE':
+        return 'Legal status unavailable';
+    }
+  }
 
   const traits = [
     { label: 'Growth form', value: props.growthForm, icon: 'mdi-leaf-outline' },
@@ -73,6 +86,10 @@
           {{ originStatus }}
         </v-chip>
       </div>
+
+      <p class="alternative-plant-card__legal-status">
+        Legal status: {{ formatLegalStatus(legalStatus) }}
+      </p>
 
       <section v-if="matchReasons.length" class="alternative-plant-card__matches">
         <h3>Why it matches</h3>
@@ -178,6 +195,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-xs);
+  }
+
+  .alternative-plant-card__legal-status {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 0.8125rem;
   }
 
   .alternative-plant-card__matches {

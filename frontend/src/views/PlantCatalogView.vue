@@ -111,7 +111,7 @@
           />
 
           <div class="catalog-results-heading">
-            <p v-if="hasLoaded && !error">{{ totalElements }} assessed plants</p>
+            <p v-if="hasLoaded && !isLoading && !error">{{ totalElements }} assessed plants</p>
           </div>
 
           <section v-if="isLoading" class="catalog-state" role="status" aria-live="polite">

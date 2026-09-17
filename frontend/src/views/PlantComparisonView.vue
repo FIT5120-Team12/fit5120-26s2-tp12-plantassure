@@ -63,7 +63,21 @@
 
       if (currentRequestId !== requestId) return;
 
-      comparisonPlants.value = response.plants;
+      const responsePlantIds = response.plants.map((plant) => plant.plantId);
+      const uniqueResponsePlantIds = new Set(responsePlantIds);
+      const hasCompleteExpectedResponse =
+        response.plants.length === plantIds.length &&
+        uniqueResponsePlantIds.size === response.plants.length &&
+        responsePlantIds.every((plantId) => plantIds.includes(plantId)) &&
+        plantIds.every((plantId) => uniqueResponsePlantIds.has(plantId));
+
+      if (hasCompleteExpectedResponse) {
+        const plantsById = new Map(response.plants.map((plant) => [plant.plantId, plant]));
+        comparisonPlants.value = plantIds.map((plantId) => plantsById.get(plantId)!);
+      } else {
+        comparisonPlants.value = [];
+      }
+
       hasLoaded.value = true;
     } catch {
       if (currentRequestId !== requestId) return;

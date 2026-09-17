@@ -22,9 +22,6 @@
   const { assessment, error, isLoading } = storeToRefs(assessmentStore);
   const routeError = ref<string | null>(null);
   const pageError = computed(() => routeError.value ?? error.value);
-  const isAiConfirmed = computed(
-    () => route.query.source === 'photo' && route.query.confirmed === 'true',
-  );
   const assessmentData = assessment;
   const establishmentPresentation = computed(() =>
     assessmentData.value
@@ -170,24 +167,16 @@
               </p>
             </div>
             <aside
-              v-if="assessmentData.plant.imageUrl || isAiConfirmed"
+              v-if="assessmentData.plant.imageUrl"
               class="assessment-identity__visual"
               aria-label="Plant visual"
             >
               <v-img
-                v-if="assessmentData.plant.imageUrl"
                 :src="assessmentData.plant.imageUrl"
                 alt=""
                 cover
                 class="assessment-identity__image"
               />
-              <div v-if="isAiConfirmed" class="assessment-identity__confirmation">
-                <v-icon icon="mdi-check-circle" size="24" aria-hidden="true" />
-                <div>
-                  <strong>Plant identified</strong>
-                  <span>Matched and confirmed before assessment.</span>
-                </div>
-              </div>
             </aside>
           </section>
 
@@ -372,33 +361,6 @@
     inset: 0;
     width: 100%;
     height: 100%;
-  }
-
-  .assessment-identity__confirmation {
-    position: absolute;
-    top: var(--space-md);
-    left: var(--space-md);
-    display: flex;
-    max-width: min(18rem, calc(100% - var(--space-lg)));
-    align-items: flex-start;
-    gap: var(--space-sm);
-    padding: var(--space-sm) var(--space-md);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    background: color-mix(in srgb, var(--color-surface) 92%, transparent);
-    color: var(--color-primary);
-  }
-
-  .assessment-identity__confirmation > div {
-    min-width: 0;
-    display: grid;
-    gap: 2px;
-  }
-
-  .assessment-identity__confirmation span {
-    color: var(--color-ink-soft);
-    font-size: 0.8125rem;
-    overflow-wrap: anywhere;
   }
 
   .assessment-identity h1 {

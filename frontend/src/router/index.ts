@@ -1,8 +1,9 @@
-import HomeView from '@/views/HomeView.vue';
-import PlantCatalogView from '@/views/PlantCatalogView.vue';
-import PlantAssessmentView from '@/views/PlantAssessmentView.vue';
 import BetterPlantAlternativesView from '@/views/BetterPlantAlternativesView.vue';
+import HomeView from '@/views/HomeView.vue';
+import PlantAssessmentView from '@/views/PlantAssessmentView.vue';
+import PlantCatalogView from '@/views/PlantCatalogView.vue';
 import PlantComparisonView from '@/views/PlantComparisonView.vue';
+import PlantIdentificationView from '@/views/PlantIdentificationView.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
@@ -21,6 +22,7 @@ const router = createRouter({
       component: BetterPlantAlternativesView,
     },
     { path: '/compare', name: 'plant-comparison', component: PlantComparisonView },
+    { path: '/identify', name: 'plant-identification', component: PlantIdentificationView },
   ],
 });
 

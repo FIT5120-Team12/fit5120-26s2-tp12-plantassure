@@ -35,7 +35,7 @@ export interface PlantCatalogItem {
   scientificName: string;
   imageUrl: string | null;
   environmentalConcern: EnvironmentalConcern;
-  originStatus: OriginStatus;
+  originStatus: OriginStatus | null;
   growthForm: string | null;
   lifeHistory: string | null;
   height: string | null;
@@ -53,6 +53,12 @@ export interface PlantCatalogResponse {
 export interface PlantAlternativesParams {
   limit?: number;
 }
+
+export type AlternativesStatus =
+  | 'matched'
+  | 'no_strict_match_found'
+  | 'insufficient_trait_data'
+  | 'not_applicable';
 
 export interface CurrentPlantAlternativeSummary {
   plantId: number;
@@ -72,7 +78,7 @@ export interface AlternativePlant {
   scientificName: string;
   imageUrl: string | null;
   environmentalConcern: EnvironmentalConcern;
-  originStatus: OriginStatus;
+  originStatus: OriginStatus | null;
   legalStatus: LegalStatus;
   growthForm: string | null;
   lifeHistory: string | null;
@@ -83,6 +89,7 @@ export interface AlternativePlant {
 
 /** Backend returns only eligible lower-concern, non-regulated assessed candidates. */
 export interface PlantAlternativesResponse {
+  status: AlternativesStatus;
   currentPlant: CurrentPlantAlternativeSummary;
   alternatives: AlternativePlant[];
 }

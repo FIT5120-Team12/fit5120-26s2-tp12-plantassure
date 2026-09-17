@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { nextTick, onMounted, ref } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+  import { nextTick, onMounted, ref } from 'vue';
+  import { useRoute, useRouter } from 'vue-router';
 
   import ctaBotanicalDecorationUrl from '@/assets/images/cta-botanical-decoration.png';
   import heroImageUrl from '@/assets/images/home-hero-botanical.png';
@@ -38,7 +38,7 @@ import { useRoute, useRouter } from 'vue-router';
   }
 
   function identifyFromPhoto() {
-    // TODO: Navigate when the plant identification route is available.
+    void router.push({ name: 'plant-identification' });
   }
 
   onMounted(async () => {

@@ -19,9 +19,10 @@
     <!-- 当前项目 Maven 坐标。 -->
     <groupId>com.plantky</groupId>
     <artifactId>plantky-backend</artifactId>
-    <version>1.0.0</version>
+    <version>2.1.0</version>
     <name>plantky-backend</name>
-    <description>Plantky Iteration 1 backend for FIT5120 Project 2</description>
+    <!-- Iteration 1: Plantky Iteration 1 backend for FIT5120 Project 2 -->
+    <description>PlantAssure Iteration 2 backend for FIT5120 Project 2</description>
 
     <properties>
         <!-- Spring Boot 3.x 最低要求 Java 17；本项目统一使用 Java 17。 -->

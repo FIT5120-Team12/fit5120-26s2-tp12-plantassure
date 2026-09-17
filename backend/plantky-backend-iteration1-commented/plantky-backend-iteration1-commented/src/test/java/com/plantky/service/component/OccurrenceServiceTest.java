@@ -23,8 +23,8 @@ class OccurrenceServiceTest {
     @Test
     void shouldReturnFoundWhenRecordCountIsPositive() {
         SpeciesDataEntity entity = new SpeciesDataEntity();
-        entity.setVbaRecordCount(8);
-        entity.setVbaMostRecentYear(2025);
+        entity.setVba100RecordCount(8);
+        entity.setVba100MostRecentYear(2025);
 
         LocalOccurrenceVO result = occurrenceService.build(
                 entity,
@@ -41,8 +41,8 @@ class OccurrenceServiceTest {
     @Test
     void shouldReturnNotFoundWithoutClaimingSpeciesAbsence() {
         SpeciesDataEntity entity = new SpeciesDataEntity();
-        entity.setVbaRecordCount(0);
-        entity.setVbaMostRecentYear(null);
+        entity.setVba100RecordCount(0);
+        entity.setVba100MostRecentYear(null);
         List<String> warnings = new ArrayList<>();
 
         LocalOccurrenceVO result = occurrenceService.build(entity, warnings);

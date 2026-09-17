@@ -3,19 +3,7 @@ package com.plantky.common.enums;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
-/**
- * 后端统一业务错误码。
- *
- * <p>每个错误同时绑定：</p>
- * <ul>
- *     <li>HTTP Status：符合 HTTP 语义，例如 400 / 404 / 500；</li>
- *     <li>业务错误 code：方便前端稳定识别错误类型；</li>
- *     <li>默认 message：没有特殊说明时直接使用。</li>
- * </ul>
- *
- * <p>把这些值集中管理，可以避免 Controller 或 Service 中散落大量
- * {@code "PLANT_NOT_FOUND"} 之类的魔法字符串。</p>
- */
+/** 后端统一业务错误码。 */
 @Getter
 public enum ErrorCode {
 
@@ -29,6 +17,46 @@ public enum ErrorCode {
             "INVALID_REQUEST",
             "The request is invalid."),
 
+    INVALID_PAGE(
+            HttpStatus.BAD_REQUEST,
+            "INVALID_PAGE",
+            "page must be zero or greater."),
+
+    INVALID_PAGE_SIZE(
+            HttpStatus.BAD_REQUEST,
+            "INVALID_PAGE_SIZE",
+            "size must be between 1 and 100."),
+
+    INVALID_FILTER(
+            HttpStatus.BAD_REQUEST,
+            "INVALID_FILTER",
+            "One or more catalog filters are invalid."),
+
+    INVALID_SORT(
+            HttpStatus.BAD_REQUEST,
+            "INVALID_SORT",
+            "The requested sort is not supported."),
+
+    INVALID_COMPARE_SELECTION(
+            HttpStatus.BAD_REQUEST,
+            "INVALID_COMPARE_SELECTION",
+            "plantIds must contain 2 to 3 unique positive integer IDs."),
+
+    INVALID_IMAGE(
+            HttpStatus.BAD_REQUEST,
+            "INVALID_IMAGE",
+            "Please upload a valid JPG, PNG or WebP image."),
+
+    IDENTIFICATION_FAILED(
+            HttpStatus.INTERNAL_SERVER_ERROR,
+            "IDENTIFICATION_FAILED",
+            "Plant identification could not be completed."),
+
+    IDENTIFICATION_SERVICE_UNAVAILABLE(
+            HttpStatus.SERVICE_UNAVAILABLE,
+            "IDENTIFICATION_SERVICE_UNAVAILABLE",
+            "Plant identification is temporarily unavailable. Please try again or search for the plant by name."),
+
     PLANT_NOT_FOUND(
             HttpStatus.NOT_FOUND,
             "PLANT_NOT_FOUND",
@@ -39,13 +67,8 @@ public enum ErrorCode {
             "INTERNAL_SERVER_ERROR",
             "Unexpected backend error.");
 
-    /** HTTP 状态码。 */
     private final HttpStatus httpStatus;
-
-    /** 前端可用于程序判断的稳定错误编码。 */
     private final String code;
-
-    /** 默认错误提示。 */
     private final String defaultMessage;
 
     ErrorCode(HttpStatus httpStatus, String code, String defaultMessage) {

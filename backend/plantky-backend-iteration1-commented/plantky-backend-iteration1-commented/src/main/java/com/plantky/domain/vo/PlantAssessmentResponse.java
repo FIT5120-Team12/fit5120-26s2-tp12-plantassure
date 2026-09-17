@@ -2,46 +2,67 @@ package com.plantky.domain.vo;
 
 import java.util.List;
 
+import com.plantky.common.enums.LegalStatus;
+import com.plantky.common.enums.OriginStatus;
+import com.plantky.domain.vo.assessment.EnvironmentalConcernVO;
+import com.plantky.domain.vo.assessment.GriisSupplementaryEvidenceVO;
+import com.plantky.domain.vo.assessment.LegalStatusDetailVO;
+import com.plantky.domain.vo.assessment.PlantTraitsVO;
+import com.plantky.domain.vo.assessment.SupportingEvidenceVO;
+import com.plantky.domain.vo.assessment.VictorianEstablishmentVO;
 import lombok.Builder;
 import lombok.Getter;
 
 /**
- * GET /api/v1/plants/{plantId}/assessment 的完整成功响应对象。
+ * GET /api/v1/plants/{plantId}/assessment 的完整响应。
  *
- * <p>它本身不负责计算任何业务规则，只负责把各业务组件已经生成的结果组合成 API Contract。</p>
- *
- * <pre>
- * PlantAssessmentResponse
- * ├── plant
- * ├── localOccurrence
- * ├── environmentalRisk
- * ├── recommendation
- * ├── sources
- * └── warnings
- * </pre>
+ * <p>Iteration 2 使用“向后兼容扩展”策略：</p>
+ * <ul>
+ *     <li>I1 的 plant/localOccurrence/environmentalRisk/recommendation/sources/warnings 全部保留；</li>
+ *     <li>I2 在同一响应中增加 normalized origin/concern、traits、legal availability、GRIIS 和 supporting evidence；</li>
+ *     <li>不把 occurrence/GRIIS 当成 environmental concern。</li>
+ * </ul>
  */
 @Getter
 @Builder
 public class PlantAssessmentResponse {
 
-    /** 植物身份与 establishment 信息。 */
+    // ---------------------------------------------------------------------
+    // Iteration 1 fields — kept unchanged for existing frontend compatibility
+    // ---------------------------------------------------------------------
+
     private final PlantIdentityVO plant;
-
-    /** City of Monash VBA 本地记录信息。 */
     private final LocalOccurrenceVO localOccurrence;
-
-    /** 2022 Advisory List 环境杂草风险。 */
     private final EnvironmentalRiskVO environmentalRisk;
-
-    /** 后端计算得到的唯一 recommendation。 */
     private final RecommendationVO recommendation;
-
-    /** 本次 assessment 使用的数据来源及其角色。 */
     private final List<DataSourceVO> sources;
-
-    /**
-     * Partial data failure 等非致命问题。
-     * 即使存在 warning，其他可用数据仍可正常返回，前端必须把 warning 展示给用户。
-     */
     private final List<String> warnings;
+
+    // ---------------------------------------------------------------------
+    // Iteration 2 additive fields
+    // ---------------------------------------------------------------------
+
+    /** Stable enum view of VicFlora origin status. */
+    private final OriginStatus originStatus;
+
+    /** VicFlora degree-of-establishment block for the new contract. */
+    private final VictorianEstablishmentVO victorianEstablishment;
+
+    /** Normalized environmental concern kept separate from local occurrence evidence. */
+    private final EnvironmentalConcernVO environmentalConcern;
+
+    /** Current legal state. With the supplied I2 dataset this is UNAVAILABLE. */
+    private final LegalStatus legalStatus;
+
+    /** Additional explanation for why legalStatus is unavailable. */
+    private final LegalStatusDetailVO legalStatusDetail;
+
+    /** AusTraits-backed trait block. Missing values remain null. */
+    private final PlantTraitsVO traits;
+
+    /** Only populated for VicFlora INTRODUCED plants; otherwise null. */
+    private final GriisSupplementaryEvidenceVO griisSupplementaryEvidence;
+
+    /** Explicit VBA100 + ALA evidence block matching the I2 data-source changes. */
+    private final SupportingEvidenceVO supportingEvidence;
 }

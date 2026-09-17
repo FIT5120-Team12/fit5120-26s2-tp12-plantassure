@@ -1,0 +1,173 @@
+### PlantAssure Iteration 2 - IDEA HTTP Client integration tests
+### Prerequisites:
+### 1) import species_data_i2_sample_backend_test.sql into MySQL
+### 2) start: python tools/mock_ai_server.py
+### 3) start Spring Boot with PLANT_IDENTIFICATION_ENABLED=true
+
+@baseUrl = http://localhost:8080
+
+### 00 - OpenAPI
+GET {{baseUrl}}/v3/api-docs
+Accept: application/json
+
+> {%
+client.test("OpenAPI returns 200", function () {
+  client.assert(response.status === 200, "Expected HTTP 200");
+});
+%}
+
+### 01 - Search
+GET {{baseUrl}}/api/v1/plants/search?q=wattle&limit=8
+Accept: application/json
+
+> {%
+client.test("Search returns results", function () {
+  client.assert(response.status === 200, "Expected HTTP 200");
+  client.assert(response.body.results.length > 0, "Expected at least one search result");
+});
+%}
+
+### 02 - Assessment ID 3
+GET {{baseUrl}}/api/v1/plants/3/assessment
+Accept: application/json
+
+> {%
+client.test("Assessment maps I2 fields", function () {
+  client.assert(response.status === 200, "Expected HTTP 200");
+  client.assert(response.body.plant.plantId === 3, "Expected plantId 3");
+  client.assert(response.body.environmentalConcern.status === "MODERATELY_HIGH", "Expected MODERATELY_HIGH");
+  client.assert(response.body.legalStatus === "UNAVAILABLE", "Expected legal UNAVAILABLE");
+});
+%}
+
+### 03 - Catalog
+GET {{baseUrl}}/api/v1/plants?page=0&size=12&sort=scientificName,asc
+Accept: application/json
+
+> {%
+client.test("Catalog is assessed-only", function () {
+  client.assert(response.status === 200, "Expected HTTP 200");
+  client.assert(response.body.items.every(p => p.environmentalConcern !== "NOT_ASSESSED"), "Catalog must exclude NOT_ASSESSED");
+});
+%}
+
+### 04 - Alternatives ID 3
+GET {{baseUrl}}/api/v1/plants/3/alternatives?limit=6
+Accept: application/json
+
+> {%
+client.test("Alternatives use lower documented concern", function () {
+  client.assert(response.status === 200, "Expected HTTP 200");
+  client.assert(response.body.status === "matched", "Expected matched");
+  client.assert(response.body.alternatives.length > 0, "Expected at least one alternative");
+  client.assert(response.body.alternatives.every(p => p.environmentalConcern !== "NOT_ASSESSED"), "NOT_ASSESSED must not be returned");
+});
+%}
+
+### 05 - Compare
+GET {{baseUrl}}/api/v1/plants/compare?plantIds=3,17,5
+Accept: application/json
+
+> {%
+client.test("Compare preserves request order", function () {
+  client.assert(response.status === 200, "Expected HTTP 200");
+  const ids = response.body.plants.map(p => p.plantId).join(",");
+  client.assert(ids === "3,17,5", "Expected order 3,17,5");
+});
+%}
+
+### 06 - AI Top 3 max
+POST {{baseUrl}}/api/v1/plants/identify
+Content-Type: multipart/form-data; boundary=PlantBoundary
+
+--PlantBoundary
+Content-Disposition: form-data; name="image"; filename="identify_top3.jpg"
+Content-Type: image/jpeg
+
+< ./test-images/identify_top3.jpg
+--PlantBoundary--
+
+> {%
+client.test("AI returns at most Top 3 and keeps unmapped candidate explicit", function () {
+  client.assert(response.status === 200, "Expected HTTP 200");
+  client.assert(response.body.matches.length === 3, "Expected exactly 3 from mock Top3 scenario");
+  const x = response.body.matches.find(m => m.scientificName === "Example species");
+  client.assert(x !== undefined, "Expected Example species");
+  client.assert(x.plantId === null, "Expected null plantId");
+  client.assert(x.plantAssureMatch === false, "Expected plantAssureMatch false");
+});
+%}
+
+### 07 - AI returns only two, backend must NOT pad to 3
+POST {{baseUrl}}/api/v1/plants/identify
+Content-Type: multipart/form-data; boundary=PlantBoundary
+
+--PlantBoundary
+Content-Disposition: form-data; name="image"; filename="identify_two.jpg"
+Content-Type: image/jpeg
+
+< ./test-images/identify_two.jpg
+--PlantBoundary--
+
+> {%
+client.test("AI can return fewer than 3", function () {
+  client.assert(response.status === 200, "Expected HTTP 200");
+  client.assert(response.body.matches.length === 2, "Expected 2; backend must not pad to 3");
+});
+%}
+
+### 08 - AI ambiguous match_key must not guess
+POST {{baseUrl}}/api/v1/plants/identify
+Content-Type: multipart/form-data; boundary=PlantBoundary
+
+--PlantBoundary
+Content-Disposition: form-data; name="image"; filename="identify_ambiguous.jpg"
+Content-Type: image/jpeg
+
+< ./test-images/identify_ambiguous.jpg
+--PlantBoundary--
+
+> {%
+client.test("Ambiguous match_key is not auto-mapped", function () {
+  client.assert(response.status === 200, "Expected HTTP 200");
+  client.assert(response.body.matches[0].plantId === null, "Expected null plantId");
+  client.assert(response.body.matches[0].plantAssureMatch === false, "Expected false mapping");
+});
+%}
+
+### 09 - AI no candidates
+POST {{baseUrl}}/api/v1/plants/identify
+Content-Type: multipart/form-data; boundary=PlantBoundary
+
+--PlantBoundary
+Content-Disposition: form-data; name="image"; filename="identify_empty.jpg"
+Content-Type: image/jpeg
+
+< ./test-images/identify_empty.jpg
+--PlantBoundary--
+
+> {%
+client.test("No candidate is a normal 200 result", function () {
+  client.assert(response.status === 200, "Expected HTTP 200");
+  client.assert(response.body.status === "NO_CONFIDENT_MATCH", "Expected NO_CONFIDENT_MATCH");
+  client.assert(response.body.matches.length === 0, "Expected []");
+});
+%}
+
+### 10 - Invalid JPEG signature
+POST {{baseUrl}}/api/v1/plants/identify
+Content-Type: multipart/form-data; boundary=PlantBoundary
+
+--PlantBoundary
+Content-Disposition: form-data; name="image"; filename="invalid_fake.jpg"
+Content-Type: image/jpeg
+
+< ./test-images/invalid_fake.jpg
+--PlantBoundary--
+
+> {%
+client.test("Fake JPEG rejected", function () {
+  client.assert(response.status === 400, "Expected HTTP 400");
+  client.assert(response.body.code === "INVALID_IMAGE", "Expected INVALID_IMAGE");
+});
+%}

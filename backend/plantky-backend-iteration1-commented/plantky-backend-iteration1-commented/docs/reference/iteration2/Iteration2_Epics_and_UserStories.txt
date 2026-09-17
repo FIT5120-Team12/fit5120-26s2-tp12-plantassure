@@ -1,0 +1,81 @@
+Epic 1 — AI-Assisted Plant Identification
+Description: Enables users who don't know a plant's name to identify it from a photo instead of searching by scientific or common name. The user uploads or captures an image, the system returns AI-generated species candidates with confidence scores (clearly distinguished from environmental risk data), the user confirms the correct match, and the system opens that species' existing PlantAssure assessment, sourced from verified data, never from AI-generated plant information.
+US 1.1 — Upload or Capture a Plant Image
+As a user who wants to identify an unknown plant, I want to upload or capture a photo of it, so that I can begin the identification process without needing to know its name.
+AC 1.1.1 — Image upload accepted and previewed
+Given the plant identification interface is displayed, When the user uploads a supported plant image, Then the system accepts the image and displays a preview.
+AC 1.1.2 — Replacing a selected image updates the preview
+Given a plant image has already been selected, When the user replaces the image with another supported image, Then the system removes the previous image and displays the new image as the current preview.
+AC 1.1.3 — Removing a selected image clears the preview and blocks submission
+Given a plant image has already been selected, When the user removes the image, Then the system clears the image preview and does not submit an identification request.
+AC 1.1.4 — Unsupported or invalid file is rejected
+Given an unsupported or invalid image file is available for upload, When the user selects the file, Then the system rejects the file and displays a clear error message.
+AC 1.1.5 — Submitting an image triggers identification only, not an assessment
+Given a valid plant image has been selected, When the user submits the image for identification, Then the system sends the image for plant identification without opening a plant assessment.
+ 
+ 
+US 1.2 — View AI Species Matches
+As a user who has submitted a plant photo, I want to see the AI's candidate species matches, clearly framed as possibilities, not certainties, with confidence scores labeled correctly, so that I can choose the right one without mistaking an identification score for a risk assessment.
+AC 1.2.1 — Candidates displayed with names
+Given the user has selected a clear, well-lit photo of a recognizable plant, When the user submits the image for identification, Then the system displays a list of candidate species, each showing common name and scientific name where available.
+AC 1.2.2 — Presented as possible, not certain
+Given the user has selected a clear, well-lit photo of a recognizable plant, When the user submits the image for identification, Then the system presents the candidates as possible matches, and does not treat the highest-ranked result as automatically confirmed or open an assessment for it.
+AC 1.2.3 — Score labeled correctly
+Given the user has selected a clear, well-lit photo of a recognizable plant, When the user submits the image for identification, Then the system labels each candidate's match score as identification confidence, not as an environmental risk or assessment score.
+AC 1.2.4 — No match found
+Given the user has selected an image the AI cannot confidently identify, When the user submits the image for identification, Then the system displays a clear no-match message, does not assign a species automatically, and provides an option to search by name instead.
+AC 1.2.5 — Service unavailable
+Given the identification service is unreachable, When the user submits an image for identification, Then the system displays a clear error message and provides an option to retry or return to standard plant search.
+ 
+ 
+US 1.3 — Confirm Species Before Assessment
+As a user reviewing AI-suggested species matches, I want to select and confirm the correct one, so that the system opens the right plant's verified assessment rather than acting on an unconfirmed guess.
+AC 1.3.1 — Selecting a candidate marks it as the current selection
+Given one or more AI species matches are displayed, When the user selects a candidate species, Then the system visibly marks that species as the current selection.
+AC 1.3.2 — Selecting a different candidate replaces the previous selection
+Given a candidate species has already been selected, When the user selects a different candidate species, Then the system replaces the previous selection with the newly selected species.
+AC 1.3.3 — Confirming a matched species opens its verified assessment
+Given a candidate species has been selected and it matches an existing PlantAssure plant record, When the user confirms the selected species, Then the system opens the PlantAssure assessment for the corresponding plant record, using verified data from that record rather than AI-generated plant information.
+AC 1.3.4 — Confirming a species with no matching record shows a no-assessment message
+Given a candidate species has been selected but it does not match any existing PlantAssure plant record, When the user confirms the selected species, Then the system displays a message stating no matching assessment is available for this species, and does not display AI-generated information as if it were a verified assessment.
+
+Epic 2 — Find a Better Plant + Compare
+US 2.1 — Find Lower-Concern Alternatives
+As a user viewing the assessment for a plant rated "Reconsider Planting" or "Use Caution", I want to see suitable lower-concern alternative plants, so that I can choose something safer to plant instead.
+AC 2.1.1 — Alternatives displayed using verified records
+Given a plant assessment has a recommendation of "Reconsider Planting" or "Use Caution", and matching alternatives are available, When the user selects the option to find alternative plants, Then the system displays suitable alternatives with lower documented environmental concern, each shown using an existing PlantAssure plant record.
+AC 2.1.2 — Matching uses only supported traits
+Given suitable candidate plants are available for alternative matching, When the user requests alternative plants, Then the system evaluates candidates using available traits including growth form, life history, woodiness, and height.
+AC 2.1.3 — Missing trait data is never inferred
+Given a candidate plant has missing trait data, When the user requests alternative plants, Then the system treats the missing trait as unavailable and does not create or infer a replacement value.
+AC 2.1.4 — No suitable alternatives found
+Given no suitable lower-concern alternatives are available, When the user requests alternative plants, Then the system displays a clear no-results message and does not generate unsupported suggestions.
+US 2.2 — Compare Plants Side by Side
+As a user considering a lower-risk alternative, I want to compare my original plant against one or more alternatives in a table, so that I can make an informed choice based on verified, clearly-labeled evidence.
+AC 2.2.1 — Comparison view shows supported fields
+Given an original plant and at least one suggested alternative are available, When the user opens the comparison view, Then the system displays the original plant and selected alternative(s) side by side using the same fields for each: environmental concern, native or introduced status, growth form, life history, woodiness, and height (where available).
+AC 2.2.2 — Environmental concern and legal status shown separately, when both exist
+Given both environmental concern and Victorian legal status are available for a compared plant, When the user opens the comparison view, Then the system displays them as separate, distinguishable types of information.
+AC 2.2.3 — Local occurrence shown as evidence, not risk
+Given local occurrence evidence is available for a compared plant, When the user opens the comparison view, Then the system presents local occurrence as supporting evidence, and does not present it as environmental risk severity.
+AC 2.2.4 — Missing fields shown as unavailable, never guessed
+Given a comparison field is unavailable for one of the compared plants, When the user opens the comparison view, Then the system displays that field as unavailable or not assessed, rather than showing guessed information.
+AC 2.2.5 — Selecting an alternative opens its own assessment
+Given an alternative plant is displayed in the comparison view, When the user selects that alternative plant, Then the system opens the PlantAssure assessment for that plant.
+
+Epic 3 — Plant Catalog & Browse
+Description: Lets users who don't have a specific plant in mind browse a catalog of assessed plants instead of searching by name, with filters to narrow results to what suits their garden.
+US 3.1 — Browse All Assessed Plants
+As a user who doesn't know what plant they're looking at, I want to browse a catalog of assessed plants, so that I can find a suitable plant without needing to search by name.
+AC 3.1.1 — Catalog displays assessed plants as cards
+Given the user is on the home page, When the user opens the catalog tab, Then all assessed plants (excluding Not Assessed) are displayed as cards showing name and risk rating.
+AC 3.1.2 — Selecting a card opens the full assessment
+Given the catalog is open, When the user clicks a plant card, Then the full assessment page opens for that plant.
+ 
+ 
+US 3.2 — Filter and Search Within Catalog
+As a user browsing the catalog, I want to filter results by risk rating and other plant characteristics, so that I can narrow results to plants that fit what I'm looking for.
+AC 3.2.1 — Filters narrow results
+Given the catalog is open, When the user applies any filter (risk, native status, life history, plant type, or size), Then only plants matching that filter are shown.
+AC 3.2.2 — No results for a filter
+Given the catalog is open, When the user applies a filter that matches no plants, Then a clear no-results message is shown instead of an empty page.

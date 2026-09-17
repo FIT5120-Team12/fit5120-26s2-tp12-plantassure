@@ -58,7 +58,7 @@ class PlantControllerTest {
     @Test
     void shouldReturnSearchContractWithoutEnvelope() throws Exception {
         // Arrange：规定 mock Service 在收到 wattle 时返回固定结果。
-        when(plantSearchService.search("wattle")).thenReturn(
+        when(plantSearchService.search("wattle", null)).thenReturn(
                 PlantSearchResponse.builder()
                         .query("wattle")
                         .results(List.of(

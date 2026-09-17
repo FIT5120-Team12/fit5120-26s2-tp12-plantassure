@@ -11,7 +11,6 @@ node_modules
 .DS_Store
 dist
 dist-ssr
-coverage
 *.local
 
 # Local environment files may contain secrets
@@ -32,15 +31,5 @@ coverage
 
 .eslintcache
 
-# Cypress
-/cypress/videos/
-/cypress/screenshots/
-
-# Vitest
-__screenshots__/
-
 # Vite
 *.timestamp-*-*.mjs
-
-test-results/
-playwright-report/

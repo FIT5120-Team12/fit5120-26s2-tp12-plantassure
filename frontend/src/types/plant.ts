@@ -141,6 +141,12 @@ export interface EnvironmentalConcernDetails {
   source: string;
 }
 
+export interface RecommendationDetail {
+  level: Recommendation;
+  displayLabel: string;
+  explanation: string;
+}
+
 export interface PlantAssessmentResponse {
   plant: PlantIdentity;
   originStatus: OriginStatus;
@@ -148,5 +154,5 @@ export interface PlantAssessmentResponse {
   localOccurrence: LocalOccurrence;
   environmentalConcern: EnvironmentalConcernDetails;
   legalStatus: LegalStatus;
-  recommendation: Recommendation;
+  recommendation: RecommendationDetail;
 }

@@ -15,10 +15,13 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.ByteArrayResource;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.client.MultipartBodyBuilder;
 import org.springframework.stereotype.Component;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClientException;
@@ -46,6 +49,7 @@ public class HttpPlantIdentificationClient implements PlantIdentificationClient 
 
     @Override
     public List<AiIdentificationCandidate> identify(MultipartFile image) {
+
         if (!properties.isEnabled()) {
             throw new BusinessException(
                     ErrorCode.IDENTIFICATION_SERVICE_UNAVAILABLE,
@@ -53,35 +57,78 @@ public class HttpPlantIdentificationClient implements PlantIdentificationClient 
         }
 
         long startedAt = System.nanoTime();
+
         try {
-            MultipartBodyBuilder bodyBuilder = new MultipartBodyBuilder();
-            bodyBuilder.part("image", toResource(image))
-                    .contentType(resolveContentType(image.getContentType()));
+            /*
+             * Epic 1 原实现：
+             *
+             * MultipartBodyBuilder bodyBuilder = new MultipartBodyBuilder();
+             * bodyBuilder.part("image", toResource(image))
+             *         .contentType(
+             *                 resolveContentType(image.getContentType()));
+             *
+             * 修改原因：
+             * MultipartBodyBuilder 依赖 Reactive Streams Publisher，
+             * 而当前项目使用 Spring MVC + RestClient，
+             * 没有必要为了 multipart 请求引入 WebFlux/reactive 依赖。
+             */
+
+            MultiValueMap<String, Object> multipartBody =
+                    new LinkedMultiValueMap<>();
+
+            HttpHeaders imageHeaders = new HttpHeaders();
+            imageHeaders.setContentType(
+                    resolveContentType(image.getContentType()));
+
+            HttpEntity<ByteArrayResource> imagePart =
+                    new HttpEntity<>(
+                            toResource(image),
+                            imageHeaders);
+
+            multipartBody.add("image", imagePart);
 
             RestClient.RequestBodySpec request = restClient.post()
                     .uri(properties.getEndpoint())
                     .contentType(MediaType.MULTIPART_FORM_DATA);
 
             if (StringUtils.hasText(properties.getApiKey())) {
-                request.header(HttpHeaders.AUTHORIZATION, "Bearer " + properties.getApiKey().trim());
+                request.header(
+                        HttpHeaders.AUTHORIZATION,
+                        "Bearer " + properties.getApiKey().trim());
             }
 
             JsonNode response = request
-                    .body(bodyBuilder.build())
+                    .body(multipartBody)
                     .retrieve()
                     .body(JsonNode.class);
 
-            List<AiIdentificationCandidate> candidates = parseCandidates(response);
-            long elapsedMs = (System.nanoTime() - startedAt) / 1_000_000L;
-            log.info("AI identification completed. providerCandidates={}, elapsedMs={}",
-                    candidates.size(), elapsedMs);
+            List<AiIdentificationCandidate> candidates =
+                    parseCandidates(response);
+
+            long elapsedMs =
+                    (System.nanoTime() - startedAt) / 1_000_000L;
+
+            log.info(
+                    "AI identification completed. "
+                            + "providerCandidates={}, elapsedMs={}",
+                    candidates.size(),
+                    elapsedMs);
+
             return candidates;
+
         } catch (RestClientException exception) {
-            log.warn("AI identification provider request failed: {}", exception.getMessage());
+
+            log.warn(
+                    "AI identification provider request failed: {}",
+                    exception.getMessage());
+
             throw new BusinessException(
                     ErrorCode.IDENTIFICATION_SERVICE_UNAVAILABLE,
-                    "Plant identification is temporarily unavailable. Please try again or search for the plant by name.");
+                    "Plant identification is temporarily unavailable. "
+                            + "Please try again or search for the plant by name.");
+
         } catch (IOException exception) {
+
             throw new BusinessException(
                     ErrorCode.IDENTIFICATION_FAILED,
                     "The uploaded image could not be read for identification.");

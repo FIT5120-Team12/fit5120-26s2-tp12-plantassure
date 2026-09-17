@@ -18,7 +18,5 @@ pnpm lint
 pnpm build
 ```
 
-See `DESIGN.md` for UI rules and `API.md` for the frontend/backend contract.
-
 Safe shared environment defaults may be committed in `.env` if the team chooses. Secrets must
 use ignored `.env.local` or `.env.*.local` files.

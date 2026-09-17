@@ -9,7 +9,11 @@
     warnings: string[];
   }>();
 
-  const presentation = computed(() => getRecommendationPresentation(props.recommendation.level));
+  const presentation = computed(() => getRecommendationPresentation(props.recommendation));
+
+  defineEmits<{
+    findBetterPlant: [];
+  }>();
 </script>
 
 <template>
@@ -21,29 +25,40 @@
     <div class="assessment-guidance__main">
       <p class="assessment-guidance__eyebrow">PLANTING GUIDANCE</p>
       <div class="assessment-guidance__title-row">
-        <span class="mdi assessment-guidance__icon" :class="presentation.icon" aria-hidden="true" />
-        <h2 id="recommendation-heading">{{ recommendation.displayLabel }}</h2>
+        <v-icon
+          class="assessment-guidance__icon"
+          :icon="presentation.icon"
+          size="28"
+          aria-hidden="true"
+        />
+        <h2 id="recommendation-heading">{{ presentation.label }}</h2>
       </div>
-      <p class="assessment-guidance__explanation">{{ recommendation.explanation }}</p>
+      <p class="assessment-guidance__explanation">{{ presentation.guidance }}</p>
+
+      <v-btn
+        v-if="
+          recommendation === 'RECONSIDER_PLANTING' || recommendation === 'USE_CAUTION'
+        "
+        color="primary"
+        variant="flat"
+        append-icon="mdi-arrow-right"
+        @click="$emit('findBetterPlant')"
+      >
+        Find a Better Plant
+      </v-btn>
 
       <div v-if="warnings.length" class="assessment-guidance__notice">
-        <span class="mdi mdi-information-outline" aria-hidden="true" />
+        <v-icon icon="mdi-information-outline" size="18" aria-hidden="true" />
         <ul>
           <li v-for="warning in warnings" :key="warning">{{ warning }}</li>
         </ul>
       </div>
-    </div>
-
-    <div class="assessment-guidance__meaning">
-      <p>WHAT THIS MEANS FOR YOU</p>
-      <span>{{ presentation.guidance }}</span>
     </div>
   </section>
 </template>
 
 <style scoped>
   .assessment-guidance {
-    overflow: hidden;
     border: 2px solid var(--color-border-strong);
     border-radius: var(--radius-lg);
     background: var(--color-surface-muted);
@@ -61,11 +76,10 @@
   }
 
   .assessment-guidance__main {
-    padding: 28px var(--space-xl) var(--space-lg);
+    padding: var(--space-lg) var(--space-xl);
   }
 
-  .assessment-guidance__eyebrow,
-  .assessment-guidance__meaning p {
+  .assessment-guidance__eyebrow {
     margin: 0;
     color: var(--color-muted);
     font-size: 0.75rem;
@@ -84,7 +98,6 @@
   .assessment-guidance__icon {
     flex: 0 0 auto;
     color: var(--color-primary);
-    font-size: 1.5rem;
   }
 
   .assessment-guidance--concern .assessment-guidance__icon,
@@ -109,6 +122,10 @@
     overflow-wrap: anywhere;
   }
 
+  .assessment-guidance__main > .v-btn {
+    margin-top: var(--space-lg);
+  }
+
   .assessment-guidance__notice {
     min-width: 0;
     display: flex;
@@ -130,23 +147,8 @@
     overflow-wrap: anywhere;
   }
 
-  .assessment-guidance__meaning {
-    padding: 18px var(--space-xl);
-    border-top: 1px solid var(--color-border-strong);
-  }
-
-  .assessment-guidance__meaning span {
-    display: block;
-    max-width: 44rem;
-    margin-top: 6px;
-    color: var(--color-ink-soft);
-    font-size: 0.875rem;
-    overflow-wrap: anywhere;
-  }
-
   @media (max-width: 767px) {
-    .assessment-guidance__main,
-    .assessment-guidance__meaning {
+    .assessment-guidance__main {
       padding-inline: var(--space-lg);
     }
 

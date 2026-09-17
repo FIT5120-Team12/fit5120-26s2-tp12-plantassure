@@ -13,9 +13,20 @@
 
 <template>
   <article class="assessment-summary-card" :class="`assessment-summary-card--${tone ?? 'neutral'}`">
-    <span class="mdi assessment-summary-card__icon" :class="icon" aria-hidden="true" />
+    <v-avatar size="56" rounded="circle" class="assessment-summary-card__icon" aria-hidden="true">
+      <v-icon :icon="icon" size="28" aria-hidden="true" />
+    </v-avatar>
     <h3>{{ title }}</h3>
-    <p>{{ value }}</p>
+    <v-chip
+      v-if="tone === 'concern' || tone === 'caution'"
+      size="small"
+      variant="outlined"
+      color="accent"
+      class="assessment-summary-card__chip"
+    >
+      {{ value }}
+    </v-chip>
+    <p v-else>{{ value }}</p>
     <span v-if="supporting" class="assessment-summary-card__supporting">{{ supporting }}</span>
     <small>{{ source }}</small>
   </article>
@@ -26,22 +37,12 @@
     display: flex;
     min-width: 0;
     flex-direction: column;
-    padding: 26px;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    background: var(--color-surface);
+    padding: var(--space-md) var(--space-lg);
   }
 
   .assessment-summary-card__icon {
-    display: inline-grid;
-    width: 44px;
-    height: 44px;
-    flex: 0 0 auto;
-    place-items: center;
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-pill);
     color: var(--color-primary);
-    font-size: 1.25rem;
   }
 
   .assessment-summary-card--concern .assessment-summary-card__icon,
@@ -60,7 +61,7 @@
   }
 
   .assessment-summary-card h3 {
-    margin: var(--space-md) 0 0;
+    margin: var(--space-sm) 0 0;
     font-family: var(--font-body);
     font-size: 0.9375rem;
     font-weight: 700;
@@ -68,15 +69,21 @@
   }
 
   .assessment-summary-card p {
-    margin: 6px 0 0;
+    margin: var(--space-xs) 0 0;
     overflow-wrap: anywhere;
     color: var(--color-primary);
     font-size: 1.125rem;
     font-weight: 800;
   }
 
+  .assessment-summary-card__chip {
+    align-self: flex-start;
+    margin-top: var(--space-xs);
+    font-weight: 700;
+  }
+
   .assessment-summary-card__supporting {
-    margin-top: 4px;
+    margin-top: var(--space-xs);
     color: var(--color-ink-soft);
     font-size: 0.875rem;
     overflow-wrap: anywhere;

@@ -40,7 +40,7 @@
   );
   const recommendationPresentation = computed(() =>
     assessmentData.value
-      ? getRecommendationPresentation(assessmentData.value.recommendation)
+      ? getRecommendationPresentation(assessmentData.value.recommendation.level)
       : null,
   );
   const assessmentNotices = computed(() => {
@@ -181,7 +181,7 @@
           </section>
 
           <AssessmentRecommendation
-            :recommendation="assessmentData.recommendation"
+            :recommendation="assessmentData.recommendation.level"
             :warnings="assessmentNotices"
             @find-better-plant="findBetterPlant"
           />

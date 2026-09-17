@@ -4,6 +4,7 @@ import { ref } from 'vue';
 import { getAlternatives } from '@/api/plants';
 import type {
   AlternativePlant,
+  AlternativesStatus,
   CurrentPlantAlternativeSummary,
   PlantAlternativesParams,
 } from '@/types/plant';
@@ -13,6 +14,7 @@ const ALTERNATIVES_ERROR_MESSAGE = 'We couldn’t load alternative plants. Pleas
 export const usePlantAlternativesStore = defineStore('plantAlternatives', () => {
   const currentPlant = ref<CurrentPlantAlternativeSummary | null>(null);
   const alternatives = ref<AlternativePlant[]>([]);
+  const status = ref<AlternativesStatus | null>(null);
   const isLoading = ref(false);
   const error = ref<string | null>(null);
   const hasLoaded = ref(false);
@@ -28,6 +30,7 @@ export const usePlantAlternativesStore = defineStore('plantAlternatives', () => 
     error.value = null;
     currentPlant.value = null;
     alternatives.value = [];
+    status.value = null;
 
     try {
       const response = await getAlternatives(plantId, params);
@@ -36,6 +39,7 @@ export const usePlantAlternativesStore = defineStore('plantAlternatives', () => 
 
       currentPlant.value = response.currentPlant;
       alternatives.value = response.alternatives;
+      status.value = response.status;
       hasLoaded.value = true;
     } catch {
       if (currentRequestId !== requestId) return;
@@ -50,6 +54,7 @@ export const usePlantAlternativesStore = defineStore('plantAlternatives', () => 
   return {
     currentPlant,
     alternatives,
+    status,
     isLoading,
     error,
     hasLoaded,

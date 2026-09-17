@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import { computed, ref, watch } from 'vue';
   import { storeToRefs } from 'pinia';
+  import { computed, ref, watch } from 'vue';
   import { RouterLink, useRoute, useRouter } from 'vue-router';
 
   import AlternativePlantCard from '@/components/alternatives/AlternativePlantCard.vue';
@@ -13,7 +13,8 @@
   const route = useRoute();
   const router = useRouter();
   const alternativesStore = usePlantAlternativesStore();
-  const { alternatives, currentPlant, error, hasLoaded, isLoading } = storeToRefs(alternativesStore);
+  const { alternatives, currentPlant, error, hasLoaded, isLoading, status } =
+    storeToRefs(alternativesStore);
   const selectedPlantIds = ref<number[]>([]);
 
   const plantId = computed<number | null>(() => {
@@ -150,6 +151,7 @@
               :image-url="plant.imageUrl"
               :environmental-concern="plant.environmentalConcern"
               :origin-status="plant.originStatus"
+              :legal-status="plant.legalStatus"
               :match-reasons="plant.matchReasons"
               :growth-form="plant.growthForm"
               :life-history="plant.lifeHistory"
@@ -162,6 +164,7 @@
           </div>
           <AlternativesEmptyState
             v-else-if="hasLoaded && currentPlant"
+            :status="status"
             @browse="browsePlants"
           />
         </section>

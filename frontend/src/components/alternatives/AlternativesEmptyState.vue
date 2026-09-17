@@ -1,18 +1,49 @@
 <script setup lang="ts">
+  import { computed } from 'vue';
+
+  import type { AlternativesStatus } from '@/types/plant';
+
+  const props = defineProps<{
+    status: AlternativesStatus | null;
+  }>();
+
   const emit = defineEmits<{
     browse: [];
   }>();
+
+  const emptyStateContent = computed(() => {
+    switch (props.status) {
+      case 'no_strict_match_found':
+        return {
+          title: 'No suitable lower-concern alternatives found',
+          description: 'We couldn’t find a suitable lower-concern alternative for this plant.',
+        };
+      case 'insufficient_trait_data':
+        return {
+          title: 'Alternatives unavailable',
+          description:
+            'There isn’t enough plant trait information available to suggest reliable alternatives for this plant.',
+        };
+      case 'not_applicable':
+        return {
+          title: 'Alternatives unavailable',
+          description: 'Better plant alternatives are not available for this plant.',
+        };
+      default:
+        return {
+          title: 'No lower-concern alternatives found',
+          description: 'No alternatives are available for this plant at the moment.',
+        };
+    }
+  });
 </script>
 
 <template>
   <v-sheet class="alternatives-empty-state" border rounded="md" color="surface">
     <v-icon icon="mdi-leaf-off-outline" size="32" aria-hidden="true" />
     <div>
-      <h2>No suitable lower-concern alternatives found</h2>
-      <p>
-        PlantAssure only shows alternatives supported by verified records. Not Assessed and
-        regulated plants are not treated as lower-concern options.
-      </p>
+      <h2>{{ emptyStateContent.title }}</h2>
+      <p>{{ emptyStateContent.description }}</p>
     </div>
     <v-btn color="primary" variant="outlined" type="button" @click="emit('browse')">
       Browse assessed plants

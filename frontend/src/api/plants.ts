@@ -11,6 +11,8 @@ import type {
 } from '@/types/plant';
 
 const DEFAULT_SEARCH_LIMIT = 8;
+const MIN_ALTERNATIVES_LIMIT = 1;
+const MAX_ALTERNATIVES_LIMIT = 20;
 
 export async function searchPlants(
   keyword: string,
@@ -58,8 +60,13 @@ export async function getAlternatives(
     throw new RangeError('plantId must be a positive integer.');
   }
 
-  if (params?.limit !== undefined && (!Number.isSafeInteger(params.limit) || params.limit <= 0)) {
-    throw new RangeError('limit must be a positive integer.');
+  if (
+    params?.limit !== undefined &&
+    (!Number.isSafeInteger(params.limit) ||
+      params.limit < MIN_ALTERNATIVES_LIMIT ||
+      params.limit > MAX_ALTERNATIVES_LIMIT)
+  ) {
+    throw new RangeError('limit must be an integer between 1 and 20.');
   }
 
   const { data } = await http.get<PlantAlternativesResponse>(`/plants/${plantId}/alternatives`, {

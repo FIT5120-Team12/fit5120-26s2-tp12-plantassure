@@ -30,7 +30,7 @@ import org.springframework.web.multipart.MultipartFile;
 /**
  * 基于 HTTP 的 AI provider adapter。
  *
- * <p><strong>Iteration 2 / Epic 1 新增：</strong>现有需求文件没有提供 AI 团队最终的真实
+ * <p><strong>Iteration 2 / Epic 1 新增：</strong>现有需求文件没有提供 AI 最终的真实
  * response schema，因此所有 provider-specific 兼容逻辑集中在本类。业务层不会因为 AI
  * 团队后续调整 JSON 字段而被污染。</p>
  *

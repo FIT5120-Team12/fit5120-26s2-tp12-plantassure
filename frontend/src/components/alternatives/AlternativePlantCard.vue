@@ -152,15 +152,19 @@
   }
 
   .alternative-plant-card__image {
+    width: 100%;
     aspect-ratio: 4 / 3;
+    overflow: hidden;
     background: var(--color-surface-muted);
   }
 
   .alternative-plant-card__image :deep(.v-img) {
+    width: 100%;
     height: 100%;
   }
 
   .alternative-plant-card__image-fallback {
+    width: 100%;
     height: 100%;
     display: grid;
     place-items: center;

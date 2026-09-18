@@ -114,6 +114,7 @@
   }
 
   .comparison-plant-header__image {
+    width: 100%;
     aspect-ratio: 4 / 3;
     overflow: hidden;
     border-radius: var(--radius-sm);
@@ -122,6 +123,7 @@
 
   .comparison-plant-header__image :deep(.v-img),
   .comparison-plant-header__image-fallback {
+    width: 100%;
     height: 100%;
   }
 

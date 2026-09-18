@@ -1,7 +1,11 @@
 <script setup lang="ts">
   import { computed, ref, watch } from 'vue';
 
-  import { getEnvironmentalRiskTone } from '@/utils/assessmentPresentation';
+  import {
+    getEnvironmentalConcernLabel,
+    getEnvironmentalRiskTone,
+  } from '@/utils/assessmentPresentation';
+  import { getOriginStatusLabel } from '@/utils/originStatusPresentation';
   import type { ComparisonPlant } from '@/types/plant';
 
   type ComparisonPlantHeaderProps = Pick<
@@ -69,10 +73,10 @@
             variant="tonal"
             :class="`comparison-plant-header__concern--${concernTone}`"
           >
-            {{ environmentalConcern }}
+            {{ getEnvironmentalConcernLabel(environmentalConcern) }}
           </v-chip>
           <v-chip v-if="originStatus" size="small" variant="outlined" color="primary">
-            {{ originStatus }}
+            {{ getOriginStatusLabel(originStatus) }}
           </v-chip>
         </div>
       </div>
@@ -110,6 +114,7 @@
   }
 
   .comparison-plant-header__image {
+    width: 100%;
     aspect-ratio: 4 / 3;
     overflow: hidden;
     border-radius: var(--radius-sm);
@@ -118,6 +123,7 @@
 
   .comparison-plant-header__image :deep(.v-img),
   .comparison-plant-header__image-fallback {
+    width: 100%;
     height: 100%;
   }
 

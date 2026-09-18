@@ -167,7 +167,13 @@
         </section>
 
         <div v-else-if="isLoading" class="comparison-page__loading" aria-live="polite">
-          <v-progress-circular indeterminate color="primary" size="28" aria-hidden="true" />
+          <v-progress-circular
+            indeterminate
+            color="primary"
+            size="28"
+            :width="3"
+            aria-hidden="true"
+          />
           <span>Loading plant comparisons…</span>
         </div>
 
@@ -306,7 +312,9 @@
     display: flex;
     align-items: center;
     gap: var(--space-sm);
+    padding-block: var(--space-md);
     color: var(--color-ink-soft);
+    font-size: 0.875rem;
   }
 
   .comparison-page__headers {

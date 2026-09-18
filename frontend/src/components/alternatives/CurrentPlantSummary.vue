@@ -1,5 +1,8 @@
 <script setup lang="ts">
-  import { getEnvironmentalConcernChipColor } from '@/utils/assessmentPresentation';
+  import {
+    getEnvironmentalConcernChipColor,
+    getEnvironmentalConcernLabel,
+  } from '@/utils/assessmentPresentation';
 
   interface CurrentPlantSummaryProps {
     commonName: string | null;
@@ -44,7 +47,7 @@
         variant="tonal"
         :color="getEnvironmentalConcernChipColor(environmentalConcern)"
       >
-        {{ environmentalConcern }}
+        {{ getEnvironmentalConcernLabel(environmentalConcern) }}
       </v-chip>
     </div>
 
@@ -74,6 +77,7 @@
   }
 
   .current-plant-summary__image {
+    width: 100%;
     aspect-ratio: 4 / 3;
     overflow: hidden;
     border-radius: var(--radius-sm);
@@ -81,10 +85,12 @@
   }
 
   .current-plant-summary__image :deep(.v-img) {
+    width: 100%;
     height: 100%;
   }
 
   .current-plant-summary__image-fallback {
+    width: 100%;
     height: 100%;
     display: grid;
     place-items: center;

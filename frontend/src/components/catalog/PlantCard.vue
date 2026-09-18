@@ -83,7 +83,10 @@
 
 <style scoped>
   .plant-card {
+    height: 100%;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
@@ -107,6 +110,7 @@
   }
 
   .plant-card__body {
+    flex: 1;
     min-width: 0;
     display: flex;
     flex-direction: column;
@@ -123,6 +127,7 @@
   }
 
   .plant-card__scientific-name {
+    min-height: 3em;
     margin: calc(var(--space-sm) * -1) 0 0;
     color: var(--color-ink-soft);
     overflow-wrap: anywhere;
@@ -153,7 +158,7 @@
   }
 
   .plant-card__action {
-    margin-top: var(--space-xs);
+    margin-top: auto;
   }
 
   @media (max-width: 479px) {

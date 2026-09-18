@@ -303,8 +303,8 @@
     margin: 0 0 var(--space-sm);
     color: var(--color-accent);
     font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 0.12em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
   }
 
   .identification-hero h1,

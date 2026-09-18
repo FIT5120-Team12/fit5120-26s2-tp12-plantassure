@@ -1,5 +1,8 @@
 <script setup lang="ts">
-  import { getEnvironmentalConcernChipColor } from '@/utils/assessmentPresentation';
+  import {
+    getEnvironmentalConcernChipColor,
+    getEnvironmentalConcernLabel,
+  } from '@/utils/assessmentPresentation';
 
   interface CurrentPlantSummaryProps {
     commonName: string | null;
@@ -44,7 +47,7 @@
         variant="tonal"
         :color="getEnvironmentalConcernChipColor(environmentalConcern)"
       >
-        {{ environmentalConcern }}
+        {{ getEnvironmentalConcernLabel(environmentalConcern) }}
       </v-chip>
     </div>
 

@@ -257,6 +257,7 @@
     align-items: center;
     gap: var(--space-xs);
     color: var(--color-primary);
+    font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
   }
@@ -330,8 +331,8 @@
     margin: 0;
     color: var(--color-accent);
     font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
   }
 
   .assessment-identity {

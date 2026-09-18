@@ -130,7 +130,13 @@
             We couldn’t find that plant.
           </v-alert>
           <div v-else-if="isLoading" class="alternatives-status" aria-live="polite">
-            <v-progress-circular indeterminate color="primary" size="28" aria-hidden="true" />
+            <v-progress-circular
+              indeterminate
+              color="primary"
+              size="28"
+              :width="3"
+              aria-hidden="true"
+            />
             <span>Loading alternative plants…</span>
           </div>
           <v-alert v-else-if="error" type="error" variant="tonal">
@@ -190,11 +196,18 @@
 
   .alternatives-back-link {
     display: inline-flex;
+    min-height: 44px;
     align-items: center;
     gap: var(--space-xs);
-    color: var(--color-ink-soft);
-    font-size: 0.9375rem;
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: 700;
     text-decoration: none;
+  }
+
+  .alternatives-back-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   .alternatives-intro {
@@ -258,7 +271,9 @@
     display: flex;
     align-items: center;
     gap: var(--space-sm);
+    padding-block: var(--space-md);
     color: var(--color-ink-soft);
+    font-size: 0.875rem;
   }
 
   @media (max-width: 999px) {

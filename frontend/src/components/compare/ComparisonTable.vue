@@ -1,8 +1,11 @@
 <script setup lang="ts">
   import {
+    getEnvironmentalConcernLabel,
     getEnvironmentalRiskTone,
     getLocalOccurrencePresentation,
   } from '@/utils/assessmentPresentation';
+  import { getLegalStatusLabel } from '@/utils/legalStatusPresentation';
+  import { getOriginStatusLabel } from '@/utils/originStatusPresentation';
   import type { ComparisonPlant, LocalOccurrence } from '@/types/plant';
 
   defineProps<{
@@ -66,11 +69,17 @@
                   size="10"
                   aria-hidden="true"
                 />
-                <span>{{ displayValue(plant.environmentalConcern) }}</span>
+                <span>{{ getEnvironmentalConcernLabel(plant.environmentalConcern) }}</span>
               </span>
             </template>
             <template v-else-if="row.key === 'localOccurrence'">
               {{ displayLocalOccurrence(plant.localOccurrence) }}
+            </template>
+            <template v-else-if="row.key === 'legalStatus'">
+              {{ getLegalStatusLabel(plant.legalStatus) }}
+            </template>
+            <template v-else-if="row.key === 'originStatus'">
+              {{ getOriginStatusLabel(plant.originStatus) }}
             </template>
             <template v-else>
               {{ displayValue(plant[row.key]) }}

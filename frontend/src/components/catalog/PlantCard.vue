@@ -1,5 +1,10 @@
 <script setup lang="ts">
-  import { getEnvironmentalConcernChipColor } from '@/utils/assessmentPresentation';
+  import {
+    getEnvironmentalConcernChipColor,
+    getEnvironmentalConcernLabel,
+  } from '@/utils/assessmentPresentation';
+  import { getOriginStatusLabel } from '@/utils/originStatusPresentation';
+  import type { OriginStatus } from '@/types/plant';
 
   interface PlantCardProps {
     plantId: number;
@@ -7,7 +12,7 @@
     scientificName: string;
     imageUrl?: string | null;
     environmentalConcern: string | null;
-    originStatus: string | null;
+    originStatus: OriginStatus | null;
     growthForm?: string | null;
     lifeHistory?: string | null;
     height?: string | null;
@@ -51,10 +56,10 @@
           variant="tonal"
           :color="getEnvironmentalConcernChipColor(environmentalConcern)"
         >
-          {{ environmentalConcern }}
+          {{ getEnvironmentalConcernLabel(environmentalConcern) }}
         </v-chip>
         <v-chip v-if="originStatus" size="small" variant="outlined" color="primary">
-          {{ originStatus }}
+          {{ getOriginStatusLabel(originStatus) }}
         </v-chip>
       </div>
 

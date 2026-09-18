@@ -220,8 +220,8 @@
     margin: 0 0 var(--space-sm);
     color: var(--color-accent);
     font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 0.12em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
   }
 
   .catalog-intro h1 {
@@ -261,8 +261,9 @@
     display: flex;
     align-items: center;
     gap: var(--space-sm);
-    min-height: 96px;
+    padding-block: var(--space-md);
     color: var(--color-ink-soft);
+    font-size: 0.875rem;
   }
 
   .catalog-grid {

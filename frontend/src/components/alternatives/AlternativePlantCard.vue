@@ -1,6 +1,11 @@
 <script setup lang="ts">
-  import { getEnvironmentalConcernChipColor } from '@/utils/assessmentPresentation';
-  import type { LegalStatus } from '@/types/plant';
+  import {
+    getEnvironmentalConcernChipColor,
+    getEnvironmentalConcernLabel,
+  } from '@/utils/assessmentPresentation';
+  import { getLegalStatusLabel } from '@/utils/legalStatusPresentation';
+  import { getOriginStatusLabel } from '@/utils/originStatusPresentation';
+  import type { LegalStatus, OriginStatus } from '@/types/plant';
 
   interface AlternativePlantCardProps {
     plantId: number;
@@ -8,7 +13,7 @@
     scientificName: string;
     imageUrl?: string | null;
     environmentalConcern: string | null;
-    originStatus: string | null;
+    originStatus: OriginStatus | null;
     legalStatus: LegalStatus;
     matchReasons: string[];
     growthForm?: string | null;
@@ -33,17 +38,6 @@
     select: [plantId: number];
     toggleCompare: [plantId: number];
   }>();
-
-  function formatLegalStatus(status: LegalStatus): string {
-    switch (status) {
-      case 'NOT_REGULATED':
-        return 'Not regulated';
-      case 'REGULATED':
-        return 'Regulated';
-      case 'UNAVAILABLE':
-        return 'Legal status unavailable';
-    }
-  }
 
   const traits = [
     { label: 'Growth form', value: props.growthForm, icon: 'mdi-leaf-outline' },
@@ -80,15 +74,19 @@
           variant="tonal"
           :color="getEnvironmentalConcernChipColor(environmentalConcern)"
         >
-          {{ environmentalConcern }}
+          {{ getEnvironmentalConcernLabel(environmentalConcern) }}
         </v-chip>
         <v-chip v-if="originStatus" size="small" variant="outlined" color="primary">
-          {{ originStatus }}
+          {{ getOriginStatusLabel(originStatus) }}
         </v-chip>
       </div>
 
       <p class="alternative-plant-card__legal-status">
-        Legal status: {{ formatLegalStatus(legalStatus) }}
+        {{
+          legalStatus === 'UNAVAILABLE'
+            ? getLegalStatusLabel(legalStatus)
+            : `Legal status: ${getLegalStatusLabel(legalStatus)}`
+        }}
       </p>
 
       <section v-if="matchReasons.length" class="alternative-plant-card__matches">
@@ -139,7 +137,10 @@
 
 <style scoped>
   .alternative-plant-card {
+    height: 100%;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
@@ -167,6 +168,7 @@
   }
 
   .alternative-plant-card__body {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
@@ -259,7 +261,7 @@
   .alternative-plant-card__actions {
     display: grid;
     gap: var(--space-xs);
-    margin-top: var(--space-xs);
+    margin-top: auto;
   }
 
   @media (max-width: 479px) {

@@ -37,6 +37,27 @@ function formatRawLabel(value: string): string {
     .join(' ');
 }
 
+export function getEnvironmentalConcernLabel(concern: string | null): string {
+  switch (concern) {
+    case 'VERY_HIGH':
+      return 'Very High';
+    case 'HIGH':
+      return 'High';
+    case 'MODERATELY_HIGH':
+      return 'Moderately High';
+    case 'MEDIUM':
+      return 'Medium';
+    case 'LOWER':
+      return 'Lower';
+    case 'NOT_ASSESSED':
+      return 'Not Assessed';
+    case 'UNAVAILABLE':
+      return 'Unavailable';
+    default:
+      return concern === null || concern.trim() === '' ? 'Unavailable' : formatRawLabel(concern);
+  }
+}
+
 export function getRecommendationPresentation(
   level: Recommendation | string,
 ): RecommendationPresentation {
@@ -180,7 +201,7 @@ export function getEnvironmentalConcernPresentation(
     case 'MEDIUM':
     case 'LOWER':
       return {
-        label: formatRawLabel(concern.status),
+        label: getEnvironmentalConcernLabel(concern.status),
         supporting: 'Environmental concern assessment',
         explanation: 'Environmental concern information is available for this plant.',
         tone: getEnvironmentalRiskTone(concern.status),
@@ -188,7 +209,7 @@ export function getEnvironmentalConcernPresentation(
       };
     case 'NOT_ASSESSED':
       return {
-        label: 'Not Assessed',
+        label: getEnvironmentalConcernLabel(concern.status),
         supporting: 'No exact matching Advisory List assessment',
         explanation:
           'No exact matching assessment was found in the 2022 Advisory List of Environmental Weeds in Victoria. This does not indicate that the plant is free of environmental risk.',
@@ -197,7 +218,7 @@ export function getEnvironmentalConcernPresentation(
       };
     case 'UNAVAILABLE':
       return {
-        label: 'Unavailable',
+        label: getEnvironmentalConcernLabel(concern.status),
         supporting: 'The environmental concern check could not be completed',
         explanation:
           'Environmental concern information is currently unavailable. This check could not be completed; the available establishment and occurrence evidence remains shown.',
@@ -206,7 +227,7 @@ export function getEnvironmentalConcernPresentation(
       };
     default:
       return {
-        label: formatRawLabel(String(concern.status)),
+        label: getEnvironmentalConcernLabel(String(concern.status)),
         supporting: 'Environmental concern status',
         explanation: 'Review the available environmental concern information.',
         tone: 'neutral',

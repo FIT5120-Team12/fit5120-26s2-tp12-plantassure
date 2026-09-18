@@ -74,5 +74,5 @@ plantky:
     top-candidates: ${PLANT_IDENTIFICATION_TOP_CANDIDATES:3}
     # 需求文档没有规定阈值；默认不额外过滤。AI 团队确认阈值后通过环境变量设置。
     minimum-confidence: ${PLANT_IDENTIFICATION_MIN_CONFIDENCE:0.0}
-    connect-timeout: ${PLANT_IDENTIFICATION_CONNECT_TIMEOUT:3s}
-    read-timeout: ${PLANT_IDENTIFICATION_READ_TIMEOUT:15s}
+    connect-timeout: ${PLANT_IDENTIFICATION_CONNECT_TIMEOUT:200s}
+    read-timeout: ${PLANT_IDENTIFICATION_READ_TIMEOUT:200s}

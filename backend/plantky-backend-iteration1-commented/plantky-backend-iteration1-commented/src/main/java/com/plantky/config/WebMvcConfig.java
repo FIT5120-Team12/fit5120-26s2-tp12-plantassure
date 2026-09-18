@@ -32,7 +32,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 // 只允许配置文件明确列出的前端 Origin，生产环境不要直接写 "*"。
                 .allowedOrigins(corsProperties.getAllowedOrigins().toArray(String[]::new))
                 // Iteration 1 只有只读查询接口，因此目前只允许 GET。
-                .allowedMethods("GET")
+                .allowedMethods("GET", "POST", "OPTIONS")
                 // 允许前端携带普通请求头；未来如果接入认证，可以再精细化限制。
                 .allowedHeaders("*")
                 // 当前项目无 Cookie/Session 登录，因此不允许跨域携带 credentials。

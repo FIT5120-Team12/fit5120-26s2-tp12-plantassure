@@ -46,8 +46,8 @@ public class PlantIdentificationProperties {
     private double minimumConfidence = 0.0d;
 
     /** 建立 AI HTTP 连接的最大等待时间。 */
-    private Duration connectTimeout = Duration.ofSeconds(200);
+    private Duration connectTimeout = Duration.ofSeconds(999);
 
     /** 等待 AI inference 返回的最大时间。 */
-    private Duration readTimeout = Duration.ofSeconds(200);
+    private Duration readTimeout = Duration.ofSeconds(999);
 }
